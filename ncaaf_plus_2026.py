@@ -753,25 +753,72 @@ SCHEDULE = {
         G("North Central","Illinois Wesleyan","1:00 PM","—","CCIW","Tucci Stadium, Bloomington IL","D-III"),
         G("Mount Union","Heidelberg",     "1:00 PM","—","OAC","Hoernemann Stadium, Tiffin OH","D-III"),
     ],
-    6: [  # Week 6 — Oct 8-11 (Red River)
-        G("Texas","Oklahoma",             "12:00 PM","ABC","Neutral","Cotton Bowl, Dallas TX",True),
-        G("Michigan","Illinois",          "12:00 PM","BTN","Big Ten","Memorial Stadium, Champaign IL"),
-        G("Notre Dame","Stanford",        "7:30 PM","NBC","ACC","Stanford Stadium"),
-        G("Penn State","Michigan State",  "3:30 PM","CBS","Big Ten","Beaver Stadium"),
-        G("Auburn","Georgia",             "7:30 PM","ESPN","SEC","Sanford Stadium"),
-        G("Ole Miss","LSU",               "7:30 PM","ESPN","SEC","Tiger Stadium"),
-        G("Alabama","Missouri",           "3:30 PM","ABC","SEC","Memorial Stadium, Columbia MO"),
-        G("Baylor","Kansas State",        "3:30 PM","ESPN2","Big 12","McLane Stadium"),
-        G("Florida State","Clemson",      "3:30 PM","ESPN","ACC","Memorial Stadium, Clemson SC"),
-        G("Colorado","Arizona",           "9:00 PM","FS1","Big 12","Arizona Stadium, Tucson AZ"),
-        G("Coastal Carolina","Troy",      "3:00 PM","ESPN+","Sun Belt","Veterans Memorial Stadium, Troy AL"),
-        G("North Dakota St","Missouri State","4:00 PM","ESPN+","MVFC","Plaster Field, Springfield MO","FCS"),
-        G("Chattanooga","Furman",         "6:00 PM","ESPN+","SoCon","Paladin Stadium, Greenville SC","FCS"),
-        G("Montana","Sacramento St",      "3:00 PM","ESPN+","Big Sky","Hornet Stadium, Sacramento CA","FCS"),
-        G("Ferris State","Lake Superior St","1:00 PM","—","GLIAC","Laker Turf Building, Sault Ste. Marie MI","D-II"),
-        G("Shepherd","Notre Dame College","1:00 PM","—","MEC","Carl Asseff Stadium, Bethel Park PA","D-II"),
-        G("Mount Union","Muskingum",      "1:00 PM","—","OAC","Muskingum Sch. Stadium, New Concord OH","D-III"),
-        G("North Central","Elmhurst",     "1:00 PM","—","CCIW","Hammerschmidt Memorial Stadium, Elmhurst IL","D-III"),
+    6: [  # Week 6 — Oct 8-11 (Red River Rivalry)
+        # ── THURSDAY OCT 8 ──
+        G("USF","UTSA",                   "Thu 7:30 PM","ESPN","AAC","Alamodome, San Antonio TX"),
+        G("South Alabama","Appalachian State","Thu 7:30 PM","ESPN2","Sun Belt","Kidd Brewer Stadium, Boone NC"),
+        G("Missouri State","WKU",         "Thu 7:00 PM","CBSSN","C-USA","L.T. Smith Stadium, Bowling Green KY"),
+        G("Sam Houston","Liberty",        "Thu 7:00 PM","ESPNU","C-USA","Williams Stadium, Lynchburg VA"),
+        # ── FRIDAY OCT 9 ──
+        G("Florida State","Louisville",   "Fri 7:00 PM","ESPN","ACC","L&N Federal Credit Union Stadium, Louisville KY"),
+        G("Iowa","Washington",            "Fri 9:00 PM","FOX","Big Ten","Husky Stadium, Seattle WA"),
+        G("Wyoming","San Jose State",     "Fri 9:00 PM","CBSSN","MWC","CEFCU Stadium, San Jose CA"),
+        G("Washington State","Utah State","Fri 9:00 PM","The CW","Pac-12","Maverik Stadium, Logan UT"),
+        G("Iowa State","BYU",             "Fri 10:15 PM","ESPN","Big 12","LaVell Edwards Stadium, Provo UT"),
+        # ── SATURDAY OCT 10 — ACC ──
+        G("North Carolina","Pitt",        "Sat 12:00 PM","ESPN","ACC","Acrisure Stadium, Pittsburgh PA"),
+        G("Wake Forest","NC State",       "Sat 12:00 PM","The CW","ACC","Carter-Finley Stadium, Raleigh NC"),
+        G("Duke","Georgia Tech",          "Sat 3:30 PM","ESPN2","ACC","Bobby Dodd Stadium, Atlanta GA"),
+        G("Stanford","Notre Dame",        "Sat 3:30 PM","NBC","ACC","Notre Dame Stadium, South Bend IN"),
+        G("Virginia Tech","California",   "Sat 3:30 PM","ACCN","ACC","California Memorial Stadium, Berkeley CA"),
+        G("Syracuse","Virginia",          "Sat 7:30 PM","ACCN","ACC","Scott Stadium, Charlottesville VA"),
+        # ── SATURDAY OCT 10 — AAC ──
+        G("Tulane","Army",                "Sat 12:00 PM","CBSSN","AAC","Michie Stadium, West Point NY"),
+        G("Charlotte","North Texas",      "Sat 3:30 PM","ESPN+","AAC","DATCU Stadium, Denton TX"),
+        G("Tulsa","Navy",                 "Sat 3:30 PM","CBSSN","AAC","Navy-Marine Corps Memorial Stadium, Annapolis MD"),
+        G("UConn","Temple",               "Sat 3:45 PM","ESPNU","AAC","Lincoln Financial Field, Philadelphia PA"),
+        G("Rice","East Carolina",         "Sat 4:00 PM","ESPN+","AAC","Dowdy-Ficklen Stadium, Greenville NC"),
+        G("UAB","Memphis",                "Sat 7:00 PM","ESPN2","AAC","Simmons Bank Liberty Stadium, Memphis TN"),
+        # ── SATURDAY OCT 10 — Big 12 ──
+        G("Texas","Oklahoma",             "Sat 3:30 PM","ABC","Neutral","Cotton Bowl, Dallas TX",True),
+        G("Arizona","West Virginia",      "Sat 12:00 PM","TNT","Big 12","Mountaineer Field, Morgantown WV"),
+        G("UCF","Oklahoma State",         "Sat 12:00 PM","ESPN2","Big 12","Boone Pickens Stadium, Stillwater OK"),
+        G("Houston","Kansas State",       "Sat 3:30 PM","FOX","Big 12","Bill Snyder Family Stadium, Manhattan KS"),
+        G("Kansas","Utah",                "Sat 10:15 PM","ESPN","Big 12","Rice-Eccles Stadium, Salt Lake City UT"),
+        G("Hawaii","Arizona State",       "Sat 10:30 PM","FS1","Big 12","Mountain America Stadium, Tempe AZ"),
+        # ── SATURDAY OCT 10 — Big Ten ──
+        G("Indiana","Nebraska",           "Sat 12:00 PM","FOX","Big Ten","Memorial Stadium, Lincoln NE"),
+        G("Ball State","Northwestern",    "Sat 12:30 PM","BTN","Big Ten","Ryan Field, Evanston IL"),
+        G("UCLA","Oregon",                "Sat 3:30 PM","CBS","Big Ten","Autzen Stadium, Eugene OR"),
+        G("Illinois","Michigan State",    "Sat 3:30 PM","FS1","Big Ten","Spartan Stadium, East Lansing MI"),
+        G("Maryland","Ohio State",        "Sat 4:15 PM","BTN","Big Ten","Ohio Stadium, Columbus OH"),
+        G("USC","Penn State",             "Sat 7:30 PM","NBC","Big Ten","Beaver Stadium, University Park PA"),
+        G("Minnesota","Purdue",           "Sat 8:00 PM","BTN","Big Ten","Ross-Ade Stadium, West Lafayette IN"),
+        # ── SATURDAY OCT 10 — MAC ──
+        G("Sacramento State","Bowling Green","Sat 12:00 PM","ESPN+","MAC","Doyt Perry Stadium, Bowling Green OH"),
+        G("Miami (Ohio)","UMass",         "Sat 2:00 PM","ESPN+","MAC","McGuirk Alumni Stadium, Amherst MA"),
+        G("Eastern Michigan","Akron",     "Sat 3:30 PM","ESPN+","MAC","InfoCision Stadium, Akron OH"),
+        G("Central Michigan","Ohio",      "Sat 3:30 PM","ESPN+","MAC","Peden Stadium, Athens OH"),
+        G("Buffalo","Toledo",             "Sat 3:30 PM","ESPN+","MAC","Glass Bowl, Toledo OH"),
+        G("Kent State","Western Michigan","Sat 3:30 PM","ESPN+","MAC","Waldo Stadium, Kalamazoo MI"),
+        # ── SATURDAY OCT 10 — MWC ──
+        G("North Dakota State","UNLV",    "Sat 7:00 PM","The CW","MWC","Allegiant Stadium, Las Vegas NV"),
+        G("Nevada","UTEP",                "Sat 7:00 PM","FS1","MWC","Sun Bowl, El Paso TX"),
+        G("Air Force","Northern Illinois","Sat 7:30 PM","CBSSN","MWC","Huskie Stadium, DeKalb IL"),
+        G("San Diego State","Oregon State","Sat 6:00 PM","USA","Pac-12","Reser Stadium, Corvallis OR"),
+        G("Boise State","Fresno State",   "Sat 10:30 PM","The CW","MWC","Bulldog Stadium, Fresno CA"),
+        # ── SATURDAY OCT 10 — SEC ──
+        G("Texas A&M","Missouri",         "Sat 12:00 PM","ABC","SEC","Memorial Stadium, Columbia MO"),
+        G("South Carolina","Florida",     "Sat 12:45 PM","SECN","SEC","Ben Hill Griffin Stadium, Gainesville FL"),
+        G("Ole Miss","Vanderbilt",        "Sat 3:30 PM","ESPN","SEC","FirstBank Stadium, Nashville TN"),
+        G("Tennessee","Arkansas",         "Sat 4:15 PM","SECN","SEC","Donald W. Reynolds Razorback Stadium, Fayetteville AR"),
+        G("LSU","Kentucky",               "Sat 7:00 PM","ESPN","SEC","Kroger Field, Lexington KY"),
+        G("Georgia","Alabama",            "Sat 7:30 PM","ABC","SEC","Bryant-Denny Stadium, Tuscaloosa AL"),
+        # ── SATURDAY OCT 10 — Sun Belt ──
+        G("Old Dominion","Appalachian State","Sat 1:00 PM","ESPN+","Sun Belt","Kidd Brewer Stadium, Boone NC"),
+        G("Coastal Carolina","Marshall",  "Sat 7:00 PM","ESPN+","Sun Belt","Joan C. Edwards Stadium, Huntington WV"),
+        G("James Madison","Georgia Southern","Sat 7:30 PM","ESPNU","Sun Belt","Paulson Stadium, Statesboro GA"),
+        G("Louisiana","Louisiana Tech",   "Sat 7:30 PM","ESPN+","Sun Belt","Joe Aillet Stadium, Ruston LA"),
     ],
     7: [  # Week 7 — Oct 15-18
         G("Ohio State","Oregon",          "7:30 PM","FOX","Big Ten","Autzen Stadium"),
@@ -1063,8 +1110,65 @@ def fetch_live(week_num):
         except: pass
     return all_fbs, all_fcs, "ESPN", None
 
+# ── LIVE ODDS (The Odds API — same lines as HardRock Bet / DraftKings) ────
+@st.cache_data(ttl=300)
+def fetch_live_odds(api_key):
+    """Fetch real sportsbook lines from The Odds API (hardrock uses same market data)."""
+    if not api_key or len(api_key) < 10:
+        return {}
+    odds_map = {}
+    try:
+        url = (
+            "https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds/"
+            "?apiKey="+api_key+
+            "&regions=us&markets=h2h,spreads,totals&oddsFormat=american&bookmakers=hardrockbet,draftkings,fanduel"
+        )
+        r = requests.get(url, timeout=12)
+        if r.status_code != 200:
+            return {}
+        for ev in r.json():
+            away = ev.get("away_team",""); home = ev.get("home_team","")
+            key = away+"@"+home
+            for book in ev.get("bookmakers",[]):
+                markets = {m["key"]: m for m in book.get("markets",[])}
+                h2h = markets.get("h2h",{}).get("outcomes",[])
+                spreads = markets.get("spreads",{}).get("outcomes",[])
+                totals = markets.get("totals",{}).get("outcomes",[])
+                ml_away = next((o["price"] for o in h2h if o["name"]==away), None)
+                ml_home = next((o["price"] for o in h2h if o["name"]==home), None)
+                sp_away = next((o["point"] for o in spreads if o["name"]==away), None)
+                total   = next((o["point"] for o in totals if o["name"]=="Over"), None)
+                ou      = None
+                if total:
+                    # Determine OVER or UNDER based on model
+                    ou = "OVER"  # will be overridden by smart_predict
+                if ml_away or sp_away or total:
+                    odds_map[key] = {
+                        "ml_away": ml_away, "ml_home": ml_home,
+                        "sp_away": sp_away,
+                        "sp_home": -sp_away if sp_away else None,
+                        "total": total,
+                        "bookmaker": book.get("title","")
+                    }
+                    break  # use first available bookmaker
+    except Exception:
+        pass
+    return odds_map
+
 # ── SIDEBAR ───────────────────────────────────────────────────────────────
 with st.sidebar:
+    st.markdown("### 🎲 Live Odds")
+    odds_api_key = st.text_input(
+        "The Odds API Key",
+        type="password",
+        placeholder="Paste key → get HardRock Bet lines",
+        help="Free at the-odds-api.com — pulls real HardRock Bet / DraftKings lines"
+    )
+    if odds_api_key:
+        st.markdown("<div style='font-size:.58rem;color:#22c55e'>✓ Live odds enabled — HardRock Bet lines active</div>",unsafe_allow_html=True)
+    else:
+        st.markdown("<div style='font-size:.58rem;color:#64748b'>→ <a href='https://the-odds-api.com' target='_blank' style='color:#38bdf8'>Get free API key</a> for real lines</div>",unsafe_allow_html=True)
+    st.markdown("---")
     st.markdown("### 📅 2026-27 Season")
     now=datetime.datetime.now()
     st.markdown("<div style='font-size:.62rem;color:#64748b;line-height:2;margin-top:4px'>"
@@ -1149,6 +1253,18 @@ div_f    = c4.selectbox("Division",["All","FBS","FCS","D-II","D-III"],label_visi
 # Static schedule is always complete and reliable
 static_games = SCHEDULE.get(week_num, [])
 
+# Fetch real sportsbook lines (HardRock Bet / DraftKings) if API key provided
+live_odds_map = {}
+odds_src = ""
+if odds_api_key:
+    try:
+        with st.spinner("🎲 Fetching HardRock Bet live lines..."):
+            live_odds_map = fetch_live_odds(odds_api_key)
+        if live_odds_map:
+            odds_src = "HardRock Bet Live"
+    except Exception:
+        pass
+
 # Try live API to get real-time scores (runs in background, doesn't block)
 live_score_map = {}
 api_src = "Built-in"
@@ -1203,9 +1319,24 @@ pred_cache = all_preds(week_num)
 
 def get_pred(away, home, neutral=False):
     key=away+"@"+home
-    if "TBD" in away or "TBD" in home or "CFP" in away or "Seed" in away or "TBD" in away:
+    if "TBD" in away or "TBD" in home or "CFP" in away or "Seed" in away:
         return None
-    return pred_cache.get(key) or smart_predict(away, home, neutral, week_num)
+    p = pred_cache.get(key) or smart_predict(away, home, neutral, week_num)
+    # Overlay real sportsbook lines (HardRock Bet) when available
+    lo = live_odds_map.get(key)
+    if lo and p:
+        p = dict(p)
+        if lo.get("ml_away") is not None:
+            p["ml_away"] = lo["ml_away"]
+        if lo.get("ml_home") is not None:
+            p["ml_home"] = lo["ml_home"]
+        if lo.get("sp_away") is not None:
+            p["sp_away"] = lo["sp_away"]
+            p["sp_home"] = lo.get("sp_home", -lo["sp_away"])
+        if lo.get("total") is not None:
+            p["total"] = lo["total"]
+        p["odds_src"] = lo.get("bookmaker","Live")
+    return p
 
 # ── STATS ─────────────────────────────────────────────────────────────────
 valid_preds=[get_pred(g["away"],g["home"],g.get("neutral",False)) for g in all_games]
@@ -1214,8 +1345,12 @@ overs=sum(1 for p in valid_preds if p["ou"]=="OVER")
 avg_t=f"{sum(p['total'] for p in valid_preds)/len(valid_preds):.1f}" if valid_preds else "—"
 sharp_c=sum(1 for p in valid_preds if "Sharp" in p["mv"])
 ap_c=sum(1 for p in valid_preds if grade(p["mlC"])[0]=="A+")
-src_html=(f"<span class='src-badge src-live'>● ESPN Live</span>" if using_live
-          else f"<span class='src-badge src-static'>📋 Built-in</span>")
+if odds_src:
+    src_html = "<span class='src-badge src-live'>🎲 HardRock Bet Lines</span>"
+elif using_live:
+    src_html = "<span class='src-badge src-live'>● ESPN Live</span>"
+else:
+    src_html = "<span class='src-badge src-static'>📋 Built-in Schedule</span>"
 
 fbs_ct=len(div_games["FBS"]); fcs_ct=len(div_games["FCS"])
 d2_ct=len(div_games["D-II"]); d3_ct=len(div_games["D-III"])
@@ -1341,18 +1476,24 @@ def render_div(div):
                     "<span class='twp "+wp_h+"'>"+str(wph)+"%</span></div>"
                     "</div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Moneyline</div>"
+                    "<div class='odds-lbl'>Moneyline"
+                    +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>HardRock</span>") if p.get("odds_src") else "")
+                    +"</div>"
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_ml+"</div>"
                     "<div class='odds-dog'>"+dnm.split()[-1]+" "+dog_ml+"</div>"
                     "<div class='odds-sm'>"+str(p["pa"])+"–"+str(p["ph"])+"</div>"
                     "<div class='"+mv_cls+"'>"+p["mv"]+" · "+str(p["sp_p"])+"%</div></div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Spread</div>"
+                    "<div class='odds-lbl'>Spread"
+                    +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
+                    +"</div>"
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_sp+"</div>"
                     "<div class='odds-sm'>"+fsp(p["sp_away"])+" / "+fsp(p["sp_home"])+"</div>"
                     "<div class='odds-sm'>"+sp_gap_str+"</div></div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Total</div>"
+                    "<div class='odds-lbl'>Total"
+                    +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
+                    +"</div>"
                     "<div class='odds-pick "+ou_cls+"'>"+p["ou"]+"</div>"
                     "<div class='odds-sm'>O/U "+str(p["total"])+"</div>"
                     "<div class='odds-sm'>OVER "+str(pub_over)+"% pub</div></div>"
