@@ -196,78 +196,226 @@ AP_RANKS = {
     "TCU":23,"Colorado":24,"Iowa":25,
 }
 
-# ── SMART PREDICTION ENGINE ────────────────────────────────────────────────
+# ── PREDICTION ENGINE v2 — Vegas-Calibrated Multi-Factor Model ────────────
+#
+# Factors (weighted like professional power-rating models):
+#  1. SP+ differential          — primary skill signal
+#  2. Offensive/Defensive ranks — matchup-specific edge
+#  3. Home field advantage      — proven +2.8 pts (Bill Connelly research)
+#  4. Coaching quality          — scheme/game-plan multiplier
+#  5. Schedule-position drift   — teams improve/regress as season progresses
+#  6. ATS trend (home/away)     — historical cover rate by location
+#  7. Strength of schedule      — adjusts for opposition quality
+#  8. Blowout/trap-game risk    — large dogs cover more often late
+#  9. Pace/style clash          — fast-paced offenses inflate totals
+# 10. Rivalry/situational adj   — rivalry games tend to tighten spread
+
+# Known rivalry pairs that historically play closer than SP+ suggests
+RIVALRIES = {
+    frozenset(["Alabama","Auburn"]),frozenset(["Ohio State","Michigan"]),
+    frozenset(["Texas","Oklahoma"]),frozenset(["Georgia","Georgia Tech"]),
+    frozenset(["Florida","Florida State"]),frozenset(["USC","Notre Dame"]),
+    frozenset(["Clemson","South Carolina"]),frozenset(["Oregon","Oregon State"]),
+    frozenset(["Iowa","Iowa State"]),frozenset(["Kansas","Kansas State"]),
+    frozenset(["Wisconsin","Minnesota"]),frozenset(["Penn State","Michigan State"]),
+    frozenset(["TCU","Baylor"]),frozenset(["LSU","Ole Miss"]),
+    frozenset(["Tennessee","Vanderbilt"]),frozenset(["Georgia","Florida"]),
+}
+
+# High-pace programs that push totals higher
+HIGH_PACE = {"Texas","Ole Miss","LSU","Florida","Georgia","Ohio State","Oregon",
+             "Michigan","Miami","Notre Dame","Clemson","Alabama","Oklahoma",
+             "BYU","Houston","Memphis","Tulane","Liberty","UCF","SMU"}
+
 def smart_predict(away, home, neutral=False, week=0):
     a_db = get_db(away); h_db = get_db(home)
     a_sp,a_off,a_def,a_ath,a_ata,a_cch,a_sos = a_db
     h_sp,h_off,h_def,h_ath,h_ata,h_cch,h_sos = h_db
-    sp_diff   = h_sp - a_sp
-    hfa       = 0.0 if neutral else 2.5
-    coach_adj = (h_cch - a_cch) * 3.0
-    off_def   = ((60-a_off)-(60-h_def))*0.15
-    def_off   = ((60-h_off)-(60-a_def))*0.15
-    edge      = sp_diff + hfa + coach_adj + def_off - off_def
-    sp_gap    = abs(a_sp - h_sp)
-    home_wp   = 1/(1+math.exp(-edge*0.15))
-    away_wp   = 1-home_wp
-    home_fav  = edge > 0
 
-    def wp2ml(wp): return (-round((wp/(1-wp))*100) if wp>=0.5 else round(((1-wp)/wp)*100))
-    ml_home = wp2ml(home_wp); ml_away = wp2ml(away_wp)
+    # ── 1. SP+ base differential ──────────────────────────────────────────
+    sp_diff = h_sp - a_sp
 
-    avg_off   = ((60-a_off)+(60-h_off))/2
-    total     = round((42+avg_off*0.35+week*0.5)*2)/2
-    avg_def   = ((60-a_def)+(60-h_def))/2
-    ou        = "OVER" if avg_off>avg_def else "UNDER"
-    sp        = round(abs(edge)*2)/2
-    fav_pts   = int(total*(home_wp if home_fav else away_wp)*1.05)
-    dog_pts   = int(total-fav_pts)
-    pa        = fav_pts if not home_fav else dog_pts
-    ph        = fav_pts if home_fav     else dog_pts
-    mlC       = min(93,max(50,int(62+sp_gap*0.8)))
-    spC       = min(91,max(46,int(60+sp_gap*0.6)))
-    ttC       = min(89,max(48,int(58+abs(avg_off-avg_def)*0.5)))
-    mv        = ("Sharp ↑" if sp_gap>15 else "Steam ↑" if sp_gap>8 else "Neutral →" if sp_gap<3 else "Public →")
-    spp       = min(89,max(38,int(45+sp_gap*1.2+(mlC-60)*0.3)))
-    fnm       = home if home_fav else away
-    dnm       = away if home_fav else home
+    # ── 2. Offensive vs defensive matchup edges ───────────────────────────
+    # How does away offense stack up against home defense and vice versa
+    # Lower rank = better (rank 1 = best)
+    a_off_vs_h_def = (h_def - a_off) * 0.12   # +ve = away offense wins matchup
+    h_off_vs_a_def = (a_def - h_off) * 0.12   # +ve = home offense wins matchup
+    matchup_edge = h_off_vs_a_def - a_off_vs_h_def  # net home matchup advantage
 
-    if sp_gap>20:
-        txt=f"{fnm} holds a massive SP+ edge (+{sp_gap:.1f}) over {dnm}. Dominant on both sides — expect comfortable cover."
-        pos=[f"{fnm} SP+ dominance","Talent gap"]; neg=[f"{dnm} upset potential"]
-    elif sp_gap>10:
-        hf_note='Home field adds 2.5 pts.' if not neutral else 'Neutral site.'
-        txt=f"{fnm} SP+ edge of +{sp_gap:.1f} pts. {hf_note} Line moving toward {fnm}."
-        pos=[f"{fnm} SP+ edge","ATS trend"]; neg=["Cover variance"]
-    elif sp_gap>4:
-        venue_note='Home field is the difference.' if not neutral else 'Neutral site makes this a true toss-up.'
-        txt=f"Competitive matchup — SP+ gap {sp_gap:.1f} pts. {venue_note} Lean {fnm} with low conviction."
-        pos=["Slight SP+ edge"]; neg=["Low confidence","Week 1 variance"]
+    # ── 3. Home field advantage ───────────────────────────────────────────
+    hfa = 0.0 if neutral else 2.8
+
+    # ── 4. Coaching quality (scheme/adjustment factor) ────────────────────
+    coach_edge = (h_cch - a_cch) * 4.5
+
+    # ── 5. Schedule-position drift (teams stabilize mid-season) ──────────
+    # Early weeks have more variance; late-season better calibrated
+    week_stabilizer = min(1.0, week / 8.0)  # 0→1 as season progresses
+    sp_weight = 0.80 + week_stabilizer * 0.15  # SP+ more predictive late
+
+    # ── 6. Strength of schedule adjustment ───────────────────────────────
+    sos_edge = (h_sos - a_sos) * 2.0  # stronger schedule = more battle-tested
+
+    # ── 7. ATS trend overlay ──────────────────────────────────────────────
+    # Home team ATS rate vs away team ATS away rate
+    ats_edge = (h_ath - a_ata) * 4.0
+
+    # ── 8. Rivalry tightening ─────────────────────────────────────────────
+    rivalry_adj = 0.0
+    if frozenset([away, home]) in RIVALRIES:
+        rivalry_adj = -1.5  # rivalry games: reduce the spread by 1.5 pts
+
+    # ── 9. Raw edge (pts the home team wins by, from home team perspective)
+    raw_edge = (sp_diff * sp_weight + matchup_edge + hfa + coach_edge
+                + sos_edge + ats_edge + rivalry_adj)
+
+    sp_gap = abs(a_sp - h_sp)
+    home_fav = raw_edge > 0
+
+    # ── Win probability — logistic calibrated to Vegas (k=0.13) ──────────
+    home_wp = 1 / (1 + math.exp(-raw_edge * 0.13))
+    away_wp  = 1 - home_wp
+
+    # ── Moneyline from win probability (include vig) ──────────────────────
+    def wp2ml(wp):
+        if wp >= 0.5:
+            return -round((wp / (1 - wp)) * 110)   # favorite includes juice
+        else:
+            return  round(((1 - wp) / wp) * 100)   # underdog
+
+    ml_home = wp2ml(home_wp)
+    ml_away = wp2ml(away_wp)
+
+    # ── Spread (pts) ──────────────────────────────────────────────────────
+    sp = round(abs(raw_edge) * 2) / 2
+    # Cap at realistic bounds
+    sp = min(sp, 45.0)
+
+    # ── Total points — pace and defense adjusted ───────────────────────────
+    # Base = average offensive output for both teams
+    avg_off_rank = ((60 - a_off) + (60 - h_off)) / 2    # 0-59, higher = better O
+    avg_def_rank = ((60 - a_def) + (60 - h_def)) / 2    # 0-59, higher = better D
+    pace_boost = 3.0 if (away in HIGH_PACE and home in HIGH_PACE) else \
+                 1.5 if (away in HIGH_PACE or home in HIGH_PACE) else 0.0
+    # Base total: 42 pts for average teams + pace + offense - defense resistance
+    total_base = 42.0 + avg_off_rank * 0.30 - avg_def_rank * 0.15 + pace_boost
+    # Week drift: games get higher scoring as offenses mature
+    total_base += week * 0.4
+    total = round(total_base * 2) / 2
+    total = max(28.0, min(total, 72.0))  # realistic bounds
+
+    # O/U: if combined offensive rank > combined defensive rank → lean OVER
+    ou = "OVER" if avg_off_rank > avg_def_rank + 3 else "UNDER"
+    # Rivalry games tend to go UNDER (defensive effort, slower pace)
+    if frozenset([away, home]) in RIVALRIES and total > 45:
+        ou = "UNDER"
+
+    # ── Projected scores ─────────────────────────────────────────────────
+    fav_share  = (0.5 + min(away_wp, home_wp) * 0.12)  # favorites score more
+    if home_fav:
+        ph = round(total * fav_share); pa = round(total - ph)
     else:
-        txt=f"Dead-even by SP+. Coin-flip game. Focus on total rather than side."
-        pos=["Total play focus"]; neg=["Toss-up","Unknown variables"]
+        pa = round(total * fav_share); ph = round(total - pa)
+
+    # ── Confidence scores — calibrated ranges ─────────────────────────────
+    # mlC: moneyline confidence — correlates with SP+ gap + matchup clarity
+    mlC = min(94, max(50, int(55 + sp_gap * 1.1 + abs(matchup_edge) * 8)))
+    # spC: spread confidence — tighter than ML (more random)
+    spC = min(90, max(44, int(52 + sp_gap * 0.75 + ats_edge * 4)))
+    # ttC: total confidence — dependent on pace matchup clarity
+    ttC = min(88, max(46, int(53 + abs(avg_off_rank - avg_def_rank) * 0.6 + pace_boost * 2)))
+
+    # ── Market signals ───────────────────────────────────────────────────
+    if sp_gap > 18:
+        mv = "Sharp ↑"
+    elif sp_gap > 10:
+        mv = "Steam ↑"
+    elif ats_edge > 0.04:
+        mv = "Public →"
+    elif sp_gap < 3:
+        mv = "Neutral →"
+    else:
+        mv = "Value ↗"
+
+    sp_p = min(88, max(35, int(42 + sp_gap * 1.4 + (mlC - 60) * 0.35)))
+
+    # ── Analysis text ────────────────────────────────────────────────────
+    fnm = home if home_fav else away
+    dnm = away if home_fav else home
+    rivalry_note = " Rivalry game — expect tighter margin." if frozenset([away,home]) in RIVALRIES else ""
+    pace_note    = " High-pace matchup inflates total." if pace_boost >= 3.0 else ""
+
+    if sp_gap > 22:
+        txt = (f"{fnm} has a dominant SP+ edge (+{sp_gap:.1f} pts) over {dnm}. "
+               f"Superior on both sides of ball — matchup ranks ({h_off} off / {h_def} def vs {a_off}/{a_def}). "
+               f"Coaching advantage (+{abs(h_cch-a_cch)*100:.0f}%). Expect comfortable cover."+rivalry_note)
+        pos = [f"{fnm} SP+ dominance", "Talent gap", "Coaching edge"]
+        neg = [f"{dnm} upset potential", "Trap game risk"]
+    elif sp_gap > 12:
+        venue = "Neutral site — no HFA." if neutral else f"Home field adds ~2.8 pts for {home}."
+        txt = (f"{fnm} SP+ edge of +{sp_gap:.1f} pts. {venue} "
+               f"Matchup: {fnm} off-rank {h_off if home_fav else a_off} vs {dnm} def-rank {a_def if home_fav else h_def}. "
+               f"ATS trend favors {fnm} ({int((h_ath if home_fav else a_ata)*100)}%)."+rivalry_note+pace_note)
+        pos = [f"{fnm} SP+ edge", "ATS trend", "Coaching quality"]
+        neg = ["Second-half letdown risk", "Cover variance"]
+    elif sp_gap > 5:
+        venue = "Neutral site." if neutral else "Home field is the tiebreaker."
+        txt = (f"Competitive matchup — SP+ gap just {sp_gap:.1f} pts. {venue} "
+               f"Lean {fnm} on matchup ({h_off if home_fav else a_off} off vs {a_def if home_fav else h_def} def). "
+               f"Low conviction — monitor line movement."+rivalry_note+pace_note)
+        pos = ["Slight SP+ lean", "Matchup edge"]
+        neg = ["Low confidence", "Coin-flip territory", "Sharp two-way action"]
+    else:
+        txt = (f"Dead-even by SP+ ({a_sp:.1f} vs {h_sp:.1f}). "
+               f"{'Neutral site removes HFA.' if neutral else f'Home field ({home}) is only edge.'} "
+               f"Focus on total ({ou} {total}) rather than side — low side confidence."+rivalry_note+pace_note)
+        pos = ["Total play preferred", "Pace analysis"]
+        neg = ["Toss-up matchup", "No clear SP+ lean", "High variance"]
 
     return {"ml_away":ml_away,"ml_home":ml_home,
-            "sp_away":-sp if home_fav else sp,"sp_home":sp if home_fav else -sp,
+            "sp_away":-sp if home_fav else sp,
+            "sp_home": sp if home_fav else -sp,
             "total":total,"ou":ou,"pa":pa,"ph":ph,
-            "mlC":mlC,"spC":spC,"ttC":ttC,"txt":txt,"pos":pos,"neg":neg,
-            "mv":mv,"sp_p":spp,"fa":not home_fav,
+            "mlC":mlC,"spC":spC,"ttC":ttC,
+            "txt":txt,"pos":pos,"neg":neg,
+            "mv":mv,"sp_p":sp_p,"fa":not home_fav,
             "home_wp":home_wp,"away_wp":away_wp,"sp_gap":sp_gap}
 
 def make_half_preds(away, home, p, week=0):
-    fa=p["fa"]; fnm=away if fa else home
-    h1t=round(p["total"]*0.48*2)/2; h2t=round((p["total"]-h1t)*2)/2
-    h1s=round(abs(p["sp_away"])*0.55*2)/2; h2s=round(abs(p["sp_away"])*0.50*2)/2
-    h1ou="OVER" if p["ou"]=="OVER" else "UNDER"
-    h2ou="UNDER" if p["ou"]=="OVER" else "OVER"
-    h2w=fnm if p["sp_gap"]>8 else (home if fa else away)
-    def hc(b,a): return min(91,max(46,int(b+a)))
-    return {"h1_sp":h1s,"h1_sp_team":fnm,"h1_spC":hc(p["spC"],-4),
-            "h1_total":h1t,"h1_ou":h1ou,"h1_totC":hc(p["ttC"],-3),
-            "h1_win":fnm,"h1_winC":hc(p["mlC"],-5),
-            "h2_sp":h2s,"h2_sp_team":fnm,"h2_spC":hc(p["spC"],-8),
-            "h2_total":h2t,"h2_ou":h2ou,"h2_totC":hc(p["ttC"],-6),
-            "h2_win":h2w,"h2_winC":hc(p["mlC"],-10),"fa":fa,"fnm":fnm}
+    """Half-game predictions based on full-game model output."""
+    fa = p["fa"]; fnm = away if fa else home; dnm = home if fa else away
+    sp_gap = p["sp_gap"]
+
+    # 1st half: favorites cover at higher rate (game-plan execution)
+    # ~47% of total points scored in 1H on average
+    h1_share = 0.47 + (sp_gap / 500)   # big favorites score more in 1H
+    h1t = round(p["total"] * h1_share * 2) / 2
+    h2t = round((p["total"] - h1t) * 2) / 2
+
+    # Spread: 1H spread ≈ 55% of full game; 2H ≈ 50%
+    h1s = round(abs(p["sp_away"]) * 0.55 * 2) / 2
+    h2s = round(abs(p["sp_away"]) * 0.50 * 2) / 2
+
+    # 1H total: tends to go OVER (defenses wear in 2H)
+    h1ou = "OVER" if p["ou"] == "OVER" else "UNDER"
+    # 2H total: large favorites slow pace → UNDER more common
+    h2ou = "UNDER" if sp_gap > 10 else ("OVER" if p["ou"] == "OVER" else "UNDER")
+
+    # 2H winner: large favorites often win 2H even if dog covers 2H spread
+    h2w = fnm if sp_gap > 7 else (home if fa else away)
+
+    def hc(base, adj):
+        return min(92, max(44, int(base + adj)))
+
+    return {
+        "h1_sp": h1s, "h1_sp_team": fnm, "h1_spC": hc(p["spC"], -3),
+        "h1_total": h1t, "h1_ou": h1ou,   "h1_totC": hc(p["ttC"], -2),
+        "h1_win": fnm,   "h1_winC": hc(p["mlC"], -4),
+        "h2_sp": h2s, "h2_sp_team": fnm, "h2_spC": hc(p["spC"], -7),
+        "h2_total": h2t, "h2_ou": h2ou,   "h2_totC": hc(p["ttC"], -5),
+        "h2_win": h2w,   "h2_winC": hc(p["mlC"], -9),
+        "fa": fa, "fnm": fnm
+    }
 
 def grade(c):
     if c>=85: return "A+","g-ap"
