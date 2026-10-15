@@ -196,6 +196,41 @@ AP_RANKS = {
     "TCU":23,"Colorado":24,"Iowa":25,
 }
 
+# ── TEAM RECORDS (updated weekly — going into Week 7, Oct 15) ─────────────
+TEAM_RECORDS = {
+    # Power 4
+    "Georgia":"6-0","Notre Dame":"6-0","Indiana":"6-0","James Madison":"6-0",
+    "Miami":"5-0","BYU":"5-0","Utah":"5-0","Texas Tech":"5-0","UCLA":"5-0",
+    "Alabama":"5-1","Ohio State":"5-1","Texas":"4-1","Ole Miss":"4-1",
+    "Missouri":"5-1","Mississippi State":"4-1","USC":"6-1","Kentucky":"5-1",
+    "Oklahoma State":"4-1","Iowa":"5-1","Houston":"5-1","Tennessee":"5-1",
+    "Wake Forest":"5-1","Arizona":"5-1","Nebraska":"5-1","Boise State":"5-1",
+    "Penn State":"5-1","Clemson":"4-2","Michigan":"4-2","Oregon":"5-1",
+    "LSU":"4-2","Texas A&M":"4-2","Florida":"4-2","Oklahoma":"4-2",
+    "Colorado":"2-3","Florida State":"3-3","Auburn":"3-3","Arkansas":"3-3",
+    "Kansas State":"4-2","Iowa State":"4-2","TCU":"3-3","West Virginia":"4-2",
+    "Cincinnati":"4-2","Kansas":"3-3","Baylor":"3-3","Oklahoma State":"4-1",
+    "Virginia Tech":"3-3","NC State":"3-3","Georgia Tech":"3-3",
+    "Louisville":"4-2","Pittsburgh":"3-3","Syracuse":"2-4","Duke":"3-3",
+    "North Carolina":"3-3","Virginia":"2-4","SMU":"4-2","Stanford":"2-4",
+    "Arizona State":"4-2","Wisconsin":"4-1","Northwestern":"4-1",
+    "Maryland":"3-3","Rutgers":"3-3","Michigan State":"2-4","Purdue":"2-4",
+    "Washington":"4-2","Minnesota":"3-3",
+    # Group of 5 / others
+    "UNLV":"4-2","Air Force":"3-3","Wyoming":"3-3","Colorado State":"4-2",
+    "Fresno State":"4-2","Nevada":"2-4","New Mexico":"3-3","San Diego State":"3-3",
+    "Washington State":"4-2","Oregon State":"3-3","San Jose State":"3-3",
+    "Tulane":"4-2","Memphis":"4-2","Army":"4-2","Navy":"3-3","UAB":"3-3",
+    "ECU":"3-3","USF":"4-2","UTSA":"3-3","Florida Atlantic":"3-3",
+    "Coastal Carolina":"4-2","Appalachian St":"4-2","Old Dominion":"2-4",
+    "Georgia Southern":"3-3","Texas State":"4-2","Troy":"3-3","Louisiana":"4-2",
+    "Arkansas State":"3-3","Southern Miss":"2-4","Georgia State":"3-3",
+    "Liberty":"4-2","North Dakota St":"5-0","South Dakota St":"4-1",
+    "Montana State":"4-1","Sacramento St":"3-2","Delaware":"3-2",
+    "Villanova":"3-2","Eastern Washington":"3-2",
+    "Ferris State":"5-0","Mount Union":"5-0","North Central":"4-1",
+}
+
 # ── PREDICTION ENGINE v2 — Vegas-Calibrated Multi-Factor Model ────────────
 #
 # Factors (weighted like professional power-rating models):
@@ -472,7 +507,9 @@ def G(a,h,t,tv,conf,venue,div="FBS",neutral=False):
     hr=str(AP_RANKS.get(h,"")) if AP_RANKS.get(h) else ""
     return{"away":a,"home":h,"time":t,"tv":tv,"conf":conf,"venue":venue,
            "div":div,"neutral":neutral,"away_rank":ar,"home_rank":hr,
-           "away_rec":"0-0","home_rec":"0-0","away_score":"","home_score":"","status":"scheduled"}
+           "away_rec":TEAM_RECORDS.get(a,""),
+           "home_rec":TEAM_RECORDS.get(h,""),
+           "away_score":"","home_score":"","status":"scheduled"}
 
 # ── FBS ALL CONFERENCES ───────────────────────────────────────────────────
 FBS_BY_CONF = {
