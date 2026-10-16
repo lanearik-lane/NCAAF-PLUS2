@@ -200,6 +200,12 @@ AP_RANKS = {
 TEAM_RECORDS = {
     # Power 4
     "Georgia":"6-0","Notre Dame":"6-0","Indiana":"6-0","James Madison":"6-0",
+    "Pitt":"3-3","Boston College":"3-3","Michigan State":"2-4","Purdue":"2-4",
+    "Ball State":"2-4","Bowling Green":"3-3","Buffalo":"2-4","Central Michigan":"3-3",
+    "Eastern Michigan":"2-4","Miami (OH)":"3-3","UMass":"1-5","Western Michigan":"2-4",
+    "Toledo":"4-2","Akron":"2-4","Ohio":"3-3","Kent State":"1-5",
+    "Charlotte":"2-4","Temple":"1-5","Tulsa":"2-4","Rice":"3-3",
+    "North Texas":"2-4","FIU":"1-5","UTEP":"2-4","Hawaii":"2-4",
     "Miami":"5-0","BYU":"5-0","Utah":"5-0","Texas Tech":"5-0","UCLA":"5-0",
     "Alabama":"5-1","Ohio State":"5-1","Texas":"4-1","Ole Miss":"4-1",
     "Missouri":"5-1","Mississippi State":"4-1","USC":"6-1","Kentucky":"5-1",
@@ -1649,14 +1655,14 @@ def render_div(div):
         _dtot = sum(len(v) for v in _slots.values())
         st.markdown(
             "<div class='day-hdr'>"
-            "<span class='day-label'>📅 "+_dn+"</span>"
+            "<span class='day-name'>📅 "+_dn+"</span>"
             "<span class='day-ct'>"+str(_dtot)+" games</span></div>",
             unsafe_allow_html=True)
         for _sn, _sg in _slots.items():
             st.markdown(
-                "<div class='time-hdr'>"
-                "<span class='time-label'>"+_sn+"</span>"
-                "<span class='time-ct'>"+str(len(_sg))+" games</span></div>",
+                "<div class='slot-hdr'>"
+                "<span class='slot-time'>"+_sn+"</span>"
+                "<span class='slot-ct'>"+str(len(_sg))+" games</span></div>",
                 unsafe_allow_html=True)
             for g,p in _sg:
                 wpa=round(p["away_wp"]*100); wph=100-wpa
