@@ -1651,7 +1651,7 @@ def render_div(div):
                     "<span class='twp "+wp_h+"'>"+str(wph)+"%</span></div>"
                     "</div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Model ML"
+                    "<div class='odds-lbl'>Model ML · Grade "+mlG+"
                     +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>HardRock</span>") if p.get("odds_src") else "")
                     +"</div>"
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_ml+"</div>"
@@ -1659,14 +1659,14 @@ def render_div(div):
                     "<div class='odds-sm'>"+str(p["pa"])+"–"+str(p["ph"])+"</div>"
                     "<div class='odds-sm'>Unvalidated estimate</div></div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Spread"
+                    "<div class='odds-lbl'>Spread · Grade "+spG+"
                     +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
                     +"</div>"
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_sp+"</div>"
                     "<div class='odds-sm'>"+fsp(p["sp_away"])+" / "+fsp(p["sp_home"])+"</div>"
                     "<div class='odds-sm'>"+sp_gap_str+"</div></div>"
                     "<div class='odds-box'>"
-                    "<div class='odds-lbl'>Total"
+                    "<div class='odds-lbl'>Total · Grade "+ttG+"
                     +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
                     +"</div>"
                     "<div class='odds-pick "+ou_cls+"'>"+p["ou"]+"</div>"
