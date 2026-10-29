@@ -1,0 +1,48 @@
+name: Monday Hard Rock board
+on:
+  schedule:
+    - cron: '0 16 * * 1'
+    - cron: '0 17 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hardrock-board
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Select noon Eastern schedule (DST aware)
+        id: clock
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          CRON_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python - <<'PY'
+          import datetime, os
+          from hardrock_data import monday_due
+          run = monday_due(datetime.datetime.now(datetime.timezone.utc), os.environ.get('CRON_SCHEDULE', ''), os.environ['EVENT_NAME'] == 'workflow_dispatch')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'run={str(run).lower()}\n')
+          PY
+      - name: Fetch board
+        if: steps.clock.outputs.run == 'true'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python hardrock_data.py
+      - name: Save snapshot
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/hardrock_board.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Monday Hard Rock NCAAF board'
+            git push
+          fi
