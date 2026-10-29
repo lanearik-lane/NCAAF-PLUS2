@@ -186,36 +186,8 @@ TEAM_DB = {
     "Mount Union":   [  9.5, 37, 30, 0.60,0.56,0.04,0.48], "North Central": [  8.5, 41, 33, 0.57,0.53,0.03,0.46],
 }
 
-def resolve_team(team):
-    import re
-    def norm(value):
-        value = value.casefold().replace("&", "and")
-        value = re.sub(r"\bst\.?\b", "state", value)
-        return " ".join(re.findall(r"[a-z0-9]+", value))
-    target = norm(team)
-    aliases = {"app state": "Appalachian St", "east tennessee state": "ETSU",
-               "florida atlantic": "FAU", "florida international": "FIU",
-               "massachusetts": "UMass", "southern miss": "Southern Miss"}
-    candidates = []
-    for name in TEAM_DB:
-        key = norm(name)
-        if target == key or target.startswith(key + " "):
-            candidates.append((len(key), name))
-    for alias, name in aliases.items():
-        if name in TEAM_DB and (target == alias or target.startswith(alias + " ")):
-            candidates.append((len(alias), name))
-    if not candidates:
-        return None
-    name = max(candidates)[1]
-    # A generic school prefix must not swallow another school with no rating.
-    suffix = target[len(norm(name)):].strip()
-    if suffix.startswith(("state ", "oh ", "ohio ", "pa ")) and norm(name) != target:
-        return None
-    return name
-
 def get_db(team):
-    name = resolve_team(team)
-    return TEAM_DB.get(name) if name else None
+    return TEAM_DB.get(team, [2.0, 60, 60, 0.50, 0.47, 0.00, 0.70])
 
 AP_RANKS = {
     "Ohio State":1,"Oregon":2,"Georgia":3,"Texas":4,"Notre Dame":5,"Miami":6,
@@ -298,10 +270,6 @@ HIGH_PACE = {"Texas","Ole Miss","LSU","Florida","Georgia","Ohio State","Oregon",
              "BYU","Houston","Memphis","Tulane","Liberty","UCF","SMU"}
 
 def smart_predict(away, home, neutral=False, week=0):
-    away = resolve_team(away)
-    home = resolve_team(home)
-    if away is None or home is None:
-        return None
     a_db = get_db(away); h_db = get_db(home)
     a_sp,a_off,a_def,a_ath,a_ata,a_cch,a_sos = a_db
     h_sp,h_off,h_def,h_ath,h_ata,h_cch,h_sos = h_db
@@ -385,12 +353,15 @@ def smart_predict(away, home, neutral=False, week=0):
         ou = "UNDER"
 
     # ── Projected scores ─────────────────────────────────────────────────
-    ph = round(max(0, min(total, (total + raw_edge) / 2)))
-    pa = round(total - ph)
+    fav_share  = (0.5 + min(away_wp, home_wp) * 0.12)  # favorites score more
+    if home_fav:
+        ph = round(total * fav_share); pa = round(total - ph)
+    else:
+        pa = round(total * fav_share); ph = round(total - pa)
 
     # ── Confidence scores — calibrated ranges ─────────────────────────────
     # mlC: moneyline confidence — correlates with SP+ gap + matchup clarity
-    mlC = round(max(home_wp, away_wp) * 100)
+    mlC = min(94, max(50, int(55 + sp_gap * 1.1 + abs(matchup_edge) * 8)))
     # spC: spread confidence — tighter than ML (more random)
     spC = min(90, max(44, int(52 + sp_gap * 0.75 + ats_edge * 4)))
     # ttC: total confidence — dependent on pace matchup clarity
@@ -444,8 +415,8 @@ def smart_predict(away, home, neutral=False, week=0):
         neg = ["Toss-up matchup", "No clear SP+ lean", "High variance"]
 
     return {"ml_away":ml_away,"ml_home":ml_home,
-            "sp_away":sp if home_fav else -sp,
-            "sp_home": -sp if home_fav else sp,
+            "sp_away":-sp if home_fav else sp,
+            "sp_home": sp if home_fav else -sp,
             "total":total,"ou":ou,"pa":pa,"ph":ph,
             "mlC":mlC,"spC":spC,"ttC":ttC,
             "txt":txt,"pos":pos,"neg":neg,
@@ -1514,7 +1485,6 @@ div_games = {d:[g for g in all_games if g.get("div","FBS")==d] for d in DIV_ORDE
 @st.cache_data(ttl=3600)
 def all_preds(week_num):
     preds={}
-    # Team-name resolution and score calculation version 2.
     for g in SCHEDULE.get(week_num,[]):
         if "TBD" not in g["away"] and "TBD" not in g["home"] and "CFP" not in g["away"] and "Seed" not in g["away"]:
             preds[g["away"]+"@"+g["home"]]=smart_predict(g["away"],g["home"],g.get("neutral",False),week_num)
@@ -1589,9 +1559,7 @@ def render_div(div):
     for g in games:
         if "TBD" in g["away"] or "Seed" in g["away"] or "CFP" in g["away"]: continue
         p = get_pred(g["away"], g["home"], g.get("neutral",False))
-        if not p:
-            st.info(g["away"] + " at " + g["home"] + " · " + g["time"] + " ET · No rating — PASS (missing team model data)")
-            continue
+        if not p: continue
         if ou_f != "All O/U" and p["ou"] != ou_f: continue
         mlG,_ = grade(p["mlC"])
         if grade_f == "A+ Only" and mlG != "A+": continue
@@ -1706,7 +1674,7 @@ def render_div(div):
                     "<div class='odds-sm'>Model estimate</div></div>"
                     "<div class='grade-col'>"
                     "<div class='gbig "+mlC+"'>"+mlG+"</div>"
-                    "<div class='g-lbl'>"+str(p["mlC"])+"/100 model</div>"
+                    "<div class='g-lbl'>Model score</div>"
                     "<div class='gsm "+spC+"'>"+spG+"</div>"
                     "<div class='gsm "+ttC+"'>"+ttG+"</div>"
                     "</div></div>"
