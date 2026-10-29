@@ -3,7 +3,7 @@ import datetime as dt
 from concurrent.futures import ThreadPoolExecutor
 from zoneinfo import ZoneInfo
 ET = ZoneInfo('America/New_York')
-GROUPS = [('80', 'FBS'), ('81', 'FCS'), ('26', 'D-II'), ('27', 'D-III')]
+GROUPS = [('80', 'FBS'), ('81', 'FCS'), ('57', 'D-II'), ('58', 'D-III')]
 
 def week_dates(week):
     if not 0 <= week <= 15:
