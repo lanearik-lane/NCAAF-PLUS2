@@ -1345,65 +1345,9 @@ HEADS = {
 
 @st.cache_data(ttl=300)
 def fetch_live(week_num):
-    all_fbs, all_fcs = [], []
-    for group,div_tag in [("80","FBS"),("81","FCS")]:
-        for url in [
-            f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups={group}&week={week_num}&seasontype=2&limit=300",
-            f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups={group}&limit=300",
-        ]:
-            try:
-                r = requests.get(url, headers=HEADS, timeout=10)
-                if r.status_code != 200: continue
-                events = r.json().get("events",[])
-                if not events: continue
-                for ev in events:
-                    try:
-                        comp = ev["competitions"][0]; comps = comp["competitors"]
-                        ht=next(c for c in comps if c.get("homeAway")=="home")
-                        at=next(c for c in comps if c.get("homeAway")=="away")
-                        start=ev.get("date","")
-                        try:
-                            dt=datetime.datetime.fromisoformat(start.replace("Z","+00:00"))
-                            et=dt.astimezone(datetime.timezone(datetime.timedelta(hours=-4)))
-                            tstr=et.strftime("%I:%M %p").lstrip("0")
-                        except: tstr="TBD"
-                        bcast=comp.get("broadcasts",[])
-                        tv=bcast[0].get("names",["—"])[0] if bcast and bcast[0].get("names") else "—"
-                        g={"away":at["team"]["displayName"],"home":ht["team"]["displayName"],
-                           "time":tstr,"tv":tv,"venue":comp.get("venue",{}).get("fullName",""),
-                           "conf":(comp.get("groups") or {}).get("name",""),
-                           "away_rec":at.get("records",[{}])[0].get("summary","0-0") if at.get("records") else "0-0",
-                           "home_rec":ht.get("records",[{}])[0].get("summary","0-0") if ht.get("records") else "0-0",
-                           "away_rank":str(at.get("curatedRank",{}).get("current","")),
-                           "home_rank":str(ht.get("curatedRank",{}).get("current","")),
-                           "away_score":at.get("score",""),"home_score":ht.get("score",""),
-                           "status":comp.get("status",{}).get("type",{}).get("name","scheduled"),
-                           "neutral":comp.get("neutralSite",False),"div":div_tag}
-                        if div_tag=="FBS": all_fbs.append(g)
-                        else: all_fcs.append(g)
-                    except: pass
-                if all_fbs or all_fcs: break
-            except: pass
-    # Also try D-II/D-III via ESPN
-    for group,div_tag in [("26","D-II"),("27","D-III")]:
-        try:
-            url=f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups={group}&week={week_num}&seasontype=2&limit=300"
-            r=requests.get(url,headers=HEADS,timeout=8)
-            if r.status_code==200:
-                for ev in r.json().get("events",[]):
-                    try:
-                        comp=ev["competitions"][0]; comps=comp["competitors"]
-                        ht=next(c for c in comps if c.get("homeAway")=="home")
-                        at=next(c for c in comps if c.get("homeAway")=="away")
-                        g={"away":at["team"]["displayName"],"home":ht["team"]["displayName"],
-                           "time":"TBD","tv":"—","venue":comp.get("venue",{}).get("fullName",""),
-                           "conf":"","away_rec":"0-0","home_rec":"0-0","away_rank":"","home_rank":"",
-                           "away_score":"","home_score":"","status":"scheduled","neutral":False,"div":div_tag}
-                        if div_tag=="D-II": all_fbs.append(g)   # stored separately
-                        else: all_fcs.append(g)
-                    except: pass
-        except: pass
-    return all_fbs, all_fcs, "ESPN", None
+    """Load the entire selected calendar week, not only ESPN's current day."""
+    from weekly_schedule import load_week
+    return load_week(week_num, requests.get, HEADS)
 
 # ── LIVE ODDS (The Odds API — same lines as HardRock Bet / DraftKings) ────
 @st.cache_data(ttl=300)
@@ -1506,7 +1450,7 @@ st.markdown(
     "FBS · FCS · D-II · D-III · SP+ Smart Predictions · Weeks 0–15</div></div>"
     "<div style='display:inline-flex;align-items:center;gap:4px;background:#0a1f0a;border:1px solid #166534;"
     "border-radius:20px;padding:3px 9px;font-size:.56rem;color:#22c55e;font-weight:700;margin-left:10px'>"
-    "<span style='width:5px;height:5px;background:#22c55e;border-radius:50%;display:inline-block'></span>LIVE</div>"
+    "<span style='width:5px;height:5px;background:#22c55e;border-radius:50%;display:inline-block'></span>SCHEDULE</div>"
     "<div style='margin-left:auto;text-align:right'>"
     "<div style='font-size:.7rem;color:#f59e0b;font-weight:700'>"+now.strftime("%m/%d/%Y")+"</div>"
     "<div style='font-size:.54rem;color:#4b5e78;margin-top:2px'>CFP Champ · Jan 25, 2027 · Allegiant Stadium, Las Vegas</div>"
@@ -1547,6 +1491,8 @@ div_f    = c4.selectbox("Division",["All","FBS","FCS","D-II","D-III"],label_visi
 # ── LOAD SCHEDULE — Static PRIMARY, Live API for score updates ─────────────
 # Static schedule is always complete and reliable
 static_games = SCHEDULE.get(week_num, [])
+if st.button("Refresh schedule"):
+    fetch_live.clear()
 
 # Fetch real sportsbook lines (HardRock Bet / DraftKings) if API key provided
 live_odds_map = {}
@@ -1569,7 +1515,7 @@ try:
         live_games, live_fcs_games, _src, _err = fetch_live(week_num)
     if live_games or live_fcs_games:
         using_live = True
-        api_src = "ESPN Live"
+        api_src = "ESPN weekly schedule"
         # Build score lookup from live data
         for lg in live_games + live_fcs_games:
             key = lg["away"]+"@"+lg["home"]
@@ -1583,19 +1529,14 @@ try:
 except Exception:
     pass
 
-# Apply live scores to static games where available
-all_games = []
-for sg in static_games:
-    game = dict(sg)
-    key = sg["away"]+"@"+sg["home"]
-    if key in live_score_map:
-        ls = live_score_map[key]
-        if ls["away_score"]: game["away_score"] = ls["away_score"]
-        if ls["home_score"]: game["home_score"] = ls["home_score"]
-        if ls["status"]:     game["status"]     = ls["status"]
-        if ls["away_rec"]:   game["away_rec"]   = ls["away_rec"]
-        if ls["home_rec"]:   game["home_rec"]   = ls["home_rec"]
-    all_games.append(game)
+# Live fixtures are authoritative: score overlays cannot add missing games.
+all_games = [dict(g) for g in live_games + live_fcs_games] if using_live else []
+if not using_live:
+    st.error("The selected week's live schedule could not be loaded. Retry Refresh schedule; the built-in list is incomplete and is not shown as a complete slate.")
+if using_live and _err:
+    st.warning(_err)
+all_games.sort(key=lambda g: g.get("kickoff", "9999"))
+st.caption("Schedule covers Monday–Sunday of the selected week. All times are Eastern; ESPN fixtures do not confirm Hard Rock availability.")
 
 # Split by division
 DIV_ORDER = ["FBS","FCS","D-II","D-III"]
@@ -1645,7 +1586,7 @@ if odds_src:
 elif using_live:
     src_html = "<span class='src-badge src-live'>● ESPN Live</span>"
 else:
-    src_html = "<span class='src-badge src-static'>📋 Built-in Schedule</span>"
+    src_html = "<span class='src-badge src-static'>Schedule unavailable</span>"
 
 fbs_ct=len(div_games["FBS"]); fcs_ct=len(div_games["FCS"])
 d2_ct=len(div_games["D-II"]); d3_ct=len(div_games["D-III"])
