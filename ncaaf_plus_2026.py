@@ -477,7 +477,7 @@ def _parse_sort(t):
     """Sort key: day-offset (0-60000) + time in HHMM."""
     t2 = t.upper().replace("ET","").replace("EDT","").strip()
     day_off = 0
-    for di, dn in enumerate(["THU","FRI","SAT","SUN","MON","TUE","WED"]):
+    for di, dn in enumerate(["MON","TUE","WED","THU","FRI","SAT","SUN"]):
         if t2.startswith(dn):
             day_off = di * 10000
             t2 = t2[3:].strip()
@@ -1347,7 +1347,8 @@ HEADS = {
 def fetch_live(week_num):
     """Load the entire selected calendar week, not only ESPN's current day."""
     from weekly_schedule import load_week
-    return load_week(week_num, requests.get, HEADS)
+    result = load_week(week_num, requests.get, HEADS)  # daily-query loader v2
+    return result
 
 # ── LIVE ODDS (The Odds API — same lines as HardRock Bet / DraftKings) ────
 @st.cache_data(ttl=300)
@@ -1510,6 +1511,8 @@ if odds_api_key:
 live_score_map = {}
 api_src = "Built-in"
 using_live = False
+_err = None
+live_games, live_fcs_games = [], []
 try:
     with st.spinner("🔄 Checking for live scores..."):
         live_games, live_fcs_games, _src, _err = fetch_live(week_num)
@@ -1526,14 +1529,14 @@ try:
                 "away_rec": lg.get("away_rec",""),
                 "home_rec": lg.get("home_rec",""),
             }
-except Exception:
-    pass
+except Exception as exc:
+    _err = "Schedule loader error: " + type(exc).__name__
 
 # Live fixtures are authoritative: score overlays cannot add missing games.
 all_games = [dict(g) for g in live_games + live_fcs_games] if using_live else []
 if not using_live:
     st.error("The selected week's live schedule could not be loaded. Retry Refresh schedule; the built-in list is incomplete and is not shown as a complete slate.")
-if using_live and _err:
+if _err:
     st.warning(_err)
 all_games.sort(key=lambda g: g.get("kickoff", "9999"))
 st.caption("Schedule covers Monday–Sunday of the selected week. All times are Eastern; ESPN fixtures do not confirm Hard Rock availability.")
@@ -1826,7 +1829,7 @@ def render_div(div):
 for div in DIV_ORDER:
     render_div(div)
 
-if not any(div_games.values()):
-    st.markdown("<div class='no-games'>No games scheduled for this week.</div>",unsafe_allow_html=True)
+if not any(div_games.values()) and not _err:
+    st.info("ESPN returned no fixtures for the selected calendar week.")
 
 st.markdown("<div style='height:30px'></div>",unsafe_allow_html=True)
