@@ -1426,7 +1426,7 @@ with st.sidebar:
 now=datetime.datetime.now()
 st.markdown(
     "<div class='hdr'><div class='brand'>NCAAF<sup>+</sup></div>"
-    "<div><div style='font-size:.6rem;color:#c8a800;font-weight:700;letter-spacing:1px'>2026 ALL DIVISIONS — COMPLETE SEASON SCHEDULE</div>"
+    "<div><div style='font-size:.6rem;color:#c8a800;font-weight:700;letter-spacing:1px'>HARD ROCK FLORIDA — LISTED MATCHUPS</div>"
     "<div style='font-size:.54rem;color:#4b5e78;text-transform:uppercase;letter-spacing:1px;margin-top:2px'>"
     "FBS · FCS · D-II · D-III · SP+ Smart Predictions · Weeks 0–15</div></div>"
     "<div style='display:inline-flex;align-items:center;gap:4px;background:#0a1f0a;border:1px solid #166534;"
@@ -1511,6 +1511,13 @@ if _err:
     st.warning(_err)
 all_games.sort(key=lambda g: g.get("kickoff", "9999"))
 st.caption("Schedule covers Monday–Sunday of the selected week. All times are Eastern; ESPN fixtures do not confirm Hard Rock availability.")
+
+# Only matchups observed on the Florida sportsbook board are shown.
+from florida_board import filter_games
+all_games, florida_captured = filter_games(all_games)
+st.caption("Hard Rock Florida matchup snapshot: " + florida_captured.strftime("%b %d, %Y %I:%M %p %Z") + ". This is a saved board check, not an automatic sportsbook connection. Refresh schedule updates ESPN, not the Florida allowlist.")
+if datetime.datetime.now(florida_captured.tzinfo) - florida_captured > datetime.timedelta(hours=24):
+    st.warning("Florida board snapshot is over 24 hours old; sportsbook additions and removals may differ.")
 
 # Split by division
 DIV_ORDER = ["FBS","FCS","D-II","D-III"]
