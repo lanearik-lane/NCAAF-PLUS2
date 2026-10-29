@@ -297,12 +297,17 @@ HIGH_PACE = {"Texas","Ole Miss","LSU","Florida","Georgia","Ohio State","Oregon",
              "Michigan","Miami","Notre Dame","Clemson","Alabama","Oklahoma",
              "BYU","Houston","Memphis","Tulane","Liberty","UCF","SMU"}
 
-def smart_predict(away, home, neutral=False, week=0):
+def smart_predict(away, home, neutral=False, week=0, allow_baseline=False):
+    original_away, original_home = away, home
     away = resolve_team(away)
     home = resolve_team(home)
-    if away is None or home is None:
+    if (away is None or home is None) and not allow_baseline:
         return None
-    a_db = get_db(away); h_db = get_db(home)
+    baseline = [2.0, 60, 60, 0.50, 0.47, 0.00, 0.70]
+    a_db = TEAM_DB[away] if away else baseline
+    h_db = TEAM_DB[home] if home else baseline
+    away = away or original_away
+    home = home or original_home
     a_sp,a_off,a_def,a_ath,a_ata,a_cch,a_sos = a_db
     h_sp,h_off,h_def,h_ath,h_ata,h_cch,h_sos = h_db
 
@@ -489,6 +494,7 @@ def make_half_preds(away, home, p, week=0):
     }
 
 def grade(c):
+    if c < 0: return "PASS", "g-c"
     if c>=85: return "A+","g-ap"
     if c>=72: return "A","g-a"
     if c>=58: return "B","g-b"
@@ -1527,6 +1533,11 @@ def get_pred(away, home, neutral=False):
     if "TBD" in away or "TBD" in home or "CFP" in away or "Seed" in away:
         return None
     p = pred_cache.get(key) or smart_predict(away, home, neutral, week_num)
+    if p is None:
+        p = smart_predict(away, home, neutral, week_num, allow_baseline=True)
+        p.update(mlC=-1, spC=-1, ttC=-1,
+                 txt="Limited-data baseline only: missing team ratings were replaced with generic inputs. Moneyline, spread and total below are illustrative estimates; not rated recommendations or Hard Rock Florida lines.",
+                 pos=["Baseline estimates shown"], neg=["Missing team ratings", "PASS — not a rated recommendation"], mv="Limited data", sp_p=0)
     # Overlay real sportsbook lines (HardRock Bet) when available
     lo = live_odds_map.get(key)
     if lo and p:
@@ -1543,7 +1554,7 @@ def get_pred(away, home, neutral=False):
         p["odds_src"] = lo.get("bookmaker","Live")
     return p
 
-st.caption("Model grades use built-in ratings, not verified current sportsbook prices. Moneyline grades are capped below A+; spread and total grades are capped at B pending validation. Missing ratings produce PASS.")
+st.caption("Model grades use built-in ratings, not verified current sportsbook prices. Moneyline grades are capped below A+; spread and total grades are capped at B pending validation. Missing ratings produce PASS with explicitly labeled generic baseline estimates.")
 
 # ── STATS ─────────────────────────────────────────────────────────────────
 valid_preds=[get_pred(g["away"],g["home"],g.get("neutral",False)) for g in all_games]
@@ -1710,7 +1721,7 @@ def render_div(div):
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_ml+"</div>"
                     "<div class='odds-dog'>"+dnm.split()[-1]+" "+dog_ml+"</div>"
                     "<div class='odds-sm'>"+str(p["pa"])+"–"+str(p["ph"])+"</div>"
-                    "<div class='odds-sm'>Unvalidated estimate</div></div>"
+                    "<div class='odds-sm'>"+("Generic baseline · PASS" if p["mlC"] < 0 else "Unvalidated estimate")+"</div></div>"
                     "<div class='odds-box'>"
                     "<div class='odds-lbl'>Spread · Grade "+spG
                     +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
@@ -1727,7 +1738,7 @@ def render_div(div):
                     "<div class='odds-sm'>Model estimate</div></div>"
                     "<div class='grade-col'>"
                     "<div class='gbig "+mlC+"'>"+mlG+"</div>"
-                    "<div class='g-lbl'>"+str(p["mlC"])+"/100 model</div>"
+                    "<div class='g-lbl'>"+("Limited data" if p["mlC"] < 0 else str(p["mlC"])+"/100 model")+"</div>"
                     "<div class='gsm "+spC+"'>"+spG+"</div>"
                     "<div class='gsm "+ttC+"'>"+ttG+"</div>"
                     "</div></div>"
