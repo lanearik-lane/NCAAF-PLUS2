@@ -1534,6 +1534,14 @@ def all_preds(week_num):
     return preds
 
 pred_cache = all_preds(week_num)
+from injury_model import apply_injuries
+import pandas as pd
+with st.expander("Injury inputs · recalculate predictions"):
+    st.caption("No live injury report connected. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
+    injury_inputs = st.data_editor(pd.DataFrame(columns=["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]),num_rows="dynamic",key="injury_inputs",use_container_width=True)
+    st.caption("Checked UTC example: "+datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")+". Invalid, unsourced or stale rows are ignored.")
+injury_rows = injury_inputs.to_dict("records")
+
 
 def get_pred(away, home, neutral=False):
     key=away+"@"+home
@@ -1559,7 +1567,7 @@ def get_pred(away, home, neutral=False):
         if lo.get("total") is not None:
             p["total"] = lo["total"]
         p["odds_src"] = lo.get("bookmaker","Live")
-    return p
+    return apply_injuries(p, away, home, injury_rows) if p else None
 
 st.caption("Model grades use built-in ratings, not verified current sportsbook prices. Moneyline grades are capped below A+; spread and total grades are capped at B pending validation. Missing ratings produce PASS with explicitly labeled generic baseline estimates.")
 
