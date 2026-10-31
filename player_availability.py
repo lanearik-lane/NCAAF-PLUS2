@@ -58,21 +58,27 @@ def render_key_player_status(game, rows, now=None):
         label = STATUS_LABELS.get(status, "Status unknown")
         checked = str(row.get("Checked UTC", "")).strip()
         stamp_label = "report time unavailable"
+        fresh = False
         if checked:
             try:
                 stamp = dt.datetime.fromisoformat(checked.replace("Z", "+00:00"))
                 if stamp.tzinfo is None:
                     stamp = stamp.replace(tzinfo=dt.timezone.utc)
                 age = now - stamp.astimezone(dt.timezone.utc)
+                fresh = 0 <= age.total_seconds() <= 24 * 3600
                 stamp_label = stamp.astimezone(ET).strftime("%b %-d %I:%M %p ET")
-                if age.total_seconds() > 24 * 3600:
-                    stamp_label += " · older than 24h"
+                if not fresh:
+                    stamp_label += " · older than 24h or future-dated"
             except ValueError:
                 pass
+        if status == "Out" and fresh:
+            playing = "NO · current report says OUT"
+        else:
+            playing = "UNCONFIRMED · " + label
         pos = str(row.get("Position", "")).upper() or "—"
         items.append("<div style='padding:3px 0;color:#e2e8f0'><b>" + esc(str(row.get("Team", ""))) +
                      "</b> · " + esc(pos) + " · " + esc(str(row.get("Player", "")) or "Player not named") +
-                     " — <span style='color:#38bdf8'>" + esc(label) + "</span>"
-                     " <span style='color:#64748b'>(" + esc(stamp_label) + ")</span></div>")
+                     " — <span style='color:#38bdf8'>Playing? " + esc(playing) + "</span>"
+                     " <span style='color:#64748b'>· Starter? not confirmed · " + esc(stamp_label) + "</span></div>")
     return ("<div style='padding:10px 18px;background:#0c1520;border-bottom:1px solid #1a2840;"
             "font-size:13px;line-height:1.5'>" + heading + note + "".join(items) + "</div>")
