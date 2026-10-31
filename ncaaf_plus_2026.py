@@ -1535,6 +1535,8 @@ def all_preds(week_num):
 
 pred_cache = all_preds(week_num)
 from injury_model import apply_injuries
+from kickoff_import import load_import
+imported_injuries, kickoff_snapshot = load_import(all_games)
 import pandas as pd
 with st.expander("Injury inputs · recalculate predictions"):
     st.caption("College injury report import / manual entry; no automatic live feed. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
@@ -1545,7 +1547,8 @@ with st.expander("Injury inputs · recalculate predictions"):
     st.caption("Direct loading is unavailable. Import a CSV you are authorized to export or transcribe its report below. Review report dates; a download time is not the report update time.")
     rw_upload = st.file_uploader("Import injury-report CSV",type=["csv"],key="rotowire_csv")
     injury_columns = ["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]
-    injury_seed = pd.DataFrame(columns=injury_columns)
+    injury_seed = pd.DataFrame(imported_injuries).reindex(columns=injury_columns) if injury_report_source == "Kickoff Status" and imported_injuries else pd.DataFrame(columns=injury_columns)
+    st.info("Kickoff Status snapshot imported " + kickoff_snapshot["imported_at"] + ". " + str(len(imported_injuries)) + " player rows matched this slate. Imported point impacts start at 0: review player roles and enter an assumed impact to change predictions. Report timestamps are preserved; no-report games are not considered healthy.")
     if rw_upload is not None:
         try:
             imported = pd.read_csv(rw_upload)
@@ -1571,7 +1574,7 @@ with st.expander("Injury inputs · recalculate predictions"):
             st.warning("Could not read this CSV. No imported injuries were applied.")
     injury_inputs = st.data_editor(injury_seed,num_rows="dynamic",key="injury_inputs_"+injury_report_source+"_"+(rw_upload.name if rw_upload else "manual"),use_container_width=True)
     st.caption("Checked UTC example: "+datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")+". Invalid, unsourced or stale rows are ignored.")
-injury_rows = injury_inputs.to_dict("records")
+injury_rows = [row for row in injury_inputs.to_dict("records") if pd.notna(pd.to_numeric(row.get("Impact points"), errors="coerce")) and float(row["Impact points"]) > 0]
 
 
 def get_pred(away, home, neutral=False):
@@ -1687,6 +1690,18 @@ def game_key_factors(game, prediction):
         factors.append(text.split(". ", 1)[0] + ". User-entered assumptions applied; see analysis for detail.")
     else:
         factors.append("Injuries: no current sourced inputs applied; availability unverified.")
+    import_rows = [row for row in imported_injuries if row["Team"] in (game["away"], game["home"])]
+    if import_rows:
+        for team in (game["away"], game["home"]):
+            team_rows = [row for row in import_rows if row["Team"] == team]
+            if team_rows:
+                counts = {}
+                for report_row in team_rows: counts[report_row["Status"]] = counts.get(report_row["Status"], 0) + 1
+                factors.append("Kickoff Status imported · " + team + ": " + ", ".join(str(count)+" "+status for status, count in sorted(counts.items())) + ". Snapshot only; verify latest report.")
+            else:
+                factors.append("Kickoff Status · " + team + ": no published player rows imported; availability unknown.")
+    else:
+        factors.append("Kickoff Status: no published player rows imported for this matchup; pending or outside FBS report coverage, not an all-clear.")
     factors.append("Price check: model lines are estimates, not current Hard Rock Florida prices.")
     return factors
 
