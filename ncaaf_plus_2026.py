@@ -1538,6 +1538,7 @@ from injury_model import apply_injuries
 from fbs_ratings import predict as predict_fbs, DATA as FBS_RATING_DATA
 from kickoff_import import load_import
 from player_availability import render_key_player_status
+from team_stars import load_team_stars
 imported_injuries, kickoff_snapshot = load_import(all_games)
 import pandas as pd
 with st.expander("Injury inputs · recalculate predictions"):
@@ -1936,9 +1937,10 @@ def render_div(div):
 
                 from html import escape
                 factors_html = "<div style='padding:12px 18px;background:#101a2a;border-bottom:1px solid #25344b;font-size:13px;line-height:1.65;color:#cbd5e1'><strong style='color:#f59e0b'>KEY FACTORS</strong><ul style='margin:6px 0 0;padding-left:20px'>" + "".join("<li>" + escape(factor) + "</li>" for factor in game_key_factors(g, p)) + "</ul></div>"
-                player_status_html = render_key_player_status(g, imported_injuries)
+                player_status_html = render_key_player_status(g, imported_injuries, team_stars)
                 st.markdown(row+factors_html+player_status_html+full_card, unsafe_allow_html=True)
 
+team_stars = load_team_stars(all_games)
 render_div(div_f)
 
 if not any(div_games.values()) and not _err:
