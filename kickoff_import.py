@@ -27,7 +27,7 @@ def load_import(games):
             if team is None or report['game_date'] not in dates[team]:continue
             position=player['position'].upper()
             unit='Offense' if position in ('QB','RB','WR','TE','OL','OT','OG','C','FB') else 'Defense' if position in ('DB','CB','S','FS','SS','LB','ILB','OLB','DL','DT','DE','NT','EDGE') else ''
-            status={'Available':'Available','Not listed':'Not listed','GTD':'Questionable','Game Time Decision':'Questionable'}.get(player['status'],player['status'])
+            status={'Available':'Available','Not listed':'Not listed','GTD':'Game Time Decision','Game Time Decision':'Game Time Decision','Game-Time Decision':'Game Time Decision'}.get(player['status'],player['status'])
             rows.append({'Team':team,'Player':player['player'],'Unit':unit,'Status':status,'Impact points':0.0,'Source':'Kickoff Status · '+report['url'],'Checked UTC':checked,'Position':position,'Game date':report['game_date']})
     unique={(r['Team'],r['Player'],r['Game date']):r for r in rows}
     return list(unique.values()),snapshot
