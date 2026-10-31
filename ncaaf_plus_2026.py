@@ -1546,11 +1546,13 @@ with st.expander("Injury inputs · recalculate predictions"):
     injury_source_url = "https://kickoffstatus.com/" if injury_report_source == "Kickoff Status" else "https://www.rotowire.com/cfootball/injury-report.php"
     st.markdown("[Open " + injury_report_source + " college football injury report](" + injury_source_url + ")")
     st.caption("Kickoff Status covers FBS conference availability reports. Pending / no report is unknown, not healthy. Its times are Pacific; enter Checked UTC in UTC. Keep unofficial injury notes separate from official availability reports.")
-    st.caption("Direct loading is unavailable. Import a CSV you are authorized to export or transcribe its report below. Review report dates; a download time is not the report update time.")
+    st.caption("An hourly GitHub check refreshes the public Kickoff Status game reports and commits the snapshot when statuses change. The check runs at the top of each hour; GitHub may queue scheduled jobs.")
+    st.caption("These reports provide availability, not announced starters. OUT means the report says no; Available/Probable means eligible or expected, not confirmed in the starting lineup. No report means unknown.")
+    st.caption("You can still import a CSV for a manual report update. Review report dates; a download time is not the report update time.")
     rw_upload = st.file_uploader("Import injury-report CSV",type=["csv"],key="rotowire_csv")
     injury_columns = ["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]
     injury_seed = pd.DataFrame(imported_injuries).reindex(columns=injury_columns) if injury_report_source == "Kickoff Status" and imported_injuries else pd.DataFrame(columns=injury_columns)
-    st.info("Kickoff Status snapshot imported " + kickoff_snapshot["imported_at"] + ". " + str(len(imported_injuries)) + " player rows matched this slate. Imported point impacts start at 0: review player roles and enter an assumed impact to change predictions. Report timestamps are preserved; no-report games are not considered healthy.")
+    st.info("Kickoff Status latest changed snapshot " + kickoff_snapshot["imported_at"] + ". " + str(len(imported_injuries)) + " player rows matched this slate. Imported point impacts start at 0: review player roles and enter an assumed impact to change predictions. Report timestamps are preserved; no-report games are not considered healthy.")
     if rw_upload is not None:
         try:
             imported = pd.read_csv(rw_upload)
