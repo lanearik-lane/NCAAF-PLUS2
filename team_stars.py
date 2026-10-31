@@ -88,6 +88,8 @@ def load_team_stars(games):
     """Fetch unique team leaders concurrently; cache each team's results for one hour."""
     teams = {}
     for game in games:
+        if game.get("div") != "FBS":
+            continue
         if game.get("away_id"):
             teams[game["away"]] = str(game["away_id"])
         if game.get("home_id"):
