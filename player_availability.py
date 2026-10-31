@@ -48,9 +48,12 @@ def render_key_player_status(game, rows, star_players=None, now=None):
     heading = ("<div style='font-weight:700;color:#f59e0b;margin-bottom:5px'>"
                "STAR PLAYERS · QB / RB / WR</div>")
     note = ("<div style='color:#94a3b8;font-size:12px;margin-bottom:6px'>"
-            "Showing each team's season statistical leader at QB, RB, and WR when available. "
-            "Availability reports do not confirm starting lineups. A current OUT says no; other statuses do not confirm a start or snap. "
-            "<a href='https://kickoffstatus.com/' target='_blank'>Kickoff Status report</a>.</div>")
+            "Showing each team's season leader at QB, RB, and WR. Check the current report before treating a player as ready; projections and depth charts do not confirm participation. "
+            "<a href='https://cfbfantasyzone.com/depth-charts' target='_blank'>CFB Fantasy Zone depth charts</a> · "
+            "<a href='https://www.on3.com/news/' target='_blank'>On3 news</a> · "
+            "<a href='https://cfbvibes.com/injuries/' target='_blank'>CFB Vibes injury reports</a> · "
+            "<a href='https://draftedge.com/cfb/' target='_blank'>DraftEdge projections</a> · "
+            "<a href='https://kickoffstatus.com/' target='_blank'>Kickoff Status reports</a>.</div>")
     items = []
     for team in teams:
         leaders = star_players.get(team, {})
