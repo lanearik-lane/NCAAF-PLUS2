@@ -1,7 +1,7 @@
 """User-entered injury scenarios; impact values are assumptions, not fitted data."""
 import datetime as dt
 import math
-WEIGHTS={'Out':1.0,'Doubtful':0.75,'Questionable':0.5,'Probable':0.1,'Active':0.0}
+WEIGHTS={'Out':1.0,'Doubtful':0.75,'Questionable':0.5,'Probable':0.1,'Available':0.0,'Active':0.0}
 
 def apply_injuries(prediction,away,home,rows,now=None):
     p=dict(prediction)
