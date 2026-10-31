@@ -1537,10 +1537,13 @@ pred_cache = all_preds(week_num)
 from injury_model import apply_injuries
 import pandas as pd
 with st.expander("Injury inputs · recalculate predictions"):
-    st.caption("RotoWire report import / manual entry; no automatic live feed. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
-    st.markdown("[Open RotoWire college football injury report](https://www.rotowire.com/cfootball/injury-report.php)")
-    st.caption("RotoWire is the preferred report source. Direct loading is unavailable. Import a CSV you are authorized to export or transcribe its report below. Review report dates; a download time is not the report update time.")
-    rw_upload = st.file_uploader("Import RotoWire injury CSV",type=["csv"],key="rotowire_csv")
+    st.caption("College injury report import / manual entry; no automatic live feed. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
+    injury_report_source = st.selectbox("Injury report source", ["Kickoff Status", "RotoWire"])
+    injury_source_url = "https://kickoffstatus.com/" if injury_report_source == "Kickoff Status" else "https://www.rotowire.com/cfootball/injury-report.php"
+    st.markdown("[Open " + injury_report_source + " college football injury report](" + injury_source_url + ")")
+    st.caption("Kickoff Status covers FBS conference availability reports. Pending / no report is unknown, not healthy. Its times are Pacific; enter Checked UTC in UTC. Keep unofficial injury notes separate from official availability reports.")
+    st.caption("Direct loading is unavailable. Import a CSV you are authorized to export or transcribe its report below. Review report dates; a download time is not the report update time.")
+    rw_upload = st.file_uploader("Import injury-report CSV",type=["csv"],key="rotowire_csv")
     injury_columns = ["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]
     injury_seed = pd.DataFrame(columns=injury_columns)
     if rw_upload is not None:
@@ -1554,7 +1557,7 @@ with st.expander("Injury inputs · recalculate predictions"):
             else:
                 for col in injury_columns:
                     if col not in imported.columns: imported[col] = ""
-                imported["Source"] = "RotoWire · https://www.rotowire.com/cfootball/injury-report.php"
+                imported["Source"] = injury_report_source + " · " + injury_source_url
                 teams = sorted({g["away"] for g in all_games}|{g["home"] for g in all_games})
                 def imported_team(value):
                     value = str(value).strip()
@@ -1566,7 +1569,7 @@ with st.expander("Injury inputs · recalculate predictions"):
                 st.info("Review imported rows: choose exact scheduled team names, Offense/Defense, status, assumed point impact and the report check time. Blank or stale values are not applied.")
         except (ValueError, UnicodeDecodeError, pd.errors.ParserError):
             st.warning("Could not read this CSV. No imported injuries were applied.")
-    injury_inputs = st.data_editor(injury_seed,num_rows="dynamic",key="injury_inputs_"+(rw_upload.name if rw_upload else "manual"),use_container_width=True)
+    injury_inputs = st.data_editor(injury_seed,num_rows="dynamic",key="injury_inputs_"+injury_report_source+"_"+(rw_upload.name if rw_upload else "manual"),use_container_width=True)
     st.caption("Checked UTC example: "+datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")+". Invalid, unsourced or stale rows are ignored.")
 injury_rows = injury_inputs.to_dict("records")
 
