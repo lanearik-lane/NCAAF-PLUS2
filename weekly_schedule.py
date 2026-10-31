@@ -51,6 +51,7 @@ def load_week(week, get, headers=None):
                 def record(c):
                     return (c.get('records') or [{}])[0].get('summary', '—')
                 events.setdefault(event['id'], {'away': away['team']['displayName'], 'home': home['team']['displayName'],
+                    'away_id': str(away['team'].get('id', '')), 'home_id': str(home['team'].get('id', '')),
                     'time': local.strftime('%a %I:%M %p'), 'kickoff': kickoff.isoformat(),
                     'tv': (broadcasts[0].get('names') or ['—'])[0] if broadcasts else '—',
                     'venue': (comp.get('venue') or {}).get('fullName', ''), 'conf': '',
