@@ -1537,8 +1537,36 @@ pred_cache = all_preds(week_num)
 from injury_model import apply_injuries
 import pandas as pd
 with st.expander("Injury inputs · recalculate predictions"):
-    st.caption("No live injury report connected. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
-    injury_inputs = st.data_editor(pd.DataFrame(columns=["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]),num_rows="dynamic",key="injury_inputs",use_container_width=True)
+    st.caption("RotoWire report import / manual entry; no automatic live feed. Enter Team, Player, Unit (Offense/Defense), Status (Out/Doubtful/Questionable/Probable/Active), assumed Impact points (0–10), Source and Checked UTC (ISO timestamp). Status weights: 100/75/50/10/0%. Offense reduces own points; defense increases opponent points. These are scenario assumptions, not calibrated probabilities. Inputs expire after 24 hours and last for this session.")
+    st.markdown("[Open RotoWire college football injury report](https://www.rotowire.com/cfootball/injury-report.php)")
+    st.caption("RotoWire is the preferred report source. Direct loading is unavailable. Import a CSV you are authorized to export or transcribe its report below. Review report dates; a download time is not the report update time.")
+    rw_upload = st.file_uploader("Import RotoWire injury CSV",type=["csv"],key="rotowire_csv")
+    injury_columns = ["Team","Player","Unit","Status","Impact points","Source","Checked UTC"]
+    injury_seed = pd.DataFrame(columns=injury_columns)
+    if rw_upload is not None:
+        try:
+            imported = pd.read_csv(rw_upload)
+            imported.columns = [str(c).strip() for c in imported.columns]
+            aliases = {"Name":"Player","Position":"Pos","Updated":"Checked UTC","Updated UTC":"Checked UTC"}
+            imported = imported.rename(columns={k:v for k,v in aliases.items() if v not in imported.columns})
+            if not {"Team","Player","Status"}.issubset(imported.columns):
+                st.warning("CSV needs Team, Player and Status columns. Add Unit, Impact points and Checked UTC before applying.")
+            else:
+                for col in injury_columns:
+                    if col not in imported.columns: imported[col] = ""
+                imported["Source"] = "RotoWire · https://www.rotowire.com/cfootball/injury-report.php"
+                teams = sorted({g["away"] for g in all_games}|{g["home"] for g in all_games})
+                def imported_team(value):
+                    value = str(value).strip()
+                    candidates = [team for team in teams if team.casefold()==value.casefold() or team.casefold().startswith(value.casefold()+" ")]
+                    return candidates[0] if len(candidates)==1 else value
+                imported["Team"] = imported["Team"].map(imported_team)
+                imported["Status"] = imported["Status"].astype(str).str.strip().str.title()
+                injury_seed = imported[injury_columns].fillna("")
+                st.info("Review imported rows: choose exact scheduled team names, Offense/Defense, status, assumed point impact and the report check time. Blank or stale values are not applied.")
+        except (ValueError, UnicodeDecodeError, pd.errors.ParserError):
+            st.warning("Could not read this CSV. No imported injuries were applied.")
+    injury_inputs = st.data_editor(injury_seed,num_rows="dynamic",key="injury_inputs_"+(rw_upload.name if rw_upload else "manual"),use_container_width=True)
     st.caption("Checked UTC example: "+datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")+". Invalid, unsourced or stale rows are ignored.")
 injury_rows = injury_inputs.to_dict("records")
 
