@@ -4,9 +4,7 @@ from html import escape
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
-KEY_POSITIONS = {"QB", "RB", "WR", "TE", "OL", "OT", "OG", "C", "FB",
-                 "DL", "DT", "DE", "EDG", "EDGE", "NT", "LB", "ILB",
-                 "OLB", "MLB", "DB", "CB", "S", "FS", "SS"}
+KEY_POSITIONS = {"QB", "RB", "WR"}
 STATUS_LABELS = {
     "Out": "OUT · report says will not play",
     "Doubtful": "Doubtful · not confirmed",
@@ -49,10 +47,7 @@ def render_key_player_status(game, rows, now=None):
                 "font-size:13px;line-height:1.5'>" + heading + note +
                 "<span style='color:#fbbf24'>No matching player rows in the imported report. "
                 "Starter and playing status: unknown.</span></div>")
-    pos_order = {"QB": 0, "RB": 1, "WR": 2, "TE": 3, "OL": 4, "OT": 4,
-                 "OG": 4, "C": 4, "FB": 4, "DL": 5, "DT": 5, "DE": 5,
-                 "EDG": 5, "EDGE": 5, "NT": 5, "LB": 6, "ILB": 6, "OLB": 6,
-                 "MLB": 6, "DB": 7, "CB": 7, "S": 7, "FS": 7, "SS": 7}
+    pos_order = {"QB": 0, "RB": 1, "WR": 2}
     relevant.sort(key=lambda r: (teams.index(r.get("Team")), pos_order.get(str(r.get("Position", "")).upper(), 9),
                                 str(r.get("Player", "")).casefold()))
     items = []
