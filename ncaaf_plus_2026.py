@@ -1535,6 +1535,7 @@ def all_preds(week_num):
 
 pred_cache = all_preds(week_num)
 from injury_model import apply_injuries
+from fbs_ratings import predict as predict_fbs, DATA as FBS_RATING_DATA
 from kickoff_import import load_import
 imported_injuries, kickoff_snapshot = load_import(all_games)
 import pandas as pd
@@ -1601,6 +1602,9 @@ def get_pred(away, home, neutral=False):
         if lo.get("total") is not None:
             p["total"] = lo["total"]
         p["odds_src"] = lo.get("bookmaker","Live")
+    game = next((g for g in all_games if g["away"] == away and g["home"] == home), None)
+    if p and game and game.get("div") == "FBS":
+        p = predict_fbs(p, away, home, neutral)
     return apply_injuries(p, away, home, injury_rows) if p else None
 
 st.caption("Model grades use built-in ratings, not verified current sportsbook prices. Moneyline grades are capped below A+; spread and total grades are capped at B pending validation. Missing ratings produce PASS with explicitly labeled generic baseline estimates.")
@@ -1637,6 +1641,7 @@ st.markdown(
     f"<div class='stat-box'><div class='stat-n' style='color:#4ade80'>{ap_c}</div><div class='stat-l'>A+ Picks</div></div>"
     "</div>", unsafe_allow_html=True)
 
+st.caption("FBS predictions use all 138 CollegeFootballRatings teams: source updated Oct 30, 2026, 5:14 AM ET, through 572 games. Saved snapshot, not live. FCS uses the legacy model; the two scales are not blended.")
 st.subheader("Strongest rated moneyline leans")
 lean_rows = []
 for game in all_games:
@@ -1675,7 +1680,11 @@ DIV_LABELS_FULL["All"] = "All divisions · earliest kickoff first"
 def game_key_factors(game, prediction):
     factors = []
     away_data, home_data = get_db(game["away"]), get_db(game["home"])
-    if away_data is not None and home_data is not None:
+    if prediction.get("rating_source") == "CollegeFootballRatings":
+        ar, hr = prediction["rating_away"], prediction["rating_home"]
+        factors.append("CollegeFootballRatings snapshot Oct 30, 2026: " + game["away"] + " " + str(ar["rating"]) + " (#" + str(ar["rank"]) + "); " + game["home"] + " " + str(hr["rating"]) + " (#" + str(hr["rank"]) + ")")
+        factors.append("Adjusted offense / defense points: " + str(ar["offense"]) + "/" + str(ar["defense"]) + " away; " + str(hr["offense"]) + "/" + str(hr["defense"]) + " home. Separate FBS model; not SP+ or a current betting line.")
+    elif away_data is not None and home_data is not None:
         gap = home_data[0] - away_data[0]
         leader = game["home"] if gap > 0 else game["away"]
         factors.append("Built-in rating matchup: " + (leader + " +" + str(round(abs(gap), 1)) if gap else "Even ratings") + " (not a live ranking)")
@@ -1792,7 +1801,7 @@ def render_div(div):
 
                 neut="<span class='ntag'>Neutral</span>" if g.get("neutral") else ""
                 conf=g.get("conf",""); conf_p=f"<span style='font-size:.46rem;color:#4b5e78'>{conf}</span>&nbsp;" if conf else ""
-                venue=g.get("venue",""); sp_gap_str=f"SP+ gap: {p['sp_gap']:.1f}"
+                venue=g.get("venue",""); sp_gap_str=f"Rating gap: {p['sp_gap']:.1f}"
                 pub_over=int(45+(p["away_wp"] if fa else p["home_wp"])*30)
                 wp_a="wp-hot" if wpa>55 else "wp-cold"; wp_h="wp-hot" if wph>55 else "wp-cold"
 
