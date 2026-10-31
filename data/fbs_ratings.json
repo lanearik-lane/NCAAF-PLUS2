@@ -1,0 +1,974 @@
+{
+  "source": "https://www.collegefootballratings.com/",
+  "source_updated": "2026-10-30T05:14:00-04:00",
+  "season": 2026,
+  "through_games": 572,
+  "teams": {
+    "Ohio State": {
+      "rank": 1,
+      "rating": 29.2,
+      "offense": 41.1,
+      "defense": 11.9,
+      "plays": 69.1
+    },
+    "Notre Dame": {
+      "rank": 2,
+      "rating": 27.2,
+      "offense": 40.9,
+      "defense": 13.7,
+      "plays": 70.4
+    },
+    "Georgia": {
+      "rank": 3,
+      "rating": 25,
+      "offense": 40.9,
+      "defense": 15.8,
+      "plays": 62.7
+    },
+    "Miami": {
+      "rank": 4,
+      "rating": 24.7,
+      "offense": 42.4,
+      "defense": 17.7,
+      "plays": 71.3
+    },
+    "Alabama": {
+      "rank": 5,
+      "rating": 23.4,
+      "offense": 39.4,
+      "defense": 16.1,
+      "plays": 63.3
+    },
+    "Texas": {
+      "rank": 6,
+      "rating": 22.4,
+      "offense": 36,
+      "defense": 13.6,
+      "plays": 68.4
+    },
+    "Indiana": {
+      "rank": 7,
+      "rating": 20.8,
+      "offense": 34.1,
+      "defense": 13.3,
+      "plays": 61.1
+    },
+    "LSU": {
+      "rank": 8,
+      "rating": 20.7,
+      "offense": 37.5,
+      "defense": 16.8,
+      "plays": 80.5
+    },
+    "Oregon": {
+      "rank": 9,
+      "rating": 19.9,
+      "offense": 35.3,
+      "defense": 15.3,
+      "plays": 72
+    },
+    "Ole Miss": {
+      "rank": 10,
+      "rating": 18.7,
+      "offense": 37.8,
+      "defense": 19.1,
+      "plays": 71.4
+    },
+    "Utah": {
+      "rank": 11,
+      "rating": 16.5,
+      "offense": 34.7,
+      "defense": 18.2,
+      "plays": 71
+    },
+    "Tennessee": {
+      "rank": 12,
+      "rating": 16.1,
+      "offense": 32.6,
+      "defense": 16.5,
+      "plays": 70.8
+    },
+    "BYU": {
+      "rank": 13,
+      "rating": 15.1,
+      "offense": 33.3,
+      "defense": 18.2,
+      "plays": 64.3
+    },
+    "Florida": {
+      "rank": 14,
+      "rating": 14.8,
+      "offense": 37.1,
+      "defense": 22.3,
+      "plays": 72.9
+    },
+    "Texas A&M": {
+      "rank": 15,
+      "rating": 14.7,
+      "offense": 31.1,
+      "defense": 16.5,
+      "plays": 69.9
+    },
+    "Oklahoma": {
+      "rank": 16,
+      "rating": 14.4,
+      "offense": 29.4,
+      "defense": 14.9,
+      "plays": 65.3
+    },
+    "USC": {
+      "rank": 17,
+      "rating": 13.7,
+      "offense": 35.2,
+      "defense": 21.6,
+      "plays": 71.6
+    },
+    "Texas Tech": {
+      "rank": 18,
+      "rating": 13.7,
+      "offense": 33.5,
+      "defense": 19.8,
+      "plays": 69.3
+    },
+    "UCLA": {
+      "rank": 19,
+      "rating": 12.8,
+      "offense": 31.1,
+      "defense": 18.3,
+      "plays": 69.7
+    },
+    "South Carolina": {
+      "rank": 20,
+      "rating": 12.8,
+      "offense": 34.7,
+      "defense": 22,
+      "plays": 72.9
+    },
+    "Houston": {
+      "rank": 21,
+      "rating": 12.8,
+      "offense": 33.7,
+      "defense": 20.9,
+      "plays": 71.6
+    },
+    "Arizona": {
+      "rank": 22,
+      "rating": 12.1,
+      "offense": 31.8,
+      "defense": 19.7,
+      "plays": 69.6
+    },
+    "Missouri": {
+      "rank": 23,
+      "rating": 12,
+      "offense": 31.1,
+      "defense": 19.1,
+      "plays": 70.4
+    },
+    "Michigan": {
+      "rank": 24,
+      "rating": 11.9,
+      "offense": 28.3,
+      "defense": 16.4,
+      "plays": 60.6
+    },
+    "Iowa": {
+      "rank": 25,
+      "rating": 11.6,
+      "offense": 29.5,
+      "defense": 17.8,
+      "plays": 63.1
+    },
+    "Wake Forest": {
+      "rank": 26,
+      "rating": 11.6,
+      "offense": 32.3,
+      "defense": 20.7,
+      "plays": 66.4
+    },
+    "Nebraska": {
+      "rank": 27,
+      "rating": 11.3,
+      "offense": 31.6,
+      "defense": 20.3,
+      "plays": 72.7
+    },
+    "Northwestern": {
+      "rank": 28,
+      "rating": 10.7,
+      "offense": 31.6,
+      "defense": 20.9,
+      "plays": 65
+    },
+    "SMU": {
+      "rank": 29,
+      "rating": 10.6,
+      "offense": 32.9,
+      "defense": 22.2,
+      "plays": 69.6
+    },
+    "Louisville": {
+      "rank": 30,
+      "rating": 10.5,
+      "offense": 34.6,
+      "defense": 24,
+      "plays": 63.7
+    },
+    "Auburn": {
+      "rank": 31,
+      "rating": 8.9,
+      "offense": 29.6,
+      "defense": 20.7,
+      "plays": 70.4
+    },
+    "Kentucky": {
+      "rank": 31,
+      "rating": 8.9,
+      "offense": 31.9,
+      "defense": 23,
+      "plays": 65.5
+    },
+    "Penn State": {
+      "rank": 33,
+      "rating": 8.6,
+      "offense": 29.7,
+      "defense": 21.2,
+      "plays": 68.7
+    },
+    "Boise State": {
+      "rank": 34,
+      "rating": 8.5,
+      "offense": 31.9,
+      "defense": 23.3,
+      "plays": 70.7
+    },
+    "Wisconsin": {
+      "rank": 35,
+      "rating": 8.4,
+      "offense": 27.3,
+      "defense": 18.8,
+      "plays": 59.4
+    },
+    "Mississippi State": {
+      "rank": 36,
+      "rating": 7.7,
+      "offense": 31.6,
+      "defense": 24,
+      "plays": 70.4
+    },
+    "Pittsburgh": {
+      "rank": 37,
+      "rating": 7.5,
+      "offense": 29.6,
+      "defense": 22.2,
+      "plays": 70.8
+    },
+    "Baylor": {
+      "rank": 38,
+      "rating": 7.5,
+      "offense": 27.9,
+      "defense": 20.5,
+      "plays": 80.9
+    },
+    "Washington": {
+      "rank": 39,
+      "rating": 7.3,
+      "offense": 29.8,
+      "defense": 22.4,
+      "plays": 65.6
+    },
+    "Florida State": {
+      "rank": 40,
+      "rating": 7.3,
+      "offense": 31.6,
+      "defense": 24.2,
+      "plays": 65.3
+    },
+    "Kansas State": {
+      "rank": 41,
+      "rating": 7.3,
+      "offense": 30,
+      "defense": 22.7,
+      "plays": 72.3
+    },
+    "TCU": {
+      "rank": 42,
+      "rating": 5.9,
+      "offense": 24.3,
+      "defense": 18.4,
+      "plays": 69.4
+    },
+    "James Madison": {
+      "rank": 43,
+      "rating": 5.7,
+      "offense": 30.9,
+      "defense": 25.2,
+      "plays": 70.7
+    },
+    "Virginia Tech": {
+      "rank": 44,
+      "rating": 5.4,
+      "offense": 30,
+      "defense": 24.6,
+      "plays": 74.3
+    },
+    "New Mexico": {
+      "rank": 45,
+      "rating": 5.3,
+      "offense": 28.1,
+      "defense": 22.8,
+      "plays": 64.4
+    },
+    "UCF": {
+      "rank": 46,
+      "rating": 4.7,
+      "offense": 29.2,
+      "defense": 24.5,
+      "plays": 64.7
+    },
+    "Clemson": {
+      "rank": 47,
+      "rating": 4.6,
+      "offense": 24.8,
+      "defense": 20.2,
+      "plays": 69.3
+    },
+    "Illinois": {
+      "rank": 47,
+      "rating": 4.6,
+      "offense": 29.8,
+      "defense": 25.3,
+      "plays": 63.3
+    },
+    "Duke": {
+      "rank": 49,
+      "rating": 4.3,
+      "offense": 26.8,
+      "defense": 22.6,
+      "plays": 68.7
+    },
+    "Oklahoma State": {
+      "rank": 50,
+      "rating": 4,
+      "offense": 31.1,
+      "defense": 27.1,
+      "plays": 74.4
+    },
+    "Minnesota": {
+      "rank": 51,
+      "rating": 4,
+      "offense": 26,
+      "defense": 22.1,
+      "plays": 63.7
+    },
+    "Oregon State": {
+      "rank": 52,
+      "rating": 4,
+      "offense": 31.3,
+      "defense": 27.4,
+      "plays": 72.7
+    },
+    "Kansas": {
+      "rank": 53,
+      "rating": 3.4,
+      "offense": 28.3,
+      "defense": 25,
+      "plays": 73.3
+    },
+    "North Carolina": {
+      "rank": 54,
+      "rating": 3,
+      "offense": 26.4,
+      "defense": 23.4,
+      "plays": 60
+    },
+    "NC State": {
+      "rank": 55,
+      "rating": 2.9,
+      "offense": 29.8,
+      "defense": 26.9,
+      "plays": 70.9
+    },
+    "Cincinnati": {
+      "rank": 56,
+      "rating": 2.6,
+      "offense": 30.1,
+      "defense": 27.5,
+      "plays": 67
+    },
+    "Virginia": {
+      "rank": 57,
+      "rating": 2.6,
+      "offense": 25,
+      "defense": 22.5,
+      "plays": 69.6
+    },
+    "UTSA": {
+      "rank": 58,
+      "rating": 2.2,
+      "offense": 29.1,
+      "defense": 27,
+      "plays": 68
+    },
+    "Texas State": {
+      "rank": 59,
+      "rating": 1.6,
+      "offense": 30,
+      "defense": 28.5,
+      "plays": 77.1
+    },
+    "Toledo": {
+      "rank": 60,
+      "rating": 1.2,
+      "offense": 29.7,
+      "defense": 28.5,
+      "plays": 71.8
+    },
+    "North Texas": {
+      "rank": 61,
+      "rating": 1,
+      "offense": 33.1,
+      "defense": 32.1,
+      "plays": 73.5
+    },
+    "Arizona State": {
+      "rank": 62,
+      "rating": 0.9,
+      "offense": 28.9,
+      "defense": 27.9,
+      "plays": 69
+    },
+    "Vanderbilt": {
+      "rank": 63,
+      "rating": 0.8,
+      "offense": 26.3,
+      "defense": 25.4,
+      "plays": 64.3
+    },
+    "Louisiana Tech": {
+      "rank": 64,
+      "rating": 0.7,
+      "offense": 26.4,
+      "defense": 25.8,
+      "plays": 68.3
+    },
+    "Iowa State": {
+      "rank": 65,
+      "rating": 0.6,
+      "offense": 25.6,
+      "defense": 25,
+      "plays": 62.3
+    },
+    "Arkansas": {
+      "rank": 66,
+      "rating": 0.3,
+      "offense": 25.1,
+      "defense": 24.8,
+      "plays": 69.9
+    },
+    "Memphis": {
+      "rank": 67,
+      "rating": 0,
+      "offense": 28.6,
+      "defense": 28.7,
+      "plays": 71.4
+    },
+    "Syracuse": {
+      "rank": 68,
+      "rating": 0,
+      "offense": 27.3,
+      "defense": 27.4,
+      "plays": 83.3
+    },
+    "Purdue": {
+      "rank": 69,
+      "rating": -0.2,
+      "offense": 29.4,
+      "defense": 29.6,
+      "plays": 70.1
+    },
+    "Michigan State": {
+      "rank": 70,
+      "rating": -0.2,
+      "offense": 24.2,
+      "defense": 24.5,
+      "plays": 63.9
+    },
+    "Liberty": {
+      "rank": 71,
+      "rating": -0.5,
+      "offense": 23.9,
+      "defense": 24.4,
+      "plays": 65.1
+    },
+    "South Florida": {
+      "rank": 72,
+      "rating": -0.6,
+      "offense": 23.1,
+      "defense": 23.7,
+      "plays": 60.1
+    },
+    "Fresno State": {
+      "rank": 73,
+      "rating": -0.7,
+      "offense": 24.8,
+      "defense": 25.6,
+      "plays": 62.1
+    },
+    "Western Michigan": {
+      "rank": 74,
+      "rating": -0.8,
+      "offense": 24.8,
+      "defense": 25.6,
+      "plays": 61
+    },
+    "West Virginia": {
+      "rank": 75,
+      "rating": -1.5,
+      "offense": 30.7,
+      "defense": 32.1,
+      "plays": 75.9
+    },
+    "Maryland": {
+      "rank": 76,
+      "rating": -1.7,
+      "offense": 27.2,
+      "defense": 28.9,
+      "plays": 69.4
+    },
+    "Boston College": {
+      "rank": 77,
+      "rating": -1.8,
+      "offense": 23.1,
+      "defense": 24.9,
+      "plays": 66
+    },
+    "Louisiana": {
+      "rank": 78,
+      "rating": -2.1,
+      "offense": 24.3,
+      "defense": 26.4,
+      "plays": 69
+    },
+    "Army": {
+      "rank": 79,
+      "rating": -2.1,
+      "offense": 27.1,
+      "defense": 29.2,
+      "plays": 66.7
+    },
+    "Rutgers": {
+      "rank": 80,
+      "rating": -2.5,
+      "offense": 27.8,
+      "defense": 30.4,
+      "plays": 67.6
+    },
+    "North Dakota State": {
+      "rank": 81,
+      "rating": -3.1,
+      "offense": 21.2,
+      "defense": 24.3,
+      "plays": 65.5
+    },
+    "UConn": {
+      "rank": 82,
+      "rating": -3.3,
+      "offense": 26.2,
+      "defense": 29.5,
+      "plays": 66.7
+    },
+    "Ohio": {
+      "rank": 83,
+      "rating": -3.5,
+      "offense": 24.3,
+      "defense": 27.9,
+      "plays": 63.5
+    },
+    "Tulane": {
+      "rank": 84,
+      "rating": -3.6,
+      "offense": 21.5,
+      "defense": 25.2,
+      "plays": 60.4
+    },
+    "Georgia Tech": {
+      "rank": 85,
+      "rating": -3.9,
+      "offense": 26.3,
+      "defense": 30.2,
+      "plays": 62.1
+    },
+    "UNLV": {
+      "rank": 86,
+      "rating": -4.5,
+      "offense": 22.4,
+      "defense": 27,
+      "plays": 67.9
+    },
+    "Washington State": {
+      "rank": 87,
+      "rating": -4.7,
+      "offense": 21.9,
+      "defense": 26.5,
+      "plays": 66.4
+    },
+    "Georgia State": {
+      "rank": 88,
+      "rating": -5.6,
+      "offense": 26.1,
+      "defense": 31.7,
+      "plays": 69.1
+    },
+    "Jacksonville State": {
+      "rank": 89,
+      "rating": -5.6,
+      "offense": 22.5,
+      "defense": 28.1,
+      "plays": 63
+    },
+    "California": {
+      "rank": 90,
+      "rating": -5.7,
+      "offense": 24.2,
+      "defense": 29.9,
+      "plays": 71.3
+    },
+    "East Carolina": {
+      "rank": 91,
+      "rating": -5.7,
+      "offense": 22.8,
+      "defense": 28.5,
+      "plays": 68
+    },
+    "Georgia Southern": {
+      "rank": 92,
+      "rating": -5.9,
+      "offense": 22.4,
+      "defense": 28.3,
+      "plays": 69.4
+    },
+    "Colorado": {
+      "rank": 93,
+      "rating": -5.9,
+      "offense": 22.1,
+      "defense": 28.1,
+      "plays": 70.4
+    },
+    "Tulsa": {
+      "rank": 94,
+      "rating": -6.3,
+      "offense": 23.2,
+      "defense": 29.5,
+      "plays": 66.3
+    },
+    "South Alabama": {
+      "rank": 95,
+      "rating": -6.6,
+      "offense": 27.3,
+      "defense": 34,
+      "plays": 73.3
+    },
+    "Utah State": {
+      "rank": 96,
+      "rating": -6.7,
+      "offense": 18.3,
+      "defense": 25,
+      "plays": 64.7
+    },
+    "App State": {
+      "rank": 97,
+      "rating": -6.8,
+      "offense": 22.9,
+      "defense": 29.7,
+      "plays": 71.3
+    },
+    "San Diego State": {
+      "rank": 98,
+      "rating": -6.9,
+      "offense": 24.2,
+      "defense": 31.1,
+      "plays": 62.9
+    },
+    "Arkansas State": {
+      "rank": 99,
+      "rating": -7.4,
+      "offense": 23.4,
+      "defense": 30.8,
+      "plays": 63.3
+    },
+    "Florida Atlantic": {
+      "rank": 100,
+      "rating": -8.3,
+      "offense": 28.1,
+      "defense": 36.3,
+      "plays": 78.8
+    },
+    "Air Force": {
+      "rank": 101,
+      "rating": -8.9,
+      "offense": 21.6,
+      "defense": 30.5,
+      "plays": 74.6
+    },
+    "Miami (OH)": {
+      "rank": 102,
+      "rating": -9,
+      "offense": 21.7,
+      "defense": 30.7,
+      "plays": 59.4
+    },
+    "Troy": {
+      "rank": 103,
+      "rating": -9.1,
+      "offense": 20.2,
+      "defense": 29.3,
+      "plays": 71
+    },
+    "Navy": {
+      "rank": 104,
+      "rating": -9.1,
+      "offense": 22.7,
+      "defense": 31.8,
+      "plays": 66.4
+    },
+    "Delaware": {
+      "rank": 105,
+      "rating": -9.2,
+      "offense": 23.3,
+      "defense": 32.5,
+      "plays": 66.5
+    },
+    "Stanford": {
+      "rank": 106,
+      "rating": -9.7,
+      "offense": 22,
+      "defense": 31.7,
+      "plays": 66.1
+    },
+    "Hawai'i": {
+      "rank": 107,
+      "rating": -9.7,
+      "offense": 20,
+      "defense": 29.7,
+      "plays": 72.6
+    },
+    "Temple": {
+      "rank": 108,
+      "rating": -9.9,
+      "offense": 21.6,
+      "defense": 31.5,
+      "plays": 60
+    },
+    "Florida International": {
+      "rank": 109,
+      "rating": -10.1,
+      "offense": 16.5,
+      "defense": 26.6,
+      "plays": 70.9
+    },
+    "Western Kentucky": {
+      "rank": 110,
+      "rating": -10.4,
+      "offense": 20.8,
+      "defense": 31.2,
+      "plays": 74
+    },
+    "Colorado State": {
+      "rank": 111,
+      "rating": -11,
+      "offense": 29,
+      "defense": 40,
+      "plays": 69.3
+    },
+    "Southern Miss": {
+      "rank": 112,
+      "rating": -11.2,
+      "offense": 22.3,
+      "defense": 33.5,
+      "plays": 71
+    },
+    "UAB": {
+      "rank": 113,
+      "rating": -11.2,
+      "offense": 18.7,
+      "defense": 29.8,
+      "plays": 68
+    },
+    "Coastal Carolina": {
+      "rank": 114,
+      "rating": -11.6,
+      "offense": 20.2,
+      "defense": 31.7,
+      "plays": 65
+    },
+    "Old Dominion": {
+      "rank": 115,
+      "rating": -11.8,
+      "offense": 16,
+      "defense": 27.8,
+      "plays": 62.5
+    },
+    "Kennesaw State": {
+      "rank": 116,
+      "rating": -11.9,
+      "offense": 18.9,
+      "defense": 30.9,
+      "plays": 65
+    },
+    "Nevada": {
+      "rank": 117,
+      "rating": -12,
+      "offense": 19.3,
+      "defense": 31.3,
+      "plays": 66.3
+    },
+    "Marshall": {
+      "rank": 118,
+      "rating": -12.1,
+      "offense": 19.6,
+      "defense": 31.7,
+      "plays": 71
+    },
+    "Central Michigan": {
+      "rank": 119,
+      "rating": -12.2,
+      "offense": 17.7,
+      "defense": 29.9,
+      "plays": 60.5
+    },
+    "Eastern Michigan": {
+      "rank": 120,
+      "rating": -13,
+      "offense": 18.4,
+      "defense": 31.3,
+      "plays": 68.7
+    },
+    "Wyoming": {
+      "rank": 121,
+      "rating": -13.1,
+      "offense": 16.2,
+      "defense": 29.4,
+      "plays": 59.3
+    },
+    "San José State": {
+      "rank": 122,
+      "rating": -13.3,
+      "offense": 17,
+      "defense": 30.3,
+      "plays": 66
+    },
+    "Rice": {
+      "rank": 123,
+      "rating": -13.7,
+      "offense": 18.9,
+      "defense": 32.7,
+      "plays": 63.5
+    },
+    "Missouri State": {
+      "rank": 124,
+      "rating": -14.4,
+      "offense": 20.2,
+      "defense": 34.6,
+      "plays": 63.3
+    },
+    "Buffalo": {
+      "rank": 125,
+      "rating": -14.7,
+      "offense": 17.7,
+      "defense": 32.4,
+      "plays": 74.8
+    },
+    "New Mexico State": {
+      "rank": 126,
+      "rating": -15.2,
+      "offense": 17.1,
+      "defense": 32.2,
+      "plays": 64.9
+    },
+    "Middle Tennessee": {
+      "rank": 127,
+      "rating": -16.4,
+      "offense": 18.9,
+      "defense": 35.3,
+      "plays": 63.9
+    },
+    "Massachusetts": {
+      "rank": 128,
+      "rating": -16.7,
+      "offense": 16.1,
+      "defense": 32.7,
+      "plays": 59.9
+    },
+    "Sam Houston": {
+      "rank": 129,
+      "rating": -17.1,
+      "offense": 14.7,
+      "defense": 31.8,
+      "plays": 63.6
+    },
+    "Kent State": {
+      "rank": 130,
+      "rating": -17.5,
+      "offense": 14.9,
+      "defense": 32.4,
+      "plays": 64.3
+    },
+    "Ball State": {
+      "rank": 131,
+      "rating": -18,
+      "offense": 19,
+      "defense": 37,
+      "plays": 65.6
+    },
+    "Bowling Green": {
+      "rank": 132,
+      "rating": -18.1,
+      "offense": 16.3,
+      "defense": 34.4,
+      "plays": 59.1
+    },
+    "Akron": {
+      "rank": 133,
+      "rating": -18.1,
+      "offense": 17.8,
+      "defense": 36,
+      "plays": 66.5
+    },
+    "UL Monroe": {
+      "rank": 134,
+      "rating": -20.9,
+      "offense": 16,
+      "defense": 36.9,
+      "plays": 65.7
+    },
+    "Charlotte": {
+      "rank": 135,
+      "rating": -21.8,
+      "offense": 16.1,
+      "defense": 37.9,
+      "plays": 58.9
+    },
+    "UTEP": {
+      "rank": 136,
+      "rating": -22.1,
+      "offense": 15.6,
+      "defense": 37.6,
+      "plays": 59.4
+    },
+    "Northern Illinois": {
+      "rank": 137,
+      "rating": -22.1,
+      "offense": 16,
+      "defense": 38.1,
+      "plays": 62.4
+    },
+    "Sacramento State": {
+      "rank": 138,
+      "rating": -24.6,
+      "offense": 12.9,
+      "defense": 37.5,
+      "plays": 65.6
+    }
+  }
+}
