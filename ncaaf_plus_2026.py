@@ -1626,8 +1626,20 @@ DIV_COLORS={"FBS":"#f59e0b","FCS":"#38bdf8","D-II":"#4ade80","D-III":"#c084fc"}
 DIV_LABELS_FULL={"FBS":"Football Bowl Subdivision","FCS":"Football Championship Subdivision",
                  "D-II":"NCAA Division II","D-III":"NCAA Division III"}
 
+def kickoff_key(game):
+    try:
+        kickoff = datetime.datetime.fromisoformat(game["kickoff"].replace("Z", "+00:00"))
+        if kickoff.tzinfo is None:
+            kickoff = kickoff.replace(tzinfo=datetime.timezone.utc)
+        return kickoff.astimezone(datetime.timezone.utc)
+    except (KeyError, ValueError, TypeError):
+        return datetime.datetime.max.replace(tzinfo=datetime.timezone.utc)
+
+DIV_COLORS["All"] = "#f59e0b"
+DIV_LABELS_FULL["All"] = "All divisions · earliest kickoff first"
+
 def render_div(div):
-    games = div_games.get(div, [])
+    games = all_games if div == "All" else div_games.get(div, [])
     if not games: return
     if div_f != "All" and div != div_f: return
 
@@ -1657,10 +1669,14 @@ def render_div(div):
 
     # ── Group by DAY then TIME SLOT ──────────────────────────────────
     from collections import OrderedDict as _OD
-    _sorted = sorted(filtered, key=lambda x: _parse_sort(x[0]["time"]))
+    _sorted = sorted(filtered, key=lambda x: kickoff_key(x[0]))
     _by_day = _OD()
     for _g,_p in _sorted:
-        _d = _day_label(_g["time"])
+        try:
+            from zoneinfo import ZoneInfo
+            _d = kickoff_key(_g).astimezone(ZoneInfo("America/New_York")).strftime("%A · %b %d")
+        except (ValueError, OverflowError):
+            _d = _day_label(_g["time"])
         _s = _time_slot(_g["time"])
         _by_day.setdefault(_d, _OD()).setdefault(_s, []).append((_g,_p))
 
@@ -1841,8 +1857,7 @@ def render_div(div):
 
                 st.markdown(row+full_card, unsafe_allow_html=True)
 
-for div in DIV_ORDER:
-    render_div(div)
+render_div(div_f)
 
 if not any(div_games.values()) and not _err:
     st.info("ESPN returned no fixtures for the selected calendar week.")
