@@ -1638,6 +1638,27 @@ def kickoff_key(game):
 DIV_COLORS["All"] = "#f59e0b"
 DIV_LABELS_FULL["All"] = "All divisions · earliest kickoff first"
 
+def game_key_factors(game, prediction):
+    factors = []
+    away_data, home_data = get_db(game["away"]), get_db(game["home"])
+    if away_data is not None and home_data is not None:
+        gap = home_data[0] - away_data[0]
+        leader = game["home"] if gap > 0 else game["away"]
+        factors.append("Built-in rating matchup: " + (leader + " +" + str(round(abs(gap), 1)) if gap else "Even ratings") + " (not a live ranking)")
+        factors.append("Offense / defense ranks (built-in): " + game["away"] + " " + str(away_data[1]) + "/" + str(away_data[2]) + "; " + game["home"] + " " + str(home_data[1]) + "/" + str(home_data[2]))
+    else:
+        missing = [team for team, data in [(game["away"], away_data), (game["home"], home_data)] if data is None]
+        factors.append("Missing team ratings: " + ", ".join(missing) + ". Generic baseline estimates; PASS.")
+    factors.append("Venue: neutral field, no home-field adjustment" if game.get("neutral") else "Venue: " + game["home"] + " at home; model assumes +2.8 points")
+    factors.append("ESPN records: " + game["away"] + " " + game.get("away_rec", "unavailable") + "; " + game["home"] + " " + game.get("home_rec", "unavailable") + " (context only)")
+    text = prediction.get("txt", "")
+    if text.startswith("INJURY SCENARIO:"):
+        factors.append(text.split(". ", 1)[0] + ". User-entered assumptions applied; see analysis for detail.")
+    else:
+        factors.append("Injuries: no current sourced inputs applied; availability unverified.")
+    factors.append("Price check: model lines are estimates, not current Hard Rock Florida prices.")
+    return factors
+
 def render_div(div):
     games = all_games if div == "All" else div_games.get(div, [])
     if not games: return
@@ -1855,7 +1876,9 @@ def render_div(div):
                     +"</details>"
                 )
 
-                st.markdown(row+full_card, unsafe_allow_html=True)
+                from html import escape
+                factors_html = "<div style='padding:12px 18px;background:#101a2a;border-bottom:1px solid #25344b;font-size:13px;line-height:1.65;color:#cbd5e1'><strong style='color:#f59e0b'>KEY FACTORS</strong><ul style='margin:6px 0 0;padding-left:20px'>" + "".join("<li>" + escape(factor) + "</li>" for factor in game_key_factors(g, p)) + "</ul></div>"
+                st.markdown(row+factors_html+full_card, unsafe_allow_html=True)
 
 render_div(div_f)
 
