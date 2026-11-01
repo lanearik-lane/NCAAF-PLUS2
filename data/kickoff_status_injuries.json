@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-10-31T22:19:29+00:00",
+  "imported_at": "2026-11-01T09:04:02+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -1026,9 +1026,135 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-army-at-memphis/",
       "game_date": "2026-10-31",
       "title": "Army at Memphis Injury Report — Week 9",
-      "reported": null,
+      "reported": "Sat Oct 31, 3:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Army",
+          "player": "Taps Hananda",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Sean Donovan",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Jaquavious Moss",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Kai Woolfolk",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Phillip Goodrich",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Cole Searight",
+          "position": "NB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Max Stober",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Miles Hagan",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Rhett VanBoening",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Cameron Binkowski",
+          "position": "OLB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Carson Smith",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Larry Pickett Jr.",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Brady Mott",
+          "position": "SB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Charlie Daly",
+          "position": "SB",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Josh Milhollin",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Army",
+          "player": "Kurt Thompson",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Memphis",
+          "player": "J'Mari Monette",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Memphis",
+          "player": "Desmond Cox",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Memphis",
+          "player": "Trey McDonald",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Memphis",
+          "player": "Aaron Karas",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Memphis",
+          "player": "Richard Thigpen",
+          "position": "OL",
+          "status": "Out"
+        },
         {
           "team": "Memphis",
           "player": "P. Poloskey Army",
@@ -1761,7 +1887,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-clemson-at-florida-state/",
       "game_date": "2026-10-31",
       "title": "Clemson at Florida State Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:00 PM PT",
+      "reported": "Sat Oct 31, 2:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -1816,7 +1942,7 @@
           "team": "Florida State",
           "player": "Charles Lester III",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Florida State",
@@ -1840,7 +1966,7 @@
           "team": "Florida State",
           "player": "K.J. Kirkland",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Florida State",
@@ -1852,7 +1978,7 @@
           "team": "Florida State",
           "player": "Conor McAneney",
           "position": "K",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Florida State",
@@ -2580,14 +2706,14 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-georgia-tech-at-pitt/",
       "game_date": "2026-10-31",
       "title": "Georgia Tech at Pitt Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:00 PM PT",
+      "reported": "Sat Oct 31, 2:30 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Georgia Tech",
           "player": "Daiquan White",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Georgia Tech",
@@ -2599,7 +2725,7 @@
           "team": "Georgia Tech",
           "player": "Jon Mitchell",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Georgia Tech",
@@ -2611,7 +2737,7 @@
           "team": "Georgia Tech",
           "player": "Jordan Walker",
           "position": "DE",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Georgia Tech",
@@ -2641,7 +2767,7 @@
           "team": "Georgia Tech",
           "player": "Courtney Heard",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Georgia Tech",
@@ -2689,7 +2815,7 @@
           "team": "Georgia Tech",
           "player": "Chris Elko",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Georgia Tech",
@@ -2725,7 +2851,7 @@
           "team": "Pitt",
           "player": "Eliyt Nairne",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Pitt",
@@ -2755,7 +2881,7 @@
           "team": "Pitt",
           "player": "Ja'Kyrian Turner",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Pitt",
@@ -2797,7 +2923,7 @@
           "team": "Pitt",
           "player": "Tyreek Robinson",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         }
       ]
     },
@@ -3510,7 +3636,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-miami-at-north-carolina/",
       "game_date": "2026-10-31",
       "title": "Miami at North Carolina Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:00 PM PT",
+      "reported": "Sat Oct 31, 2:30 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -3553,7 +3679,7 @@
           "team": "North Carolina",
           "player": "Peyton Waters",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "North Carolina",
@@ -3589,19 +3715,19 @@
           "team": "North Carolina",
           "player": "Jonathan Agumadu",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "North Carolina",
           "player": "Andrew Threatt",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "North Carolina",
           "player": "Jordan Hall",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "North Carolina",
@@ -3957,7 +4083,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-mississippi-state-at-texas/",
       "game_date": "2026-10-31",
       "title": "Mississippi State at Texas Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:10 PM PT",
+      "reported": "Sat Oct 31, 3:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -3982,7 +4108,7 @@
           "team": "Mississippi State",
           "player": "Tyler Lockhart",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Mississippi State",
@@ -4000,7 +4126,7 @@
           "team": "Mississippi State",
           "player": "Isaac Smith",
           "position": "S",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Mississippi State",
@@ -4086,7 +4212,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-missouri-at-arkansas/",
       "game_date": "2026-10-31",
       "title": "Missouri at Arkansas Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:10 PM PT",
+      "reported": "Sat Oct 31, 3:15 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -4159,7 +4285,7 @@
           "team": "Arkansas",
           "player": "Chris Marshall",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Arkansas",
@@ -4377,7 +4503,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-northern-illinois-at-unlv/",
       "game_date": "2026-10-31",
       "title": "Northern Illinois at UNLV Injury Report — Week 9",
-      "reported": "Thu Oct 29, 2:17 PM PT",
+      "reported": "Sat Oct 31, 4:28 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -4480,7 +4606,7 @@
           "team": "UNLV",
           "player": "Avery Helm",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -4528,13 +4654,13 @@
           "team": "UNLV",
           "player": "Jackson Brown",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
           "player": "Joe Metzger",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -4552,7 +4678,7 @@
           "team": "UNLV",
           "player": "Landyn Cleveland",
           "position": "S",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -4570,7 +4696,7 @@
           "team": "UNLV",
           "player": "Matt Byrnes",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -4582,13 +4708,13 @@
           "team": "UNLV",
           "player": "Kayden McGee",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
           "player": "Taeshaun Lyons",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Not Listed"
         }
       ]
     },
@@ -4896,7 +5022,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-ohio-state-at-usc/",
       "game_date": "2026-10-31",
       "title": "Ohio State at USC Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:00 PM PT",
+      "reported": "Sat Oct 31, 2:30 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -4909,7 +5035,7 @@
           "team": "Ohio State",
           "player": "Jay Timmons",
           "position": "CB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Ohio State",
@@ -4969,7 +5095,7 @@
           "team": "Ohio State",
           "player": "Brandon Inniss",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Ohio State",
@@ -4981,13 +5107,13 @@
           "team": "USC",
           "player": "Jahkeem Stewart",
           "position": "DT",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "USC",
           "player": "Jamaal Jarrett",
           "position": "DT",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "USC",
@@ -5041,7 +5167,7 @@
           "team": "USC",
           "player": "Shahn Alston",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "USC",
@@ -5065,7 +5191,7 @@
           "team": "USC",
           "player": "Mark Bowman",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "USC",
@@ -5097,7 +5223,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-oklahoma-state-at-iowa-state/",
       "game_date": "2026-10-31",
       "title": "Oklahoma State at Iowa State Injury Report — Week 9",
-      "reported": "Fri Oct 30, 7:00 PM PT",
+      "reported": "Sat Oct 31, 2:30 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -5116,7 +5242,7 @@
           "team": "Iowa State",
           "player": "Trey Verdon",
           "position": "DE",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Iowa State",
@@ -5182,13 +5308,13 @@
           "team": "Oklahoma State",
           "player": "Landon Dean",
           "position": "DT",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oklahoma State",
           "player": "Quinton Hammonds",
           "position": "S",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oklahoma State",
@@ -5208,14 +5334,14 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-oregon-state-at-fresno-state/",
       "game_date": "2026-10-31",
       "title": "Oregon State at Fresno State Injury Report — Week 9",
-      "reported": "Fri Oct 30, 7:09 PM PT",
+      "reported": "Sat Oct 31, 6:04 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Fresno State",
           "player": "Ethan Tierney",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
@@ -5227,25 +5353,25 @@
           "team": "Fresno State",
           "player": "Sammie Hunter",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Jahzon Jacks",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Jairus Satele",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Logan Goodspeed",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
@@ -5257,13 +5383,13 @@
           "team": "Fresno State",
           "player": "Lucas Blumling",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Niko Baumgartner",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
@@ -5275,13 +5401,13 @@
           "team": "Fresno State",
           "player": "Marquise Thorpe-Taylor",
           "position": "OL",
-          "status": "Not Listed"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Marqusie Thorpe-Taylor",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "Fresno State",
@@ -5293,7 +5419,7 @@
           "team": "Fresno State",
           "player": "Ethan Rossetti",
           "position": "SP",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
@@ -6423,7 +6549,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-texas-state-at-boise-state/",
       "game_date": "2026-10-31",
       "title": "Texas State at Boise State Injury Report — Week 9",
-      "reported": "Fri Oct 30, 7:08 PM PT",
+      "reported": "Sat Oct 31, 5:04 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -6436,13 +6562,13 @@
           "team": "Boise State",
           "player": "Sire Gaines",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Boise State",
           "player": "Austin Terry",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Boise State",
@@ -6454,7 +6580,7 @@
           "team": "Boise State",
           "player": "Ben Ford",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Boise State",
@@ -6478,37 +6604,37 @@
           "team": "Texas State",
           "player": "Ryan Nolan",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "Will Mitchell",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "Bryce Carter",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "Donterry Russell",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "Jo'Laison Landry",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "JP Deeter",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Texas State",
@@ -6520,7 +6646,7 @@
           "team": "Texas State",
           "player": "TJ Burkhalter",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
@@ -6544,13 +6670,13 @@
           "team": "Texas State",
           "player": "Davian Jackson",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
           "player": "Torrance Burgess",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
@@ -7239,7 +7365,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-washington-at-nebraska/",
       "game_date": "2026-10-31",
       "title": "Washington at Nebraska Injury Report — Week 9",
-      "reported": "Fri Oct 30, 5:00 PM PT",
+      "reported": "Sat Oct 31, 3:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -7288,7 +7414,7 @@
           "team": "Nebraska",
           "player": "Vincent Shavers Jr.",
           "position": "LB",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Nebraska",
@@ -7342,25 +7468,25 @@
           "team": "Washington",
           "player": "Jacob Manu",
           "position": "LB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Xe'ree Alexander",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Washington",
           "player": "Jake Flores",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Washington",
           "player": "Justin Hylkema",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Washington",
@@ -7372,19 +7498,19 @@
           "team": "Washington",
           "player": "Demond Williams Jr.",
           "position": "QB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Ansu Sanoe",
           "position": "RB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Washington",
           "player": "Jayden Limar",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
@@ -7402,13 +7528,13 @@
           "team": "Washington",
           "player": "Trey Cooley",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Alex McLaughlin",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
@@ -7422,7 +7548,7 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-washington-state-at-san-diego-state/",
       "game_date": "2026-10-31",
       "title": "Washington State at San Diego State Injury Report — Week 9",
-      "reported": "Fri Oct 30, 7:07 PM PT",
+      "reported": "Sat Oct 31, 2:04 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -7453,19 +7579,19 @@
           "team": "San Diego State",
           "player": "Josiah Cox",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "San Diego State",
           "player": "Max Garrison",
           "position": "DB",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "San Diego State",
           "player": "Mike Lindsay",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "San Diego State",
@@ -7501,7 +7627,7 @@
           "team": "San Diego State",
           "player": "Tano Letuli",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "San Diego State",
@@ -7531,7 +7657,7 @@
           "team": "San Diego State",
           "player": "Jayden Denegal",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "San Diego State",
@@ -7615,7 +7741,7 @@
           "team": "Washington State",
           "player": "Jeremiah Bernard",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Washington State",
@@ -7627,7 +7753,7 @@
           "team": "Washington State",
           "player": "Darrius Clemons",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Out"
         }
       ]
     },
