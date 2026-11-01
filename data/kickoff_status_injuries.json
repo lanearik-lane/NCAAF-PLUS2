@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-01T09:04:02+00:00",
+  "imported_at": "2026-11-01T16:39:04+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -5334,14 +5334,14 @@
       "url": "https://kickoffstatus.com/games/2026-10-31-oregon-state-at-fresno-state/",
       "game_date": "2026-10-31",
       "title": "Oregon State at Fresno State Injury Report — Week 9",
-      "reported": "Sat Oct 31, 6:04 PM PT",
+      "reported": "Fri Oct 30, 7:09 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Fresno State",
           "player": "Ethan Tierney",
           "position": "DB",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
@@ -5353,25 +5353,25 @@
           "team": "Fresno State",
           "player": "Sammie Hunter",
           "position": "DB",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
           "player": "Jahzon Jacks",
           "position": "DL",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
           "player": "Jairus Satele",
           "position": "DL",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
           "player": "Logan Goodspeed",
           "position": "DL",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
@@ -5383,13 +5383,13 @@
           "team": "Fresno State",
           "player": "Lucas Blumling",
           "position": "ILB",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
           "player": "Niko Baumgartner",
           "position": "ILB",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
@@ -5401,13 +5401,13 @@
           "team": "Fresno State",
           "player": "Marquise Thorpe-Taylor",
           "position": "OL",
-          "status": "Game-Time Decision"
+          "status": "Not Listed"
         },
         {
           "team": "Fresno State",
           "player": "Marqusie Thorpe-Taylor",
           "position": "OL",
-          "status": "Not Listed"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
@@ -5419,7 +5419,7 @@
           "team": "Fresno State",
           "player": "Ethan Rossetti",
           "position": "SP",
-          "status": "Game-Time Decision"
+          "status": "Questionable"
         },
         {
           "team": "Fresno State",
@@ -7978,6 +7978,414 @@
       "url": "https://kickoffstatus.com/games/2026-11-06-virginia-tech-at-smu/",
       "game_date": "2026-11-06",
       "title": "Virginia Tech at SMU Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-air-force-at-army/",
+      "game_date": "2026-11-07",
+      "title": "Air Force at Army Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-alabama-at-lsu/",
+      "game_date": "2026-11-07",
+      "title": "Alabama at LSU Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-arkansas-at-auburn/",
+      "game_date": "2026-11-07",
+      "title": "Arkansas at Auburn Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-boise-state-at-colorado-state/",
+      "game_date": "2026-11-07",
+      "title": "Boise State at Colorado State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-byu-at-utah/",
+      "game_date": "2026-11-07",
+      "title": "BYU at Utah Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-charlotte-at-uab/",
+      "game_date": "2026-11-07",
+      "title": "Charlotte at UAB Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-cincinnati-at-houston/",
+      "game_date": "2026-11-07",
+      "title": "Cincinnati at Houston Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-clemson-at-syracuse/",
+      "game_date": "2026-11-07",
+      "title": "Clemson at Syracuse Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-colorado-at-arizona-state/",
+      "game_date": "2026-11-07",
+      "title": "Colorado at Arizona State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-delaware-at-kennesaw-state/",
+      "game_date": "2026-11-07",
+      "title": "Delaware at Kennesaw State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-duke-at-nc-state/",
+      "game_date": "2026-11-07",
+      "title": "Duke at NC State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-florida-state-at-boston-college/",
+      "game_date": "2026-11-07",
+      "title": "Florida State at Boston College Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-fresno-state-at-utah-state/",
+      "game_date": "2026-11-07",
+      "title": "Fresno State at Utah State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-georgia-at-ole-miss/",
+      "game_date": "2026-11-07",
+      "title": "Georgia at Ole Miss Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-georgia-state-at-app-state/",
+      "game_date": "2026-11-07",
+      "title": "Georgia State at App State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-hawai-i-at-utep/",
+      "game_date": "2026-11-07",
+      "title": "Hawai'i at UTEP Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-iowa-at-northwestern/",
+      "game_date": "2026-11-07",
+      "title": "Iowa at Northwestern Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-iowa-state-at-baylor/",
+      "game_date": "2026-11-07",
+      "title": "Iowa State at Baylor Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-kentucky-at-tennessee/",
+      "game_date": "2026-11-07",
+      "title": "Kentucky at Tennessee Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-liberty-at-new-mexico-state/",
+      "game_date": "2026-11-07",
+      "title": "Liberty at New Mexico State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-louisiana-tech-at-troy/",
+      "game_date": "2026-11-07",
+      "title": "Louisiana Tech at Troy Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-louisville-at-georgia-tech/",
+      "game_date": "2026-11-07",
+      "title": "Louisville at Georgia Tech Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-marshall-at-georgia-southern/",
+      "game_date": "2026-11-07",
+      "title": "Marshall at Georgia Southern Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-maryland-at-purdue/",
+      "game_date": "2026-11-07",
+      "title": "Maryland at Purdue Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-merrimack-at-wake-forest/",
+      "game_date": "2026-11-07",
+      "title": "Merrimack at Wake Forest Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-miami-at-notre-dame/",
+      "game_date": "2026-11-07",
+      "title": "Miami at Notre Dame Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-michigan-state-at-michigan/",
+      "game_date": "2026-11-07",
+      "title": "Michigan State at Michigan Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-missouri-state-at-fiu/",
+      "game_date": "2026-11-07",
+      "title": "Missouri State at FIU Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-north-carolina-at-uconn/",
+      "game_date": "2026-11-07",
+      "title": "North Carolina at UConn Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-northern-illinois-at-san-jose-state/",
+      "game_date": "2026-11-07",
+      "title": "Northern Illinois at San José State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-oklahoma-at-florida/",
+      "game_date": "2026-11-07",
+      "title": "Oklahoma at Florida Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-oklahoma-state-at-kansas-state/",
+      "game_date": "2026-11-07",
+      "title": "Oklahoma State at Kansas State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-old-dominion-at-coastal-carolina/",
+      "game_date": "2026-11-07",
+      "title": "Old Dominion at Coastal Carolina Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-oregon-at-ohio-state/",
+      "game_date": "2026-11-07",
+      "title": "Oregon at Ohio State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-penn-state-at-washington/",
+      "game_date": "2026-11-07",
+      "title": "Penn State at Washington Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-rice-at-north-texas/",
+      "game_date": "2026-11-07",
+      "title": "Rice at North Texas Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-rutgers-at-wisconsin/",
+      "game_date": "2026-11-07",
+      "title": "Rutgers at Wisconsin Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-sam-houston-at-jacksonville-state/",
+      "game_date": "2026-11-07",
+      "title": "Sam Houston at Jacksonville State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-south-alabama-at-louisiana/",
+      "game_date": "2026-11-07",
+      "title": "South Alabama at Louisiana Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-temple-at-navy/",
+      "game_date": "2026-11-07",
+      "title": "Temple at Navy Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-texas-a-m-at-south-carolina/",
+      "game_date": "2026-11-07",
+      "title": "Texas A&M at South Carolina Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-texas-at-missouri/",
+      "game_date": "2026-11-07",
+      "title": "Texas at Missouri Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-texas-state-at-oregon-state/",
+      "game_date": "2026-11-07",
+      "title": "Texas State at Oregon State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-tulsa-at-tulane/",
+      "game_date": "2026-11-07",
+      "title": "Tulsa at Tulane Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-ucf-at-kansas/",
+      "game_date": "2026-11-07",
+      "title": "UCF at Kansas Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-ucla-at-minnesota/",
+      "game_date": "2026-11-07",
+      "title": "UCLA at Minnesota Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-ul-monroe-at-arkansas-state/",
+      "game_date": "2026-11-07",
+      "title": "UL Monroe at Arkansas State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-vanderbilt-at-mississippi-state/",
+      "game_date": "2026-11-07",
+      "title": "Vanderbilt at Mississippi State Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-west-virginia-at-texas-tech/",
+      "game_date": "2026-11-07",
+      "title": "West Virginia at Texas Tech Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-western-kentucky-at-middle-tennessee/",
+      "game_date": "2026-11-07",
+      "title": "Western Kentucky at Middle Tennessee Injury Report — Week 10",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-07-wyoming-at-unlv/",
+      "game_date": "2026-11-07",
+      "title": "Wyoming at UNLV Injury Report — Week 10",
       "reported": null,
       "coverage": "pending",
       "players": []
