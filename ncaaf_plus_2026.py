@@ -126,6 +126,33 @@ details summary:hover{background:#0c1a2e}
 .src-badge{display:inline-flex;align-items:center;gap:3px;border-radius:10px;padding:2px 7px;font-size:.56rem;font-weight:700}
 .src-live{background:#0a1f0a;border:1px solid #166534;color:#22c55e}
 .src-static{background:#0f1929;border:1px solid #1e2d40;color:#64748b}
+
+/* RESEARCH PANEL */
+.research-wrap{background:#06090f;border-top:1px solid #1a2840;padding:12px 18px}
+.research-tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.rtab{font-size:.58rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+      padding:3px 10px;border-radius:12px;border:1px solid;cursor:pointer}
+.rtab-pvp{color:#f59e0b;border-color:#f59e0b44;background:#f59e0b0a}
+.rtab-pvt{color:#38bdf8;border-color:#38bdf844;background:#38bdf80a}
+.rtab-tvt{color:#4ade80;border-color:#4ade8044;background:#4ade800a}
+.rtab-inj{color:#f87171;border-color:#f8717144;background:#f871710a}
+.rtab-wx{color:#c084fc;border-color:#c084fc44;background:#c084fc0a}
+.research-section{background:#0c1520;border:1px solid #1a2840;border-radius:8px;padding:10px 12px;margin-bottom:8px}
+.research-lbl{font-size:.56rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.rl-pvp{color:#f59e0b}.rl-pvt{color:#38bdf8}.rl-tvt{color:#4ade80}.rl-inj{color:#f87171}.rl-wx{color:#c084fc}
+.research-line{font-size:.67rem;color:#94a3b8;line-height:1.8;padding:2px 0;border-bottom:1px solid #0f1929}
+.research-line:last-child{border-bottom:none}
+.inj-out{color:#f87171;font-weight:700}.inj-doubt{color:#fb923c}.inj-ques{color:#fbbf24}.inj-ok{color:#4ade80}
+.wx-good{color:#4ade80}.wx-warn{color:#fbbf24}.wx-bad{color:#f87171}
+.pick-badge{display:inline-flex;align-items:center;gap:5px;border-radius:6px;padding:4px 10px;
+            font-size:.72rem;font-weight:700;margin:3px 3px 3px 0}
+.pick-ml{background:#166534;color:#4ade80;border:1px solid #166534}
+.pick-sp{background:#1e3a5f;color:#60a5fa;border:1px solid #1e3a5f}
+.pick-ou{background:#312e81;color:#a5b4fc;border:1px solid #312e81}
+.pick-gr-ap{background:#166534;color:#4ade80}.pick-gr-a{background:#14532d;color:#86efac}
+.pick-gr-b{background:#1e3a5f;color:#60a5fa}.pick-gr-c{background:#3b2300;color:#fb923c}
+.adj-note{font-size:.62rem;color:#38bdf8;background:#0c1d30;border:1px solid #1e3a5f;
+          border-radius:6px;padding:4px 9px;margin:4px 0;display:block}
 </style>
 """, unsafe_allow_html=True)
 
@@ -1602,6 +1629,18 @@ def fetch_live(week_num):
     result = load_week(week_num, requests.get, HEADS)  # daily-query loader v2
     return result
 
+@st.cache_data(ttl=1800, show_spinner=False)
+def cached_research(away, home, venue, game_date, pred_key):
+    """Cache research per game (30-min TTL). pred_key forces refresh on prediction change."""
+    from research_engine import research_game
+    import json
+    try:
+        # p is reconstructed from SCHEDULE + smart_predict — pass a lightweight snapshot
+        p_snap = smart_predict(away, home, False, 10, allow_baseline=True) or {}
+        return research_game(away, home, venue, game_date, p_snap)
+    except Exception as exc:
+        return {"pvp":[],"pvt":[],"tvt":[],"injuries":{},"inj_notes":[],"weather":{"available":False},"wx_note":"","adj_p":{},"error":str(exc)[:120]}
+
 # ── SIDEBAR ───────────────────────────────────────────────────────────────
 with st.sidebar:
     st.info("Hard Rock Florida • ESPN schedule • No sportsbook API key required")
@@ -2132,6 +2171,114 @@ def render_div(div):
                     "</div></div>"
                 )
 
+                # ── Research Panel ─────────────────────────────────────
+                # Derive game date from kickoff or week
+                try:
+                    from zoneinfo import ZoneInfo as _ZI
+                    _ko = g.get("kickoff","")
+                    if _ko:
+                        _gd = datetime.datetime.fromisoformat(_ko.replace("Z","+00:00")).astimezone(_ZI("America/New_York")).strftime("%Y-%m-%d")
+                    else:
+                        raise ValueError
+                except Exception:
+                    # fallback: Saturday of game week
+                    _week_starts = {10:"2026-11-07",11:"2026-11-14",12:"2026-11-21",
+                                    13:"2026-11-28",9:"2026-11-01",8:"2026-10-24",
+                                    7:"2026-10-17",6:"2026-10-10",5:"2026-10-03",
+                                    4:"2026-09-26",3:"2026-09-19",2:"2026-09-12",
+                                    1:"2026-09-05",0:"2026-08-29",14:"2026-12-05",15:"2026-12-12"}
+                    _gd = _week_starts.get(week_num, "2026-11-07")
+
+                _pred_key = f"{p.get('sp_gap',0):.1f}_{p.get('total',0)}"
+                research = cached_research(g["away"], g["home"], venue, _gd, _pred_key)
+                rp = research.get("adj_p", p)
+
+                # Build research HTML sections
+                def _rl(lines, lbl_cls, lbl_txt):
+                    inner = "".join(f"<div class='research-line'>{ln}</div>" for ln in lines) if lines else "<div class='research-line' style='color:#334155'>No data available.</div>"
+                    return (f"<div class='research-section'>"
+                            f"<div class='research-lbl {lbl_cls}'>{lbl_txt}</div>"
+                            f"{inner}</div>")
+
+                pvp_html = _rl(research.get("pvp",[]), "rl-pvp", "Player vs Player")
+                pvt_html = _rl(research.get("pvt",[]), "rl-pvt", "Player vs Team")
+                tvt_html = _rl(research.get("tvt",[]), "rl-tvt", "Team vs Team")
+
+                # Injury section
+                inj_lines = []
+                inj_data = research.get("injuries", {})
+                for tm, players in inj_data.items():
+                    for pl in players[:8]:
+                        sc = ("inj-out" if pl["status"]=="Out" else
+                              "inj-doubt" if pl["status"]=="Doubtful" else
+                              "inj-ques" if pl["status"]=="Questionable" else "inj-ok")
+                        inj_lines.append(f"<span class='{sc}'>[{pl['status']}]</span> "
+                                         f"<b>{tm}</b> {pl['name']} ({pl['pos']}) — "
+                                         f"{pl.get('detail','') or 'no detail'} "
+                                         f"<span style='color:#4b5e78'>impact est. {pl['impact']:.1f}pts</span>")
+                for n in research.get("inj_notes", []):
+                    inj_lines.insert(0, f"<b>{n}</b>")
+                if not inj_lines:
+                    inj_lines = ["No injury data retrieved from ESPN (may not be available yet for this week)"]
+                inj_html = _rl(inj_lines, "rl-inj", "🩺 Injury Report")
+
+                # Weather section
+                wx = research.get("weather", {})
+                wx_lines = []
+                if wx.get("dome"):
+                    wx_lines = ["🏟️ Indoor/Dome venue — no weather impact on scoring"]
+                elif wx.get("available"):
+                    wx_lines = [f"📍 {venue[:60]}",
+                                f"🌡️ {wx.get('lo',0):.0f}–{wx.get('hi',0):.0f}°F · {wx.get('condition','')}",
+                                f"💨 Wind: {wx.get('wind',0):.0f}mph · Precip: {wx.get('precip',0):.2f}\""]
+                    wx_lines += wx.get("notes", [])
+                    adj = wx.get("ou_adj", 0)
+                    if adj < 0:
+                        wx_lines.append(f"📉 Weather reduces scoring est. by {abs(adj):.1f}pts → lean {rp.get('ou','?')} {rp.get('total','?')}")
+                    else:
+                        wx_lines.append("✅ No meaningful weather impact on O/U")
+                else:
+                    err = wx.get("error","") or "Outside forecast window or venue coords unknown"
+                    wx_lines = [f"Weather data unavailable: {err}"]
+                if research.get("wx_note"):
+                    wx_lines.insert(0, research["wx_note"])
+                wx_html = _rl(wx_lines, "rl-wx", "🌤️ Weather Impact")
+
+                # Research-adjusted pick badges
+                rfa = rp.get("fa", p["fa"])
+                rfnm = g["away"] if rfa else g["home"]
+                rdnm = g["home"] if rfa else g["away"]
+                rml_fav = fml(rp.get("ml_away",p["ml_away"]) if rfa else rp.get("ml_home",p["ml_home"]))
+                rsp_fav = fsp(rp.get("sp_away",p["sp_away"]) if rfa else rp.get("sp_home",p["sp_home"]))
+                rtot = rp.get("total", p["total"]); rou = rp.get("ou", p["ou"])
+                rpa = rp.get("pa", p["pa"]); rph = rp.get("ph", p["ph"])
+                rmlC = rp.get("mlC", p["mlC"]); rmlG, rmlCls = grade(rmlC)
+                rspC = rp.get("spC", p["spC"]); rspG, rspCls = grade(rspC)
+                rttC = rp.get("ttC", p["ttC"]); rttG, rttCls = grade(rttC)
+                rou_cls = "over-c" if rou=="OVER" else "under-c"
+
+                pick_html = (
+                    "<div class='research-section' style='margin-bottom:6px'>"
+                    "<div class='research-lbl' style='color:#c8a800'>🎯 Research-Adjusted Picks</div>"
+                    + ("".join(f"<span class='adj-note'>{n}</span>" for n in research.get("inj_notes",[]))
+                       if research.get("inj_notes") else "")
+                    + (f"<span class='adj-note'>{research['wx_note']}</span>" if research.get("wx_note") else "")
+                    + "<div style='display:flex;flex-wrap:wrap;gap:4px;margin-top:6px'>"
+                    + f"<span class='pick-badge pick-ml'><span class='pick-gr-{rmlG.lower().replace('+','p')}' style='background:transparent'>{rmlG}</span> ML: {rfnm.split()[-1]} {rml_fav}</span>"
+                    + f"<span class='pick-badge pick-sp'>{rspG} Spread: {rfnm.split()[-1]} {rsp_fav}</span>"
+                    + f"<span class='pick-badge pick-ou'>{rttG} {rou} {rtot}</span>"
+                    + f"<span class='pick-badge' style='background:#1a1200;color:#c8a800;border:1px solid #c8a80044'>"
+                      f"Proj: {g['away'].split()[-1]} {rpa} – {rph} {g['home'].split()[-1]}</span>"
+                    + "</div></div>"
+                )
+
+                research_section = (
+                    "<div class='research-wrap'>"
+                    + pick_html
+                    + pvp_html + pvt_html + tvt_html + inj_html + wx_html
+                    + "</div>"
+                )
+
                 full_card=(
                     "<details>"
                     "<summary>"+g["away"]+" vs "+g["home"]+" &nbsp;▾ "+venue[:50]+"</summary>"
@@ -2146,6 +2293,7 @@ def render_div(div):
                       "<div class='ai-txt' style='color:#334155'>First meeting or insufficient history.</div></div>")
                     +"</div>"
                     +half_inner
+                    +research_section
                     +"</details>"
                 )
 
