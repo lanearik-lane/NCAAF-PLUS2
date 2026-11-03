@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-03T15:58:15+00:00",
+  "imported_at": "2026-11-03T21:41:12+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -8300,12 +8300,6 @@
         },
         {
           "team": "Southern Miss",
-          "player": "J. Himes Southern Miss",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Southern Miss",
           "player": "Z. Collins James Madison",
           "position": "WR",
           "status": "Questionable"
@@ -9854,21 +9848,27 @@
         },
         {
           "team": "Kansas State",
-          "player": "B. Barnett Kansas State",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Kansas State",
-          "player": "D. Duff Kansas State",
+          "player": "Avery Johnson Kansas State",
           "position": "QB",
           "status": "Out"
         },
         {
           "team": "Kansas State",
-          "player": "J. Knuth Kansas State",
+          "player": "Blake Barnett Kansas State",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Starting"
+        },
+        {
+          "team": "Kansas State",
+          "player": "Dillon Duff Kansas State",
+          "position": "QB",
+          "status": "Backup"
+        },
+        {
+          "team": "Kansas State",
+          "player": "Jacob Knuth Kansas State",
+          "position": "QB",
+          "status": "Out (Expected)"
         },
         {
           "team": "Kansas State",
