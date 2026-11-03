@@ -1633,13 +1633,106 @@ def fetch_live(week_num):
 def cached_research(away, home, venue, game_date, pred_key):
     """Cache research per game (30-min TTL). pred_key forces refresh on prediction change."""
     from research_engine import research_game
-    import json
     try:
-        # p is reconstructed from SCHEDULE + smart_predict — pass a lightweight snapshot
         p_snap = smart_predict(away, home, False, 10, allow_baseline=True) or {}
         return research_game(away, home, venue, game_date, p_snap)
     except Exception as exc:
         return {"pvp":[],"pvt":[],"tvt":[],"injuries":{},"inj_notes":[],"weather":{"available":False},"wx_note":"","adj_p":{},"error":str(exc)[:120]}
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def research_ml_vote(away: str, home: str) -> dict:
+    """
+    Run PvP / PvT / TvT matchup analysis and return a vote on ML winner.
+
+    Returns:
+      {
+        "winner": team_name,   # the team the research favors
+        "edge":   float,       # 0–3 pts extra edge to add to that team's raw_edge
+        "reason": str,         # short explanation shown in the pick badge
+      }
+    """
+    try:
+        from research_engine import (get_player_data, player_vs_player,
+                                      player_vs_team, team_vs_team)
+        adb = get_player_data(away)
+        hdb = get_player_data(home)
+        p_snap = smart_predict(away, home, False, 10, allow_baseline=True) or {}
+
+        # ── tally votes: +1 = away wins matchup, -1 = home wins matchup ──
+        votes = 0
+        reasons = []
+
+        # PvP — QB duel: better passer wins
+        a_pass = adb.get("pass_yds", 220)
+        h_pass = hdb.get("pass_yds", 220)
+        if abs(a_pass - h_pass) >= 25:
+            if a_pass > h_pass:
+                votes += 1
+                reasons.append(f"QB edge: {adb.get('QB',away+' QB')} ({a_pass} pass yds/g)")
+            else:
+                votes -= 1
+                reasons.append(f"QB edge: {hdb.get('QB',home+' QB')} ({h_pass} pass yds/g)")
+
+        # PvP — RB vs pass-rush: rush yards vs sacks allowed
+        a_rush = adb.get("rush_yds", 145)
+        h_rush = hdb.get("rush_yds", 145)
+        h_sacks = hdb.get("sacks_per_game", 2.0)
+        a_sacks = adb.get("sacks_per_game", 2.0)
+        # away RB vs home D pressure
+        away_rush_wins = a_rush > 160 and h_sacks < 2.2
+        home_rush_wins = h_rush > 160 and a_sacks < 2.2
+        if away_rush_wins and not home_rush_wins:
+            votes += 1
+            reasons.append(f"Ground game: {adb.get('RB',away+' RB')} ({a_rush} rush yds/g)")
+        elif home_rush_wins and not away_rush_wins:
+            votes -= 1
+            reasons.append(f"Ground game: {hdb.get('RB',home+' RB')} ({h_rush} rush yds/g)")
+
+        # PvT — QB vs opposing D-rank
+        a_def = adb.get("def_rank", 40)
+        h_def = hdb.get("def_rank", 40)
+        # lower def_rank = better defense
+        if a_pass > 260 and h_def > 30:       # away QB exploits weak home D
+            votes += 1
+            reasons.append(f"PvT: {adb.get('QB',away+' QB')} vs #{h_def} ranked D")
+        elif h_pass > 260 and a_def > 30:      # home QB exploits weak away D
+            votes -= 1
+            reasons.append(f"PvT: {hdb.get('QB',home+' QB')} vs #{a_def} ranked D")
+
+        # TvT — PPG comparison
+        a_ppg = adb.get("points_per_game", 25)
+        h_ppg = hdb.get("points_per_game", 25)
+        if abs(a_ppg - h_ppg) >= 5:
+            if a_ppg > h_ppg:
+                votes += 1
+                reasons.append(f"Scoring: {away} {a_ppg} PPG vs {home} {h_ppg} PPG")
+            else:
+                votes -= 1
+                reasons.append(f"Scoring: {home} {h_ppg} PPG vs {away} {a_ppg} PPG")
+
+        # TvT — turnover margin
+        a_to = adb.get("to_per_game", 1.5)
+        h_to = hdb.get("to_per_game", 1.5)
+        if abs(a_to - h_to) >= 0.4:
+            if a_to < h_to:   # away turns it over less
+                votes += 1
+                reasons.append(f"Turnover edge: {away} ({a_to:.1f} TO/g vs {h_to:.1f})")
+            else:
+                votes -= 1
+                reasons.append(f"Turnover edge: {home} ({h_to:.1f} TO/g vs {a_to:.1f})")
+
+        # Convert vote total → edge pts (max ±3 pts nudge)
+        # Each clean vote = 0.7 pts; capped at 3
+        edge = min(3.0, abs(votes) * 0.7)
+        winner = away if votes > 0 else (home if votes < 0 else None)
+
+        # Trim reasons to top 2
+        top_reasons = reasons[:2]
+        reason_str = " · ".join(top_reasons) if top_reasons else "Matchups even"
+
+        return {"winner": winner, "edge": edge, "votes": votes, "reason": reason_str}
+    except Exception as exc:
+        return {"winner": None, "edge": 0.0, "votes": 0, "reason": str(exc)[:80]}
 
 # ── SIDEBAR ───────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -2028,12 +2121,68 @@ def render_div(div):
                 unsafe_allow_html=True)
             for g,p in _sg:
                 wpa=round(p["away_wp"]*100); wph=100-wpa
-                fa=p["fa"]; fnm=g["away"] if fa else g["home"]; dnm=g["home"] if fa else g["away"]
-                fav_ml=fml(p["ml_away"] if fa else p["ml_home"]); dog_ml=fml(p["ml_home"] if fa else p["ml_away"])
+
+                # ── Research vote: PvP / PvT / TvT nudge on ML ───────────
+                rv = research_ml_vote(g["away"], g["home"])
+                rv_winner = rv.get("winner")    # team name or None
+                rv_edge   = rv.get("edge", 0.0) # pts extra for that team
+                rv_reason = rv.get("reason","")
+                rv_votes  = rv.get("votes", 0)
+
+                # Re-derive win probs with research nudge applied
+                import math as _math
+                _a_wp_raw = p.get("away_wp", 0.5)
+                _h_wp_raw = p.get("home_wp", 0.5)
+                if rv_winner == g["away"] and rv_edge > 0:
+                    # convert edge pts to logit nudge (same k=0.13 as smart_predict)
+                    _nudge = rv_edge * 0.13
+                    _raw_logit = _math.log(_a_wp_raw / max(0.001, 1 - _a_wp_raw))
+                    _new_awp = 1 / (1 + _math.exp(-(_raw_logit + _nudge)))
+                    _new_hwp = 1 - _new_awp
+                elif rv_winner == g["home"] and rv_edge > 0:
+                    _nudge = rv_edge * 0.13
+                    _raw_logit = _math.log(_h_wp_raw / max(0.001, 1 - _h_wp_raw))
+                    _new_hwp = 1 / (1 + _math.exp(-(_raw_logit + _nudge)))
+                    _new_awp = 1 - _new_hwp
+                else:
+                    _new_awp, _new_hwp = _a_wp_raw, _h_wp_raw
+
+                # Recompute ML from adjusted WPs
+                def _wp2ml(wp):
+                    if wp >= 0.999: return -9999
+                    if wp <= 0.001: return 9999
+                    if wp > 0.5:
+                        return -round((wp / (1 - wp)) * 110 / 10) * 10
+                    else:
+                        return round(((1 - wp) / wp) * 110 / 10) * 10
+
+                _fa_adj = _new_awp >= _new_hwp  # True = away favored after research
+                _ml_away_adj = _wp2ml(_new_awp)
+                _ml_home_adj = _wp2ml(_new_hwp)
+                wpa=round(_new_awp*100); wph=100-wpa
+
+                fa=_fa_adj; fnm=g["away"] if fa else g["home"]; dnm=g["home"] if fa else g["away"]
+                fav_ml=fml(_ml_away_adj if fa else _ml_home_adj)
+                dog_ml=fml(_ml_home_adj if fa else _ml_away_adj)
                 fav_sp=fsp(p["sp_away"] if fa else p["sp_home"])
                 mlG,mlC=grade(p["mlC"]); spG,spC=grade(p["spC"]); ttG,ttC=grade(p["ttC"])
                 ou_cls="over-c" if p["ou"]=="OVER" else "under-c"
                 mv_cls="mv-s" if "Sharp" in p["mv"] else("mv-p" if "Public" in p["mv"] else "mv-n")
+
+                # Research indicator badge (shows in ML box)
+                _orig_fa = p["fa"]
+                _flipped = (_fa_adj != _orig_fa)
+                if rv_winner and rv_edge >= 0.7:
+                    _rv_badge = (
+                        f"<span style='font-size:.42rem;font-weight:700;"
+                        f"color:{'#f59e0b' if _flipped else '#4ade80'};"
+                        f"display:block;margin-top:2px'>"
+                        f"{'⚡ Research flip → ' if _flipped else '✓ Research confirms '}"
+                        f"{rv_winner.split()[-1]}"
+                        f"</span>"
+                    )
+                else:
+                    _rv_badge = ""
 
                 # Rankings
                 a_rank=g.get("away_rank","") or (str(AP_RANKS[g["away"]]) if g["away"] in AP_RANKS else "")
@@ -2085,7 +2234,8 @@ def render_div(div):
                     "<div class='odds-pick fav-c'>"+fnm.split()[-1]+" "+fav_ml+"</div>"
                     "<div class='odds-dog'>"+dnm.split()[-1]+" "+dog_ml+"</div>"
                     "<div class='odds-sm'>"+str(p["pa"])+"–"+str(p["ph"])+"</div>"
-                    "<div class='odds-sm'>"+("Generic baseline · PASS" if p["mlC"] < 0 else "Unvalidated estimate")+"</div></div>"
+                    +_rv_badge+
+                    "<div class='odds-sm'>"+("Generic baseline · PASS" if p["mlC"] < 0 else "Matchup-adjusted pick")+"</div></div>"
                     "<div class='odds-box'>"
                     "<div class='odds-lbl'>Spread · Grade "+spG
                     +((" <span style='font-size:.42rem;color:#22c55e;font-weight:700'>Live</span>") if p.get("odds_src") else "")
