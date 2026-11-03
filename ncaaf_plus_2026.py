@@ -321,8 +321,8 @@ def smart_predict(away, home, neutral=False, week=0, allow_baseline=False):
     if (away is None or home is None) and not allow_baseline:
         return None
     baseline = [2.0, 60, 60, 0.50, 0.47, 0.00, 0.70]
-    a_db = TEAM_DB[away] if away else baseline
-    h_db = TEAM_DB[home] if home else baseline
+    a_db = TEAM_DB.get(away, baseline) if away else baseline
+    h_db = TEAM_DB.get(home, baseline) if home else baseline
     away = away or original_away
     home = home or original_home
     a_sp,a_off,a_def,a_ath,a_ata,a_cch,a_sos = a_db
@@ -1486,7 +1486,8 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### 🏅 AP Top 10")
     for team,rank in sorted(AP_RANKS.items(),key=lambda x:x[1])[:10]:
-        sp=get_db(team)[0]
+        db=get_db(team)
+        sp=db[0] if db else "—"
         st.markdown(f"<span style='font-size:.66rem;color:#94a3b8'>#"+str(rank)+" "+team
                     +f" <span style='color:#38bdf8;font-size:.58rem'>SP+{sp}</span></span>",unsafe_allow_html=True)
     st.markdown("---")
