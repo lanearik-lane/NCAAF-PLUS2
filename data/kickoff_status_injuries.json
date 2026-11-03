@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-03T07:42:49+00:00",
+  "imported_at": "2026-11-03T15:58:15+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -8175,7 +8175,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-05-james-madison-at-southern-miss/",
       "game_date": "2026-11-05",
       "title": "James Madison at Southern Miss Injury Report — Week 10",
-      "reported": "Mon Nov 2, 5:07 PM PT",
+      "reported": "Mon Nov 2, 9:17 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -8207,12 +8207,6 @@
           "player": "Noah Grevious",
           "position": "WR",
           "status": "Questionable"
-        },
-        {
-          "team": "Southern Miss",
-          "player": "Robert Briggs",
-          "position": "",
-          "status": "Out"
         },
         {
           "team": "Southern Miss",
@@ -8285,6 +8279,12 @@
           "player": "Ethan Hampton Southern Miss",
           "position": "QB",
           "status": "Probable"
+        },
+        {
+          "team": "Southern Miss",
+          "player": "Robert Briggs",
+          "position": "RB",
+          "status": "Out"
         },
         {
           "team": "Southern Miss",
