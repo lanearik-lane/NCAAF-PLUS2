@@ -300,28 +300,23 @@ PLAYER_DB = {
                       "pass_yds":212,"rush_yds":148,"points_per_game":22.4,"def_rank":39,"sacks_per_game":1.7,"to_per_game":1.6},
 }
 
-def get_player_data(team: str) -> dict:
+def get_player_data(team: str, team_db: dict | None = None) -> dict:
     """
     Return player data for a team. If not in PLAYER_DB, build an estimate
-    from TEAM_DB sp+ and off/def ranks so we never show zeroes.
+    from team_db (TEAM_DB passed in from the caller) so we never show zeroes
+    and never need to import the main app module (avoids circular imports).
     """
     if team in PLAYER_DB:
         return PLAYER_DB[team]
-    # Build fallback from TEAM_DB if possible
-    try:
-        from ncaaf_plus_2026 import TEAM_DB  # avoid circular at module level
-        db = TEAM_DB.get(team)
-    except Exception:
-        db = None
+    # Use caller-supplied TEAM_DB snapshot if available
+    db = (team_db or {}).get(team)
     if db:
         sp, off_rank, def_rank = db[0], db[1], db[2]
-        # Estimate stats from SP+ and off/def ranks
-        # off_rank 1=elite (60+ pts), 60=weak (18 pts). Scale linearly.
-        ppg = max(16, 42 - off_rank * 0.38)
+        ppg      = max(16,  42  - off_rank * 0.38)
         pass_yds = max(160, 320 - off_rank * 0.9)
-        rush_yds = max(90, 200 - off_rank * 0.5)
-        sacks = max(1.2, 3.4 - def_rank * 0.02)
-        to = min(2.0, 0.7 + def_rank * 0.015)
+        rush_yds = max(90,  200 - off_rank * 0.5)
+        sacks    = max(1.2, 3.4 - def_rank * 0.02)
+        to       = min(2.0, 0.7 + def_rank * 0.015)
         return {
             "QB": f"{team} QB", "RB": f"{team} RB", "WR": f"{team} WR",
             "pass_yds": round(pass_yds), "rush_yds": round(rush_yds),

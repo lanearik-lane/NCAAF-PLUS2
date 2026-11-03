@@ -1639,7 +1639,6 @@ def cached_research(away, home, venue, game_date, pred_key):
     except Exception as exc:
         return {"pvp":[],"pvt":[],"tvt":[],"injuries":{},"inj_notes":[],"weather":{"available":False},"wx_note":"","adj_p":{},"error":str(exc)[:120]}
 
-@st.cache_data(ttl=1800, show_spinner=False)
 def research_ml_vote(away: str, home: str) -> dict:
     """
     Run PvP / PvT / TvT matchup analysis and return a vote on ML winner.
@@ -1652,10 +1651,9 @@ def research_ml_vote(away: str, home: str) -> dict:
       }
     """
     try:
-        from research_engine import (get_player_data, player_vs_player,
-                                      player_vs_team, team_vs_team)
-        adb = get_player_data(away)
-        hdb = get_player_data(home)
+        from research_engine import get_player_data
+        adb = get_player_data(away, team_db=TEAM_DB)
+        hdb = get_player_data(home, team_db=TEAM_DB)
         p_snap = smart_predict(away, home, False, 10, allow_baseline=True) or {}
 
         # ── tally votes: +1 = away wins matchup, -1 = home wins matchup ──
