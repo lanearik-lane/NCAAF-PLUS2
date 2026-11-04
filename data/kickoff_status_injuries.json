@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-03T21:41:12+00:00",
+  "imported_at": "2026-11-04T01:59:27+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -7890,14 +7890,134 @@
       "url": "https://kickoffstatus.com/games/2026-11-03-buffalo-at-miami-oh/",
       "game_date": "2026-11-03",
       "title": "Buffalo at Miami (OH) Injury Report — Week 10",
-      "reported": null,
+      "reported": "Tue Nov 3, 4:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Buffalo",
+          "player": "Ramari Taylor",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Charlton Goodell",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jacari Bennett",
+          "position": "EDG",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "DJ Mangan",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jack Garbolino",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Mathew Hilty",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Nino Francavilla",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Elijah Holmes",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jake Forburger",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Dylan Cleary",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Zae Jennings",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Alvin Jones III",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jeremiah Watkins",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Mark-Anthony Scott, Jr.",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Adrian Walker Jr.",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Max Deckard",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Anthony Ludington",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Greg Smith Jr.",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Shaun Shahu",
+          "position": "OL",
+          "status": "Out"
+        },
         {
           "team": "Miami (OH)",
           "player": "Caleb Heavner Miami (OH)",
           "position": "QB",
           "status": "Expected To Start"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "David McComb",
+          "position": "QB",
+          "status": "Out"
         },
         {
           "team": "Miami (OH)",
@@ -7919,9 +8039,39 @@
         },
         {
           "team": "Miami (OH)",
+          "player": "Thomas Gotkowski",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Cade Yacamelli",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Miami (OH)",
           "player": "T. Shelton Jr. Buffalo",
           "position": "RB",
           "status": "Questionable"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Brayden Boeing",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Eric Karner",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Trey Zvonar",
+          "position": "TE",
+          "status": "Out"
         },
         {
           "team": "Miami (OH)",
@@ -7937,7 +8087,19 @@
         },
         {
           "team": "Miami (OH)",
+          "player": "Devin Hyatt",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
           "player": "D. Hyatt Miami (OH)",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Keith Reynolds",
           "position": "WR",
           "status": "Out"
         },
@@ -7953,9 +8115,45 @@
       "url": "https://kickoffstatus.com/games/2026-11-03-ohio-at-akron/",
       "game_date": "2026-11-03",
       "title": "Ohio at Akron Injury Report — Week 10",
-      "reported": null,
+      "reported": "Tue Nov 3, 3:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Akron",
+          "player": "Catrell White",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Iesa Jarmon",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Omari Abor",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Logan Hindmarch",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Malakai Ross-Graves",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Gavin James",
+          "position": "LB",
+          "status": "Out"
+        },
         {
           "team": "Akron",
           "player": "C. Broughton Akron",
@@ -7970,7 +8168,19 @@
         },
         {
           "team": "Akron",
+          "player": "Semaj Beals",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
           "player": "C. Gee Akron",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Chris Gee",
           "position": "RB",
           "status": "Out"
         },
@@ -7982,7 +8192,37 @@
         },
         {
           "team": "Akron",
+          "player": "Daymon David",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Elijah Alexander",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Cameron Monteiro",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
           "player": "L. Sivon Akron",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Luke Sivon",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Paul Davis",
           "position": "WR",
           "status": "Out"
         },
@@ -7991,6 +8231,78 @@
           "player": "R. Neer Ohio",
           "position": "WR",
           "status": "Questionable"
+        },
+        {
+          "team": "Ohio",
+          "player": "Will Hryszko",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Cody Raymond",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Will Odenthal",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Andrew Vera",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Eli Thompson",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Ryan Miller",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Tony Mathis",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Ian Ver Steeg",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Kaden Page",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Marcus Cain",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Rashad Perry",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Ohio",
+          "player": "Zach Hackleman",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
@@ -8325,9 +8637,15 @@
       "url": "https://kickoffstatus.com/games/2026-11-06-nebraska-at-illinois/",
       "game_date": "2026-11-06",
       "title": "Nebraska at Illinois Injury Report — Week 10",
-      "reported": null,
+      "reported": "Tue Nov 3, 5:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Illinois",
+          "player": "Tywan Cox",
+          "position": "DB",
+          "status": "Out"
+        },
         {
           "team": "Illinois",
           "player": "A. Jones Jr. Nebraska",
@@ -8336,9 +8654,45 @@
         },
         {
           "team": "Illinois",
+          "player": "Carter Smith",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "Demetrius John",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "Grant Beerman",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "Kai Pritchard",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "TJ McMillen",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
           "player": "Katin Houser Illinois",
           "position": "QB",
           "status": "Returned"
+        },
+        {
+          "team": "Illinois",
+          "player": "Ca'Lil Valentine",
+          "position": "RB",
+          "status": "Out"
         },
         {
           "team": "Illinois",
@@ -8360,7 +8714,19 @@
         },
         {
           "team": "Illinois",
+          "player": "BJ Thurman",
+          "position": "TE",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Illinois",
           "player": "A. Perry Illinois",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "Jayshon Platt",
           "position": "WR",
           "status": "Out"
         },
@@ -8381,6 +8747,60 @@
           "player": "L. Miles Nebraska",
           "position": "WR",
           "status": "Questionable"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Jamir Conn",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Kahmir Prescott",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Anthony Jones Jr.",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Gabe Moore",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Jacob Bower",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Jase Reynolds",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Gunnar Gottula",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Vincent Genatone",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Larry Miles",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
