@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-04T08:59:17+00:00",
+  "imported_at": "2026-11-04T17:04:59+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -8317,7 +8317,7 @@
           "team": "UMass",
           "player": "William Watson III UMass",
           "position": "QB",
-          "status": "Returned"
+          "status": "Expected To Play"
         },
         {
           "team": "UMass",
@@ -8380,7 +8380,7 @@
           "team": "Eastern Michigan",
           "player": "Jadyn Glasser Central Michigan",
           "position": "QB",
-          "status": "Expected To Start"
+          "status": "Starting"
         },
         {
           "team": "Eastern Michigan",
@@ -8433,6 +8433,12 @@
       "reported": null,
       "coverage": "report",
       "players": [
+        {
+          "team": "Sacramento State",
+          "player": "John Alan Richter Toledo",
+          "position": "QB",
+          "status": "Expected To Start"
+        },
         {
           "team": "Sacramento State",
           "player": "B. Collins Sacramento State",
@@ -8594,6 +8600,12 @@
         },
         {
           "team": "Southern Miss",
+          "player": "Landry Lyddy Southern Miss",
+          "position": "QB",
+          "status": "Starting"
+        },
+        {
+          "team": "Southern Miss",
           "player": "Robert Briggs",
           "position": "RB",
           "status": "Out"
@@ -8627,6 +8639,12 @@
       "players": [
         {
           "team": "Florida Atlantic",
+          "player": "Owen McCown UTSA",
+          "position": "QB",
+          "status": "Expected To Play"
+        },
+        {
+          "team": "Florida Atlantic",
           "player": "P. Cannon Florida Atlantic",
           "position": "TE",
           "status": "Questionable"
@@ -8648,12 +8666,6 @@
         },
         {
           "team": "Illinois",
-          "player": "A. Jones Jr. Nebraska",
-          "position": "DL",
-          "status": "Out"
-        },
-        {
-          "team": "Illinois",
           "player": "Carter Smith",
           "position": "DL",
           "status": "Out"
@@ -8663,6 +8675,12 @@
           "player": "Demetrius John",
           "position": "DL",
           "status": "Out"
+        },
+        {
+          "team": "Illinois",
+          "player": "R. Van Poppel Nebraska",
+          "position": "DL",
+          "status": "Questionable"
         },
         {
           "team": "Illinois",
@@ -8738,13 +8756,7 @@
         },
         {
           "team": "Illinois",
-          "player": "J. Platt Illinois",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Illinois",
-          "player": "L. Miles Nebraska",
+          "player": "J. Harvey Illinois",
           "position": "WR",
           "status": "Questionable"
         },
@@ -8969,12 +8981,6 @@
         },
         {
           "team": "Arizona",
-          "player": "C. Rusk Arizona",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Arizona",
           "player": "Shane King",
           "position": "TE",
           "status": "Out"
@@ -9122,6 +9128,18 @@
         },
         {
           "team": "SMU",
+          "player": "B. Meadows Virginia Tech",
+          "position": "OG",
+          "status": "Questionable"
+        },
+        {
+          "team": "SMU",
+          "player": "K. Altuner Virginia Tech",
+          "position": "OG",
+          "status": "Questionable"
+        },
+        {
+          "team": "SMU",
           "player": "Abel Hoopii",
           "position": "OL",
           "status": "Out"
@@ -9173,18 +9191,6 @@
           "player": "C. Reed SMU",
           "position": "WR",
           "status": "Questionable"
-        },
-        {
-          "team": "SMU",
-          "player": "L. Stuewe Virginia Tech",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "SMU",
-          "player": "S. Peterkin Virginia Tech",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "SMU",
@@ -9475,7 +9481,7 @@
           "team": "Utah",
           "player": "L. Martin BYU",
           "position": "RB",
-          "status": "Out"
+          "status": "Questionable"
         },
         {
           "team": "Utah",
@@ -9638,6 +9644,18 @@
           "player": "W. Helton Arizona State",
           "position": "OG",
           "status": "Out"
+        },
+        {
+          "team": "Arizona State",
+          "player": "J. Lewis Colorado",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Arizona State",
+          "player": "M. Keene Arizona State",
+          "position": "QB",
+          "status": "Questionable"
         },
         {
           "team": "Arizona State",
@@ -11373,6 +11391,30 @@
           "status": "Questionable"
         }
       ]
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-10-kent-state-at-bowling-green/",
+      "game_date": "2026-11-10",
+      "title": "Kent State at Bowling Green Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-10-ohio-at-miami-oh/",
+      "game_date": "2026-11-10",
+      "title": "Ohio at Miami (OH) Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-10-western-michigan-at-akron/",
+      "game_date": "2026-11-10",
+      "title": "Western Michigan at Akron Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
     }
   ]
 }
