@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-06T10:32:28+00:00",
+  "imported_at": "2026-11-06T17:51:16+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -10226,12 +10226,6 @@
         },
         {
           "team": "LSU",
-          "player": "T. Green LSU",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "LSU",
           "player": "A. Walker Alabama",
           "position": "WR",
           "status": "Out"
@@ -10609,6 +10603,12 @@
           "team": "Utah",
           "player": "Isaiah Garcia",
           "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Utah",
+          "player": "S. Moa BYU",
+          "position": "RB",
           "status": "Out"
         },
         {
@@ -10991,9 +10991,15 @@
         },
         {
           "team": "Arizona State",
-          "player": "J. Lewis Colorado",
+          "player": "Jake Fette Arizona State",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Starting"
+        },
+        {
+          "team": "Arizona State",
+          "player": "Julian Lewis Colorado",
+          "position": "QB",
+          "status": "Out"
         },
         {
           "team": "Arizona State",
@@ -11003,9 +11009,9 @@
         },
         {
           "team": "Arizona State",
-          "player": "M. Keene Arizona State",
+          "player": "Mikey Keene Arizona State",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Probable (Not Starting)"
         },
         {
           "team": "Arizona State",
@@ -12203,7 +12209,7 @@
         },
         {
           "team": "UTEP",
-          "player": "I. Jaramilla-Phe Hawai'i",
+          "player": "I. Jaramilla-Phe Hawaiʻi",
           "position": "QB",
           "status": "Out"
         },
@@ -12221,7 +12227,7 @@
         },
         {
           "team": "UTEP",
-          "player": "D. Heimuli Hawai'i",
+          "player": "D. Heimuli Hawaiʻi",
           "position": "WR",
           "status": "Out"
         },
@@ -12239,13 +12245,7 @@
         },
         {
           "team": "UTEP",
-          "player": "P. Ashlock Hawai'i",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "UTEP",
-          "player": "T. Griffiths Hawai'i",
+          "player": "T. Griffiths Hawaiʻi",
           "position": "WR",
           "status": "Out"
         }
@@ -13656,7 +13656,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-northern-illinois-at-san-jose-state/",
       "game_date": "2026-11-07",
       "title": "Northern Illinois at San José State Injury Report — Week 10",
-      "reported": "Thu Nov 5, 12:11 PM PT",
+      "reported": "Fri Nov 6, 9:03 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -13813,12 +13813,6 @@
           "team": "San José State",
           "player": "G. Weber Northern Illinois",
           "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "San José State",
-          "player": "C. Hoch San José State",
-          "position": "WR",
           "status": "Questionable"
         },
         {
@@ -14609,6 +14603,12 @@
       "players": [
         {
           "team": "North Texas",
+          "player": "Jacurri Brown Rice",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "North Texas",
           "player": "D. Clemens North Texas",
           "position": "TE",
           "status": "Questionable"
@@ -15107,12 +15107,6 @@
           "player": "Matt Fuller",
           "position": "RB",
           "status": "Out"
-        },
-        {
-          "team": "South Carolina",
-          "player": "A. Bethel-Roman Texas A&M",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "South Carolina",
@@ -16399,12 +16393,6 @@
         },
         {
           "team": "UNLV",
-          "player": "D. Irvin Jr. UNLV",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "UNLV",
           "player": "K. McGee UNLV",
           "position": "WR",
           "status": "Questionable"
@@ -16497,6 +16485,22 @@
       "url": "https://kickoffstatus.com/games/2026-11-11-umass-at-toledo/",
       "game_date": "2026-11-11",
       "title": "UMass at Toledo Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-12-louisiana-at-ul-monroe/",
+      "game_date": "2026-11-12",
+      "title": "Louisiana at UL Monroe Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-12-memphis-at-south-florida/",
+      "game_date": "2026-11-12",
+      "title": "Memphis at South Florida Injury Report — Week 11",
       "reported": null,
       "coverage": "pending",
       "players": []
