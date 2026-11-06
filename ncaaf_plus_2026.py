@@ -392,7 +392,7 @@ AP_RANKS = {
     "Iowa":21,"New Mexico":22,"South Carolina":23,"Arizona":24,"Florida":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 10, Nov 5) ─────────────
+# ── TEAM RECORDS (updated weekly — going into Week 10, Nov 6) ─────────────
 TEAM_RECORDS = {
     # AP Top 25
     "Miami":"8-0","Georgia":"7-1","Utah":"8-0","Notre Dame":"7-1","UCLA":"8-0",
@@ -419,7 +419,7 @@ TEAM_RECORDS = {
     "Pittsburgh":"4-5","Syracuse":"3-6","North Carolina":"4-5","Georgia Tech":"4-5",
     # American
     "Tulane":"6-3","Memphis":"5-4","Navy":"5-4","Army":"6-3","UAB":"5-4",
-    "ECU":"4-5","USF":"5-4","UTSA":"4-5","Florida Atlantic":"4-5","Tulsa":"3-6",
+    "ECU":"4-5","USF":"5-4","UTSA":"4-6","Florida Atlantic":"5-5","Tulsa":"3-6",
     "Rice":"4-5","North Texas":"4-5","Charlotte":"3-6","Temple":"2-7",
     "South Florida":"5-4","East Carolina":"4-5",
     # Sun Belt

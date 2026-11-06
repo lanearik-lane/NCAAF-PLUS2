@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-11-05T05:47:01.000Z",
-  "source": "Built-in Week 10 schedule (ESPN API unavailable; proxy restricted)",
+  "captured_at": "2026-11-06T05:49:35.000Z",
+  "source": "Built-in schedule (ESPN API blocked \u2014 extracted from ncaaf_plus_2026.py Week 10)",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "matchups": [
@@ -237,6 +237,83 @@
     },
     {
       "teams": [
+        "Delaware",
+        "Kennesaw State"
+      ],
+      "time": "Saturday, 3:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Western Kentucky",
+        "Middle Tennessee"
+      ],
+      "time": "Saturday, 3:30 pm EDT"
+    },
+    {
+      "teams": [
+        "Missouri State",
+        "FIU"
+      ],
+      "time": "Saturday, 4:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Sam Houston",
+        "Jacksonville State"
+      ],
+      "time": "Saturday, 7:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Liberty",
+        "New Mexico State"
+      ],
+      "time": "Saturday, 8:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Northern Illinois",
+        "San Jose State"
+      ],
+      "time": "Saturday, 4:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Boise State",
+        "Colorado State"
+      ],
+      "time": "Saturday, 6:00 pm EDT"
+    },
+    {
+      "teams": [
+        "Hawaii",
+        "UTEP"
+      ],
+      "time": "Saturday, 9:30 pm EDT"
+    },
+    {
+      "teams": [
+        "Wyoming",
+        "UNLV"
+      ],
+      "time": "Saturday, 10:30 pm EDT"
+    },
+    {
+      "teams": [
+        "Fresno State",
+        "Utah State"
+      ],
+      "time": "Saturday, 9:30 pm EDT"
+    },
+    {
+      "teams": [
+        "Texas State",
+        "Oregon State"
+      ],
+      "time": "Saturday, 10:30 pm EDT"
+    },
+    {
+      "teams": [
         "Texas",
         "Missouri"
       ],
@@ -335,122 +412,45 @@
     },
     {
       "teams": [
-        "Northern Illinois",
-        "San Jose State"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Boise State",
-        "Colorado State"
-      ],
-      "time": "Saturday, 6:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Hawaii",
-        "UTEP"
-      ],
-      "time": "Saturday, 9:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Wyoming",
-        "UNLV"
-      ],
-      "time": "Saturday, 10:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Fresno State",
-        "Utah State"
-      ],
-      "time": "Saturday, 9:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Texas State",
-        "Oregon State"
-      ],
-      "time": "Saturday, 10:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Delaware",
-        "Kennesaw State"
-      ],
-      "time": "Saturday, 3:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Western Kentucky",
-        "Middle Tennessee"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Missouri State",
-        "FIU"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Sam Houston",
-        "Jacksonville State"
-      ],
-      "time": "Saturday, 7:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Liberty",
-        "New Mexico State"
-      ],
-      "time": "Saturday, 8:00 pm EDT"
-    },
-    {
-      "teams": [
         "North Dakota St",
         "South Dakota St"
       ],
-      "time": "Saturday, 4:00 pm EDT"
+      "time": "4:00, PM EDT"
     },
     {
       "teams": [
         "Weber State",
         "Montana"
       ],
-      "time": "Saturday, 3:00 pm EDT"
+      "time": "3:00, PM EDT"
     },
     {
       "teams": [
         "Chattanooga",
         "Mercer"
       ],
-      "time": "Saturday, 6:00 pm EDT"
+      "time": "6:00, PM EDT"
     },
     {
       "teams": [
         "Ferris State",
         "Northwood"
       ],
-      "time": "Saturday, 1:00 pm EDT"
+      "time": "1:00, PM EDT"
     },
     {
       "teams": [
         "Mount Union",
         "Ohio Dominican"
       ],
-      "time": "Saturday, 1:00 pm EDT"
+      "time": "1:00, PM EDT"
     },
     {
       "teams": [
         "North Central",
         "Augustana SD"
       ],
-      "time": "Saturday, 12:00 pm EDT"
+      "time": "\u2014,  EDT"
     }
   ]
 }
