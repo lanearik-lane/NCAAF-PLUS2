@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-06T17:51:16+00:00",
+  "imported_at": "2026-11-06T22:51:41+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -9468,7 +9468,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-06-new-mexico-at-nevada/",
       "game_date": "2026-11-06",
       "title": "New Mexico at Nevada Injury Report — Week 10",
-      "reported": "Thu Nov 5, 10:40 AM PT",
+      "reported": "Fri Nov 6, 2:11 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -9627,14 +9627,44 @@
       "url": "https://kickoffstatus.com/games/2026-11-06-south-florida-at-east-carolina/",
       "game_date": "2026-11-06",
       "title": "South Florida at East Carolina Injury Report — Week 10",
-      "reported": null,
+      "reported": "Fri Nov 6, 2:30 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "East Carolina",
+          "player": "Ayden Duncanson",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
+          "player": "David Coleman Jr.",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
+          "player": "DeMarius Hines",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
+          "player": "Jaylen Bowden",
+          "position": "DB",
+          "status": "Out"
+        },
         {
           "team": "East Carolina",
           "player": "Michael Van Buren Jr. South Florida",
           "position": "QB",
           "status": "Unclear"
+        },
+        {
+          "team": "East Carolina",
+          "player": "Ismael Smith Flores",
+          "position": "TE",
+          "status": "Out"
         },
         {
           "team": "East Carolina",
@@ -9644,15 +9674,105 @@
         },
         {
           "team": "East Carolina",
+          "player": "Brock Spalding",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "East Carolina",
+          "player": "Dawson Quarterman",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
+          "player": "Dillon Lorick",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
           "player": "J. Alexis South Florida",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "East Carolina",
+          "player": "Jeremiah Melvin",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "East Carolina",
           "player": "JeyQuan Smith South Florida",
           "position": "WR",
           "status": "Unclear"
+        },
+        {
+          "team": "South Florida",
+          "player": "Iverson Garcia-Ponce",
+          "position": "NT",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Cash Hudson",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Ethan Green",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "South Florida",
+          "player": "Thomas Shrader",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Michael Van Buren Jr.",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "A'Mon Lane-Ganus",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Derrick \"Tre\" Nichols III",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "team": "South Florida",
+          "player": "Arhmad Branch",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Gabe Legrand",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "Jaden Alexis",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "South Florida",
+          "player": "JeyQuan Smith",
+          "position": "WR",
+          "status": "Questionable"
         }
       ]
     },
@@ -9849,7 +9969,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-06-virginia-tech-at-smu/",
       "game_date": "2026-11-06",
       "title": "Virginia Tech at SMU Injury Report — Week 10",
-      "reported": "Thu Nov 5, 6:00 PM PT",
+      "reported": "Fri Nov 6, 2:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -9928,7 +10048,7 @@
           "team": "SMU",
           "player": "Ahmaad Moses",
           "position": "S",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "SMU",
@@ -9970,7 +10090,7 @@
           "team": "Virginia Tech",
           "player": "Emmett Laws",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Virginia Tech",
