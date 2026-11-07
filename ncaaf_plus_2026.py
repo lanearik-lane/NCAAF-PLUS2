@@ -1622,7 +1622,7 @@ HEADS = {
     "Accept":"application/json","Origin":"https://www.espn.com","Referer":"https://www.espn.com/",
 }
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=120)
 def fetch_live(week_num):
     """Load the entire selected calendar week, not only ESPN's current day."""
     from weekly_schedule import load_week
@@ -1854,6 +1854,14 @@ except Exception as exc:
 if using_live:
     all_games = [dict(g) for g in live_games + live_fcs_games]
     all_games.sort(key=lambda g: g.get("kickoff", "9999"))
+    # If ESPN returned games but none match our prediction DB, fall back to SCHEDULE
+    if all_games and not any(
+        smart_predict(g["away"], g["home"], False, week_num, allow_baseline=True)
+        for g in all_games[:3]
+    ):
+        all_games = [dict(g) for g in SCHEDULE.get(week_num, [])]
+        api_src = "Built-in schedule (ESPN names unmatched)"
+        using_live = False
 else:
     # Fall back to static schedule — always shows the correct slate
     all_games = [dict(g) for g in SCHEDULE.get(week_num, [])]
