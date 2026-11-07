@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-07T16:10:33+00:00",
+  "imported_at": "2026-11-07T20:42:57+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -10157,45 +10157,21 @@
       "players": [
         {
           "team": "Army",
+          "player": "Cale Hellums Army",
+          "position": "QB",
+          "status": "Starting"
+        },
+        {
+          "team": "Army",
+          "player": "Evan Medders Air Force",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Army",
           "player": "L. Szarka Air Force",
           "position": "QB",
           "status": "Out For Season"
-        },
-        {
-          "team": "Army",
-          "player": "G. Stalfort Air Force",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Army",
-          "player": "P. Poloskey Army",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Army",
-          "player": "R. Boyle Army",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Army",
-          "player": "B. Anderson Army",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Army",
-          "player": "N. Dolbin Army",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Army",
-          "player": "S. Maiava-Alaimalo Air Force",
-          "position": "WR",
-          "status": "Questionable"
         }
       ]
     },
@@ -10203,7 +10179,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-alabama-at-lsu/",
       "game_date": "2026-11-07",
       "title": "Alabama at LSU Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:10 PM PT",
+      "reported": "Sat Nov 7, 11:00 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -10216,7 +10192,7 @@
           "team": "Alabama",
           "player": "Zabien Brown",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Alabama",
@@ -10228,7 +10204,7 @@
           "team": "Alabama",
           "player": "Terrance Green",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Alabama",
@@ -10258,37 +10234,37 @@
           "team": "Alabama",
           "player": "Racin Delgatty",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Alabama",
           "player": "William Sanders",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Alabama",
           "player": "Jett Thomalla",
           "position": "QB",
-          "status": "Doubtful"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Alabama",
           "player": "AK Dear",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Alabama",
           "player": "EJ Crowell",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Alabama",
           "player": "Ryan Coleman-Williams",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "LSU",
@@ -10318,7 +10294,7 @@
           "team": "LSU",
           "player": "Whit Weeks",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "LSU",
@@ -10348,7 +10324,7 @@
           "team": "LSU",
           "player": "Trey'Dez Green",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "LSU",
@@ -10380,7 +10356,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-arkansas-at-auburn/",
       "game_date": "2026-11-07",
       "title": "Arkansas at Auburn Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:10 PM PT",
+      "reported": "Sat Nov 7, 8:15 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -10393,19 +10369,19 @@
           "team": "Arkansas",
           "player": "Quincy Rhodes Jr.",
           "position": "DL",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Arkansas",
           "player": "Steven Soles Jr.",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Arkansas",
           "player": "Braylen Russell",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Arkansas",
@@ -10423,13 +10399,13 @@
           "team": "Arkansas",
           "player": "Chris Marshall",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Auburn",
           "player": "Andre Jordan Jr.",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Auburn",
@@ -10477,7 +10453,7 @@
           "team": "Auburn",
           "player": "Jeremiah Koger",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         }
       ]
     },
@@ -10761,26 +10737,128 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-charlotte-at-uab/",
       "game_date": "2026-11-07",
       "title": "Charlotte at UAB Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 10:30 AM PT",
       "coverage": "report",
       "players": [
         {
-          "team": "UAB",
-          "player": "J. Hoffman Charlotte",
+          "team": "Charlotte",
+          "player": "Devon St. Clair",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Zayden Laing-Taylor",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Calif Spencer",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Jamil Davis",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Jaylen Doss",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Kendal Brown",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Jerry Wall III",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Latrell Sellers",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Mathias Nielsen",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Chance Williams",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Charlotte",
+          "player": "Shelden Golliday",
           "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "Mykale Hrabowski",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "Nigel Tate",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "Colby Archie",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "Kyrik Mason",
+          "position": "OL",
           "status": "Questionable"
         },
         {
           "team": "UAB",
-          "player": "S. Golliday Charlotte",
-          "position": "WR",
+          "player": "Marlin Dean",
+          "position": "OLB",
           "status": "Questionable"
         },
         {
           "team": "UAB",
-          "player": "T. Boston Charlotte",
+          "player": "Antonio Ferguson",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "Jaylen Elder",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Out"
+        },
+        {
+          "team": "UAB",
+          "player": "No injuries reported Charlotte",
+          "position": "—",
+          "status": "None Reported"
+        },
+        {
+          "team": "UAB",
+          "player": "No injuries reported UAB",
+          "position": "—",
+          "status": "None Reported"
         }
       ]
     },
@@ -10788,7 +10866,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-cincinnati-at-houston/",
       "game_date": "2026-11-07",
       "title": "Cincinnati at Houston Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:00 PM PT",
+      "reported": "Sat Nov 7, 11:00 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -10807,7 +10885,7 @@
           "team": "Cincinnati",
           "player": "Simeon Coleman",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Cincinnati",
@@ -10819,7 +10897,7 @@
           "team": "Cincinnati",
           "player": "Taran Tyo",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Cincinnati",
@@ -10837,19 +10915,19 @@
           "team": "Houston",
           "player": "JD Rhym",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
           "player": "Keany Parks",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
           "player": "De'Marion Thomas",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
@@ -10885,7 +10963,7 @@
           "team": "Houston",
           "player": "Tyson Turner",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         }
       ]
     },
@@ -11259,9 +11337,75 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-delaware-at-kennesaw-state/",
       "game_date": "2026-11-07",
       "title": "Delaware at Kennesaw State Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 8:22 AM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Delaware",
+          "player": "Noah Frazier",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Delaware",
+          "player": "Colin Gallagher",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Delaware",
+          "player": "Greg Spiller",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Ja'Lyen Judson",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Kaleb Gray",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Tony Williams Jr.",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Zakir Abdul-Salaam",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Donovan Westmoreland",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Aidan Williams",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Enrico Maghelli",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Luke Duska",
+          "position": "OL",
+          "status": "Out"
+        },
         {
           "team": "Kennesaw State",
           "player": "G. Bullock Jr. Kennesaw State",
@@ -11285,6 +11429,12 @@
           "player": "Z. Booker Kennesaw State",
           "position": "WR",
           "status": "Questionable"
+        },
+        {
+          "team": "Kennesaw State",
+          "player": "Zion Booker",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
@@ -13746,14 +13896,62 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-missouri-state-at-fiu/",
       "game_date": "2026-11-07",
       "title": "Missouri State at FIU Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 9:17 AM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "FIU",
+          "player": "Jahmani Chin-Suer",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Kiyante Ingram",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Wesley Miller",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Dante Anderson",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Richard Nwaukoni",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Noah Sidan",
+          "position": "K",
+          "status": "Out"
+        },
         {
           "team": "FIU",
           "player": "N. Sidan FIU",
           "position": "K",
           "status": "Questionable"
+        },
+        {
+          "team": "FIU",
+          "player": "Oscar Colon",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Spencer Webb",
+          "position": "OL",
+          "status": "Out"
         },
         {
           "team": "FIU",
@@ -13781,6 +13979,18 @@
         },
         {
           "team": "FIU",
+          "player": "Ayden Passley",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
+          "player": "Davis Brown",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
           "player": "J. Rexroat Missouri State",
           "position": "TE",
           "status": "Questionable"
@@ -13793,9 +14003,63 @@
         },
         {
           "team": "FIU",
+          "player": "Greg Gaines",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "FIU",
           "player": "M. Miller Missouri State",
           "position": "WR",
           "status": "Questionable"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Dylan Dixson",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Kellen Lindstrom",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Malachi Madison",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Markell Chapman",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Heiko Malone",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Josh Joyner",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Brycen Dorsey",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri State",
+          "player": "Sean Reese",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
@@ -13848,20 +14112,32 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-northern-illinois-at-san-jose-state/",
       "game_date": "2026-11-07",
       "title": "Northern Illinois at San José State Injury Report — Week 10",
-      "reported": "Sat Nov 7, 7:11 AM PT",
+      "reported": "Sat Nov 7, 8:33 AM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Northern Illinois",
           "player": "Dev'ion Reynolds",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Northern Illinois",
           "player": "Cole Latimer",
           "position": "DB",
           "status": "Out"
+        },
+        {
+          "team": "Northern Illinois",
+          "player": "Darrius Summers III",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "Northern Illinois",
+          "player": "James Bradley",
+          "position": "DE",
+          "status": "Questionable"
         },
         {
           "team": "Northern Illinois",
@@ -13874,6 +14150,12 @@
           "player": "Joseph Nnamuchi",
           "position": "DE",
           "status": "Questionable"
+        },
+        {
+          "team": "Northern Illinois",
+          "player": "JT King",
+          "position": "DE",
+          "status": "Out"
         },
         {
           "team": "Northern Illinois",
@@ -13891,7 +14173,7 @@
           "team": "Northern Illinois",
           "player": "Montrel Canion",
           "position": "DT",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "Northern Illinois",
@@ -13921,7 +14203,7 @@
           "team": "Northern Illinois",
           "player": "Luke Skartvedt",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Northern Illinois",
@@ -13933,13 +14215,19 @@
           "team": "Northern Illinois",
           "player": "Tyler Chambers",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Northern Illinois",
           "player": "Bryshawn Brown",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Out"
+        },
+        {
+          "team": "Northern Illinois",
+          "player": "Triston White",
+          "position": "RB",
+          "status": "Out"
         },
         {
           "team": "Northern Illinois",
@@ -13955,9 +14243,15 @@
         },
         {
           "team": "Northern Illinois",
+          "player": "Jermaine Green Jr",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Northern Illinois",
           "player": "Rickey Taylor Jr.",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "San José State",
@@ -14023,7 +14317,7 @@
           "team": "San José State",
           "player": "Jase Nix",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Out"
         }
       ]
     },
@@ -14190,26 +14484,26 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-oklahoma-state-at-kansas-state/",
       "game_date": "2026-11-07",
       "title": "Oklahoma State at Kansas State Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:00 PM PT",
+      "reported": "Sat Nov 7, 8:30 AM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Kansas State",
           "player": "Eli Jackson",
           "position": "DT",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Kansas State",
           "player": "DJ Ackerson Jr.",
           "position": "LB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Kansas State",
           "player": "Sawyer Schilke",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Kansas State",
@@ -14263,7 +14557,7 @@
           "team": "Kansas State",
           "player": "Koy Beasley",
           "position": "S",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Kansas State",
@@ -14275,7 +14569,7 @@
           "team": "Kansas State",
           "player": "Lawson McGraw",
           "position": "TE",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Kansas State",
@@ -14442,14 +14736,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-oregon-at-ohio-state/",
       "game_date": "2026-11-07",
       "title": "Oregon at Ohio State Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:00 PM PT",
+      "reported": "Sat Nov 7, 10:30 AM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Ohio State",
           "player": "Eli Lee",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Ohio State",
@@ -14521,13 +14815,13 @@
           "team": "Ohio State",
           "player": "Brandon Inniss",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Ohio State",
           "player": "Brock Boyd",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Ohio State",
@@ -14599,7 +14893,7 @@
           "team": "Oregon",
           "player": "Jeremiah McClellan",
           "position": "WR",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oregon",
@@ -14613,7 +14907,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-penn-state-at-washington/",
       "game_date": "2026-11-07",
       "title": "Penn State at Washington Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:00 PM PT",
+      "reported": "Sat Nov 7, 10:30 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -14638,7 +14932,7 @@
           "team": "Penn State",
           "player": "Armstrong Nnodim",
           "position": "DT",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Penn State",
@@ -14656,13 +14950,13 @@
           "team": "Penn State",
           "player": "Malachi Goodman",
           "position": "OL",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Penn State",
           "player": "Chase Sowell",
           "position": "WR",
-          "status": "Probable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Penn State",
@@ -14674,7 +14968,7 @@
           "team": "Penn State",
           "player": "Zay Robinson",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Washington",
@@ -14692,43 +14986,43 @@
           "team": "Washington",
           "player": "Ramzak Fruean",
           "position": "EDG",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Xe'ree Alexander",
           "position": "LB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Champ Taulealea",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Geirean Hatchett",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Jack Shaffer",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Justin Hylkema",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
           "player": "Kolt Dieterich",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
@@ -14776,7 +15070,7 @@
           "team": "Washington",
           "player": "Alex McLaughlin",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Washington",
@@ -14796,62 +15090,170 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-rice-at-north-texas/",
       "game_date": "2026-11-07",
       "title": "Rice at North Texas Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 11:00 AM PT",
       "coverage": "report",
       "players": [
         {
           "team": "North Texas",
+          "player": "Caden Jenkins",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Zach Johnson",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Avion Carter",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Grady Holmes",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Kailer Pettijohn",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Depth chart Rice",
+          "position": "OL/WR",
+          "status": "Lineup Change"
+        },
+        {
+          "team": "North Texas",
+          "player": "Chaston Ditta",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
           "player": "Jacurri Brown Rice",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Expected To Play"
         },
         {
           "team": "North Texas",
-          "player": "D. Clemens North Texas",
+          "player": "Colin Page",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Aaden Little",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Julian Knox Sr.",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "North Texas",
+          "player": "Drew Clemens",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "North Texas",
-          "player": "J. Falk Rice",
-          "position": "TE",
-          "status": "Questionable"
+          "player": "Corri Milliner",
+          "position": "WR",
+          "status": "Out"
         },
         {
           "team": "North Texas",
-          "player": "P. Zinter Rice",
-          "position": "TE",
-          "status": "Questionable"
+          "player": "Josiah Martin",
+          "position": "WR",
+          "status": "Out"
         },
         {
           "team": "North Texas",
-          "player": "V. Aderungboye North Texas",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "North Texas",
-          "player": "B. Grice Rice",
+          "player": "Kyle Koch",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "North Texas",
-          "player": "B. Jackson Jr. Rice",
-          "position": "WR",
+          "player": "No new injuries reported North Texas",
+          "position": "—",
+          "status": "None Reported"
+        },
+        {
+          "team": "Rice",
+          "player": "Tariq Watson",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Chibby Nwajuaku",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Clay Mitchell",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Cole Principe",
+          "position": "OL",
           "status": "Questionable"
         },
         {
-          "team": "North Texas",
-          "player": "C. Milliner North Texas",
-          "position": "WR",
-          "status": "Questionable"
+          "team": "Rice",
+          "player": "Ian Bothwell",
+          "position": "OL",
+          "status": "Out"
         },
         {
-          "team": "North Texas",
-          "player": "J. Tyre North Texas",
-          "position": "WR",
-          "status": "Questionable"
+          "team": "Rice",
+          "player": "Justin Powell",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Quinton Jackson",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Michael Amey III",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Ben Grice",
+          "position": "SL",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Jai Jacobs-Ford",
+          "position": "SL",
+          "status": "Out"
+        },
+        {
+          "team": "Rice",
+          "player": "Colten Cole",
+          "position": "TE",
+          "status": "Out"
         }
       ]
     },
@@ -14859,7 +15261,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-rutgers-at-wisconsin/",
       "game_date": "2026-11-07",
       "title": "Rutgers at Wisconsin Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:00 PM PT",
+      "reported": "Sat Nov 7, 11:15 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -14872,7 +15274,7 @@
           "team": "Rutgers",
           "player": "Kevin Levy",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Rutgers",
@@ -14890,19 +15292,19 @@
           "team": "Rutgers",
           "player": "Rondo Porter",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Rutgers",
           "player": "Dane Pizzaro",
           "position": "K",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Rutgers",
           "player": "Abram Wright",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Rutgers",
@@ -14914,7 +15316,7 @@
           "team": "Rutgers",
           "player": "Ty Morris",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Rutgers",
@@ -14938,7 +15340,7 @@
           "team": "Rutgers",
           "player": "Dyzier Carter",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Rutgers",
@@ -14956,7 +15358,7 @@
           "team": "Wisconsin",
           "player": "Barrett Nelson",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Wisconsin",
@@ -14980,7 +15382,7 @@
           "team": "Wisconsin",
           "player": "Nate Palmer",
           "position": "RB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Wisconsin",
@@ -15210,54 +15612,222 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-temple-at-navy/",
       "game_date": "2026-11-07",
       "title": "Temple at Navy Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 10:30 AM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Navy",
-          "player": "A. Sheppard Temple",
+          "player": "Sean Martin",
+          "position": "CB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Navy",
+          "player": "Matt Reyes",
+          "position": "DT",
+          "status": "Questionable"
+        },
+        {
+          "team": "Navy",
+          "player": "Chris Herock",
+          "position": "NG",
+          "status": "Questionable"
+        },
+        {
+          "team": "Navy",
+          "player": "Hoke Smith II",
+          "position": "OG",
+          "status": "Questionable"
+        },
+        {
+          "team": "Navy",
+          "player": "Ajani Sheppard Temple",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Navy",
-          "player": "J. Chalmers Navy",
+          "player": "Christian Cromer",
           "position": "RB",
           "status": "Out"
         },
         {
           "team": "Navy",
-          "player": "L. Walker Navy",
+          "player": "Sam Brown V Temple",
           "position": "RB",
-          "status": "Out"
+          "status": "Active"
         },
         {
           "team": "Navy",
-          "player": "S. Brown V Temple",
-          "position": "RB",
+          "player": "Aaron Rose",
+          "position": "S",
           "status": "Questionable"
         },
         {
           "team": "Navy",
-          "player": "J. Norris Navy",
+          "player": "Giuseppe Sessi",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "team": "Navy",
+          "player": "Matthew Seliga",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Navy",
+          "player": "Gavin Noe",
           "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Navy",
-          "player": "M. Barlow Navy",
-          "position": "TE",
           "status": "Out"
         },
         {
           "team": "Navy",
-          "player": "C. Logan Temple",
+          "player": "Peter Clarke Temple",
+          "position": "TE",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Navy",
+          "player": "Akeem Clark",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Navy",
+          "player": "Bash Bodily",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Navy",
+          "player": "Joshua Guerin",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Navy",
+          "player": "Joshua Guerin Navy",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "Navy",
-          "player": "R. Stocksdale Temple",
+          "player": "Truman Brasfield",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Devontae Ward-Grant",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Jett White",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Brandon Enarusai",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Kevin Hornbeak Jr.",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Eric Stuart",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Tyree Alualu",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Willy Love",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "John Watkins",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Kevin Terry",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Luke Watson",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Ajani Sheppard",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "De'Carlos Young",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Hunter Smith",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Sam Brown V",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Peter Clarke",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Kaegan Chambers",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Kenedy Uzoma",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Temple",
+          "player": "Rameir Hardy",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "Temple",
+          "player": "Zander Baptiste",
           "position": "WR",
           "status": "Out"
         }
@@ -15267,7 +15837,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-texas-a-m-at-south-carolina/",
       "game_date": "2026-11-07",
       "title": "Texas A&M at South Carolina Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:10 PM PT",
+      "reported": "Sat Nov 7, 10:30 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -15370,7 +15940,7 @@
           "team": "Texas A&M",
           "player": "KJ Edwards",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Texas A&M",
@@ -15825,7 +16395,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-ucf-at-kansas/",
       "game_date": "2026-11-07",
       "title": "UCF at Kansas Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:00 PM PT",
+      "reported": "Sat Nov 7, 11:15 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -15838,13 +16408,13 @@
           "team": "Kansas",
           "player": "Syeed Gibbs",
           "position": "CB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Kansas",
           "player": "David Santiago",
           "position": "DE",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Kansas",
@@ -15856,13 +16426,13 @@
           "team": "Kansas",
           "player": "Bam Crouch",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Kansas",
           "player": "Josh Galbreath",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Kansas",
@@ -15880,7 +16450,7 @@
           "team": "Kansas",
           "player": "Cole Ballard",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Kansas",
@@ -15904,7 +16474,7 @@
           "team": "Kansas",
           "player": "Jaden Harris",
           "position": "S",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Kansas",
@@ -15994,31 +16564,31 @@
           "team": "UCF",
           "player": "Ty Bartrum",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
           "player": "Bruno Dall",
           "position": "EDG",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
           "player": "Jayden Jennings",
           "position": "LB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
           "player": "Lewis Carter",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "UCF",
           "player": "Jacob Maiava",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "UCF",
@@ -16030,7 +16600,7 @@
           "team": "UCF",
           "player": "Alonza Barnett III",
           "position": "QB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
@@ -16042,13 +16612,13 @@
           "team": "UCF",
           "player": "Taevion Swint",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
           "player": "Caleb Rollerson",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         }
       ]
     },
@@ -16338,7 +16908,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-vanderbilt-at-mississippi-state/",
       "game_date": "2026-11-07",
       "title": "Vanderbilt at Mississippi State Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:10 PM PT",
+      "reported": "Sat Nov 7, 11:45 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -16369,7 +16939,7 @@
           "team": "Mississippi State",
           "player": "Tyler Lockhart",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Mississippi State",
@@ -16447,7 +17017,7 @@
           "team": "Vanderbilt",
           "player": "Khalil Poteat",
           "position": "EDG",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Vanderbilt",
@@ -16643,6 +17213,99 @@
       "players": []
     },
     {
+      "url": "https://kickoffstatus.com/games/2026-11-07-wku-at-mtsu/",
+      "game_date": "2026-11-07",
+      "title": "WKU at MTSU Injury Report — Week 10",
+      "reported": "Sat Nov 7, 9:10 AM PT",
+      "coverage": "report",
+      "players": [
+        {
+          "team": "MTSU",
+          "player": "Micah Smith",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "MTSU",
+          "player": "A. Boyd Western Kentucky",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "MTSU",
+          "player": "S. Baines Western Kentucky",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "MTSU",
+          "player": "Tayvion Galloway",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "MTSU",
+          "player": "T. Galloway Middle Tennessee",
+          "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "MTSU",
+          "player": "K. Hutchinson Western Kentucky",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "MTSU",
+          "player": "Landon Collins",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "MTSU",
+          "player": "N. Johnson Western Kentucky",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "MTSU",
+          "player": "Zaidyn Moore",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "WKU",
+          "player": "Nathan Gonzales",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "WKU",
+          "player": "Zayden Walters",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "WKU",
+          "player": "Zach Smith",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "WKU",
+          "player": "Sincere Baines",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "WKU",
+          "player": "Nigel Johnson",
+          "position": "WR",
+          "status": "Out"
+        }
+      ]
+    },
+    {
       "url": "https://kickoffstatus.com/games/2026-11-07-wyoming-at-unlv/",
       "game_date": "2026-11-07",
       "title": "Wyoming at UNLV Injury Report — Week 10",
@@ -16818,48 +17481,156 @@
       "game_date": "2026-11-10",
       "title": "Kent State at Bowling Green Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Bowling Green",
+          "player": "Terik Mulder Kent State",
+          "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "Bowling Green",
+          "player": "No injuries reported Bowling Green",
+          "position": "—",
+          "status": "None Reported"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-ohio-at-miami-oh/",
       "game_date": "2026-11-10",
       "title": "Ohio at Miami (OH) Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Miami (OH)",
+          "player": "Will Hryszko Ohio",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "David McComb Miami (OH)",
+          "position": "QB",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Cade Yacamelli Miami (OH)",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Brady Simmons Miami (OH)",
+          "position": "WR",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Devin Hyatt Miami (OH)",
+          "position": "WR",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-western-michigan-at-akron/",
       "game_date": "2026-11-10",
       "title": "Western Michigan at Akron Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Akron",
+          "player": "Jeremy Schleicher Western Michigan",
+          "position": "C",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Akron",
+          "player": "Noah Bishop Western Michigan",
+          "position": "DE",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Akron",
+          "player": "C. Broughton Akron",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Akron",
+          "player": "C. Gee / L. Sivon / J. Riggins Akron",
+          "position": "RB/WR",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Cameron Monteiro Akron",
+          "position": "WR",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-buffalo-at-ball-state/",
       "game_date": "2026-11-11",
       "title": "Buffalo at Ball State Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Ball State",
+          "player": "No injuries reported Buffalo",
+          "position": "—",
+          "status": "None Reported"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-sacramento-state-at-central-michigan/",
       "game_date": "2026-11-11",
       "title": "Sacramento State at Central Michigan Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Central Michigan",
+          "player": "Angel Flores Central Michigan",
+          "position": "QB",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Carson Conklin / Davion Godley / Kyle Koontz Sacramento State",
+          "position": "QB/RB/TE",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Langston Lewis / Xavier White Central Michigan",
+          "position": "WR/LB",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-umass-at-toledo/",
       "game_date": "2026-11-11",
       "title": "UMass at Toledo Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Toledo",
+          "player": "Kickoff info Toledo",
+          "position": "—",
+          "status": "Schedule"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-12-louisiana-at-ul-monroe/",
