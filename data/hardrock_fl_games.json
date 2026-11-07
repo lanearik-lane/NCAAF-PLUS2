@@ -1,456 +1,66 @@
 {
-  "captured_at": "2026-11-06T05:49:35.000Z",
-  "source": "Built-in schedule (ESPN API blocked \u2014 extracted from ncaaf_plus_2026.py Week 10)",
+  "captured_at": "2026-11-07T12:00:00.000Z",
+  "source": "CBS Sports / ESPN FBS Week 10 schedule (manual refresh — ESPN API blocked by proxy)",
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
   "matchups": [
-    {
-      "teams": [
-        "UTSA",
-        "Florida Atlantic"
-      ],
-      "time": "Thursday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "James Madison",
-        "Southern Miss"
-      ],
-      "time": "Thursday, 8:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Virginia Tech",
-        "SMU"
-      ],
-      "time": "Friday, 7:00 pm EDT"
-    },
-    {
-      "teams": [
-        "South Florida",
-        "East Carolina"
-      ],
-      "time": "Friday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Nebraska",
-        "Illinois"
-      ],
-      "time": "Friday, 8:00 pm EDT"
-    },
-    {
-      "teams": [
-        "New Mexico",
-        "Nevada"
-      ],
-      "time": "Friday, 9:00 pm EDT"
-    },
-    {
-      "teams": [
-        "TCU",
-        "Arizona"
-      ],
-      "time": "Friday, 10:15 pm EDT"
-    },
-    {
-      "teams": [
-        "Clemson",
-        "Syracuse"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Florida State",
-        "Boston College"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "North Carolina",
-        "UConn"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Duke",
-        "NC State"
-      ],
-      "time": "Saturday, 12:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Merrimack",
-        "Wake Forest"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Louisville",
-        "Georgia Tech"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Miami",
-        "Notre Dame"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Tulsa",
-        "Tulane"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Charlotte",
-        "UAB"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Temple",
-        "Navy"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Rice",
-        "North Texas"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Air Force",
-        "Army"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "BYU",
-        "Utah"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Iowa State",
-        "Baylor"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Oklahoma State",
-        "Kansas State"
-      ],
-      "time": "Saturday, 1:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Cincinnati",
-        "Houston"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "UCF",
-        "Kansas"
-      ],
-      "time": "Saturday, 3:45 pm EDT"
-    },
-    {
-      "teams": [
-        "Colorado",
-        "Arizona State"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "West Virginia",
-        "Texas Tech"
-      ],
-      "time": "Saturday, 9:30 pm EDT"
-    },
-    {
-      "teams": [
-        "UCLA",
-        "Minnesota"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Maryland",
-        "Purdue"
-      ],
-      "time": "Saturday, 12:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Oregon",
-        "Ohio State"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Penn State",
-        "Washington"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Rutgers",
-        "Wisconsin"
-      ],
-      "time": "Saturday, 4:15 pm EDT"
-    },
-    {
-      "teams": [
-        "Iowa",
-        "Northwestern"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Michigan State",
-        "Michigan"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Delaware",
-        "Kennesaw State"
-      ],
-      "time": "Saturday, 3:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Western Kentucky",
-        "Middle Tennessee"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Missouri State",
-        "FIU"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Sam Houston",
-        "Jacksonville State"
-      ],
-      "time": "Saturday, 7:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Liberty",
-        "New Mexico State"
-      ],
-      "time": "Saturday, 8:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Northern Illinois",
-        "San Jose State"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Boise State",
-        "Colorado State"
-      ],
-      "time": "Saturday, 6:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Hawaii",
-        "UTEP"
-      ],
-      "time": "Saturday, 9:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Wyoming",
-        "UNLV"
-      ],
-      "time": "Saturday, 10:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Fresno State",
-        "Utah State"
-      ],
-      "time": "Saturday, 9:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Texas State",
-        "Oregon State"
-      ],
-      "time": "Saturday, 10:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Texas",
-        "Missouri"
-      ],
-      "time": "Saturday, 12:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Arkansas",
-        "Auburn"
-      ],
-      "time": "Saturday, 12:45 pm EDT"
-    },
-    {
-      "teams": [
-        "Texas A&M",
-        "South Carolina"
-      ],
-      "time": "Saturday, 3:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Alabama",
-        "LSU"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Vanderbilt",
-        "Mississippi State"
-      ],
-      "time": "Saturday, 4:15 pm EDT"
-    },
-    {
-      "teams": [
-        "Kentucky",
-        "Tennessee"
-      ],
-      "time": "Saturday, 6:15 pm EDT"
-    },
-    {
-      "teams": [
-        "Georgia",
-        "Ole Miss"
-      ],
-      "time": "Saturday, 7:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Oklahoma",
-        "Florida"
-      ],
-      "time": "Saturday, 7:45 pm EDT"
-    },
-    {
-      "teams": [
-        "Old Dominion",
-        "Coastal Carolina"
-      ],
-      "time": "Saturday, 1:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Georgia State",
-        "Appalachian State"
-      ],
-      "time": "Saturday, 2:30 pm EDT"
-    },
-    {
-      "teams": [
-        "UL Monroe",
-        "Arkansas State"
-      ],
-      "time": "Saturday, 3:00 pm EDT"
-    },
-    {
-      "teams": [
-        "Marshall",
-        "Georgia Southern"
-      ],
-      "time": "Saturday, 3:30 pm EDT"
-    },
-    {
-      "teams": [
-        "Louisiana Tech",
-        "Troy"
-      ],
-      "time": "Saturday, 4:00 pm EDT"
-    },
-    {
-      "teams": [
-        "South Alabama",
-        "Louisiana"
-      ],
-      "time": "Saturday, 5:00 pm EDT"
-    },
-    {
-      "teams": [
-        "North Dakota St",
-        "South Dakota St"
-      ],
-      "time": "4:00, PM EDT"
-    },
-    {
-      "teams": [
-        "Weber State",
-        "Montana"
-      ],
-      "time": "3:00, PM EDT"
-    },
-    {
-      "teams": [
-        "Chattanooga",
-        "Mercer"
-      ],
-      "time": "6:00, PM EDT"
-    },
-    {
-      "teams": [
-        "Ferris State",
-        "Northwood"
-      ],
-      "time": "1:00, PM EDT"
-    },
-    {
-      "teams": [
-        "Mount Union",
-        "Ohio Dominican"
-      ],
-      "time": "1:00, PM EDT"
-    },
-    {
-      "teams": [
-        "North Central",
-        "Augustana SD"
-      ],
-      "time": "\u2014,  EDT"
-    }
+    {"teams": ["UTSA", "Florida Atlantic"],            "time": "Thursday, 7:30 pm EDT"},
+    {"teams": ["James Madison", "Southern Miss"],      "time": "Thursday, 8:00 pm EDT"},
+    {"teams": ["Virginia Tech", "SMU"],                "time": "Friday, 7:00 pm EDT"},
+    {"teams": ["South Florida", "East Carolina"],      "time": "Friday, 7:30 pm EDT"},
+    {"teams": ["Nebraska", "Illinois"],                "time": "Friday, 8:00 pm EDT"},
+    {"teams": ["New Mexico", "Nevada"],                "time": "Friday, 9:00 pm EDT"},
+    {"teams": ["TCU", "Arizona"],                      "time": "Friday, 10:15 pm EDT"},
+    {"teams": ["Iowa State", "Baylor"],                "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["BYU", "Utah"],                         "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["Clemson", "Syracuse"],                 "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["Florida State", "Boston College"],     "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["Tulsa", "Tulane"],                     "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["Texas", "Missouri"],                   "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["UCLA", "Minnesota"],                   "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["North Carolina", "UConn"],             "time": "Saturday, 12:00 pm EDT"},
+    {"teams": ["Maryland", "Purdue"],                  "time": "Saturday, 12:30 pm EDT"},
+    {"teams": ["Duke", "NC State"],                    "time": "Saturday, 12:30 pm EDT"},
+    {"teams": ["Arkansas", "Auburn"],                  "time": "Saturday, 12:45 pm EDT"},
+    {"teams": ["Oklahoma State", "Kansas State"],      "time": "Saturday, 1:00 pm EDT"},
+    {"teams": ["Old Dominion", "Coastal Carolina"],    "time": "Saturday, 1:00 pm EDT"},
+    {"teams": ["Georgia State", "Appalachian State"],  "time": "Saturday, 2:30 pm EDT"},
+    {"teams": ["Texas A&M", "South Carolina"],         "time": "Saturday, 3:00 pm EDT"},
+    {"teams": ["UL Monroe", "Arkansas State"],         "time": "Saturday, 3:00 pm EDT"},
+    {"teams": ["Delaware", "Kennesaw State"],          "time": "Saturday, 3:00 pm EDT"},
+    {"teams": ["Temple", "Navy"],                      "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Western Kentucky", "Middle Tennessee"],"time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Penn State", "Washington"],            "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Oregon", "Ohio State"],                "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Marshall", "Georgia Southern"],        "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Merrimack", "Wake Forest"],            "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Cincinnati", "Houston"],               "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Charlotte", "UAB"],                    "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["Alabama", "LSU"],                      "time": "Saturday, 3:30 pm EDT"},
+    {"teams": ["UCF", "Kansas"],                       "time": "Saturday, 3:45 pm EDT"},
+    {"teams": ["Rice", "North Texas"],                 "time": "Saturday, 4:00 pm EDT"},
+    {"teams": ["Northern Illinois", "San Jose State"], "time": "Saturday, 4:00 pm EDT"},
+    {"teams": ["Missouri State", "FIU"],               "time": "Saturday, 4:00 pm EDT"},
+    {"teams": ["Louisiana Tech", "Troy"],              "time": "Saturday, 4:00 pm EDT"},
+    {"teams": ["Vanderbilt", "Mississippi State"],     "time": "Saturday, 4:15 pm EDT"},
+    {"teams": ["Rutgers", "Wisconsin"],                "time": "Saturday, 4:15 pm EDT"},
+    {"teams": ["South Alabama", "Louisiana"],          "time": "Saturday, 5:00 pm EDT"},
+    {"teams": ["Boise State", "Colorado State"],       "time": "Saturday, 6:00 pm EDT"},
+    {"teams": ["Kentucky", "Tennessee"],               "time": "Saturday, 6:15 pm EDT"},
+    {"teams": ["Sam Houston", "Jacksonville State"],   "time": "Saturday, 7:00 pm EDT"},
+    {"teams": ["Georgia", "Ole Miss"],                 "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Michigan State", "Michigan"],          "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Miami", "Notre Dame"],                 "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Louisville", "Georgia Tech"],          "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Iowa", "Northwestern"],                "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Colorado", "Arizona State"],           "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Air Force", "Army"],                   "time": "Saturday, 7:30 pm EDT"},
+    {"teams": ["Oklahoma", "Florida"],                 "time": "Saturday, 7:45 pm EDT"},
+    {"teams": ["Liberty", "New Mexico State"],         "time": "Saturday, 8:00 pm EDT"},
+    {"teams": ["West Virginia", "Texas Tech"],         "time": "Saturday, 9:30 pm EDT"},
+    {"teams": ["Hawaii", "UTEP"],                      "time": "Saturday, 9:30 pm EDT"},
+    {"teams": ["Fresno State", "Utah State"],          "time": "Saturday, 9:30 pm EDT"},
+    {"teams": ["Wyoming", "UNLV"],                     "time": "Saturday, 10:30 pm EDT"},
+    {"teams": ["Texas State", "Oregon State"],         "time": "Saturday, 10:30 pm EDT"}
   ]
 }
