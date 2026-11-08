@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-08T14:15:04+00:00",
+  "imported_at": "2026-11-08T19:25:20+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -17793,48 +17793,180 @@
       "game_date": "2026-11-10",
       "title": "Kent State at Bowling Green Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Bowling Green",
+          "player": "Terik Mulder Kent State",
+          "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "Bowling Green",
+          "player": "No injuries reported Bowling Green",
+          "position": "—",
+          "status": "None Reported"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-ohio-at-miami-oh/",
       "game_date": "2026-11-10",
       "title": "Ohio at Miami (OH) Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Miami (OH)",
+          "player": "Will Hryszko Ohio",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "David McComb Miami (OH)",
+          "position": "QB",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Thomas Gotkowski Miami (OH)",
+          "position": "QB",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Cade Yacamelli Miami (OH)",
+          "position": "RB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Brady Simmons Miami (OH)",
+          "position": "WR",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Miami (OH)",
+          "player": "Devin Hyatt Miami (OH)",
+          "position": "WR",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-western-michigan-at-akron/",
       "game_date": "2026-11-10",
       "title": "Western Michigan at Akron Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Akron",
+          "player": "Jeremy Schleicher Western Michigan",
+          "position": "C",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Akron",
+          "player": "Noah Bishop Western Michigan",
+          "position": "DE",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Akron",
+          "player": "C. Broughton Akron",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Akron",
+          "player": "C. Gee / L. Sivon / J. Riggins Akron",
+          "position": "RB/WR",
+          "status": "Out"
+        },
+        {
+          "team": "Akron",
+          "player": "Cameron Monteiro Akron",
+          "position": "WR",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-buffalo-at-ball-state/",
       "game_date": "2026-11-11",
       "title": "Buffalo at Ball State Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Ball State",
+          "player": "No injuries reported Buffalo",
+          "position": "—",
+          "status": "None Reported"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-sacramento-state-at-central-michigan/",
       "game_date": "2026-11-11",
       "title": "Sacramento State at Central Michigan Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Central Michigan",
+          "player": "Grant Meadors Sacramento State",
+          "position": "K",
+          "status": "Questionable"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Angel Flores Central Michigan",
+          "position": "QB",
+          "status": "Out For Season"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Carson Conklin Sacramento State",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Jackson Sharman Sacramento State",
+          "position": "QB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Carson Conklin / Davion Godley / Kyle Koontz Sacramento State",
+          "position": "QB/RB/TE",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Langston Lewis / Xavier White Central Michigan",
+          "position": "WR/LB",
+          "status": "Out"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-umass-at-toledo/",
       "game_date": "2026-11-11",
       "title": "UMass at Toledo Injury Report — Week 11",
       "reported": null,
-      "coverage": "pending",
-      "players": []
+      "coverage": "report",
+      "players": [
+        {
+          "team": "Toledo",
+          "player": "Kickoff info Toledo",
+          "position": "—",
+          "status": "Schedule"
+        }
+      ]
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-12-louisiana-at-ul-monroe/",
