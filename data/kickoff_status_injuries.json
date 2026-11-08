@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-08T06:59:44+00:00",
+  "imported_at": "2026-11-08T14:15:04+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -17793,156 +17793,48 @@
       "game_date": "2026-11-10",
       "title": "Kent State at Bowling Green Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Bowling Green",
-          "player": "Terik Mulder Kent State",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Bowling Green",
-          "player": "No injuries reported Bowling Green",
-          "position": "—",
-          "status": "None Reported"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-ohio-at-miami-oh/",
       "game_date": "2026-11-10",
       "title": "Ohio at Miami (OH) Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Miami (OH)",
-          "player": "Will Hryszko Ohio",
-          "position": "K",
-          "status": "Out"
-        },
-        {
-          "team": "Miami (OH)",
-          "player": "David McComb Miami (OH)",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Miami (OH)",
-          "player": "Cade Yacamelli Miami (OH)",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Miami (OH)",
-          "player": "Brady Simmons Miami (OH)",
-          "position": "WR",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Miami (OH)",
-          "player": "Devin Hyatt Miami (OH)",
-          "position": "WR",
-          "status": "Out"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-10-western-michigan-at-akron/",
       "game_date": "2026-11-10",
       "title": "Western Michigan at Akron Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Akron",
-          "player": "Jeremy Schleicher Western Michigan",
-          "position": "C",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Akron",
-          "player": "Noah Bishop Western Michigan",
-          "position": "DE",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Akron",
-          "player": "C. Broughton Akron",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Akron",
-          "player": "C. Gee / L. Sivon / J. Riggins Akron",
-          "position": "RB/WR",
-          "status": "Out"
-        },
-        {
-          "team": "Akron",
-          "player": "Cameron Monteiro Akron",
-          "position": "WR",
-          "status": "Out"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-buffalo-at-ball-state/",
       "game_date": "2026-11-11",
       "title": "Buffalo at Ball State Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Ball State",
-          "player": "No injuries reported Buffalo",
-          "position": "—",
-          "status": "None Reported"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-sacramento-state-at-central-michigan/",
       "game_date": "2026-11-11",
       "title": "Sacramento State at Central Michigan Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Central Michigan",
-          "player": "Angel Flores Central Michigan",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Central Michigan",
-          "player": "Carson Conklin / Davion Godley / Kyle Koontz Sacramento State",
-          "position": "QB/RB/TE",
-          "status": "Out"
-        },
-        {
-          "team": "Central Michigan",
-          "player": "Langston Lewis / Xavier White Central Michigan",
-          "position": "WR/LB",
-          "status": "Out"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-11-umass-at-toledo/",
       "game_date": "2026-11-11",
       "title": "UMass at Toledo Injury Report — Week 11",
       "reported": null,
-      "coverage": "report",
-      "players": [
-        {
-          "team": "Toledo",
-          "player": "Kickoff info Toledo",
-          "position": "—",
-          "status": "Schedule"
-        }
-      ]
+      "coverage": "pending",
+      "players": []
     },
     {
       "url": "https://kickoffstatus.com/games/2026-11-12-louisiana-at-ul-monroe/",
@@ -17980,6 +17872,454 @@
       "url": "https://kickoffstatus.com/games/2026-11-13-illinois-at-ucla/",
       "game_date": "2026-11-13",
       "title": "Illinois at UCLA Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-alabama-at-vanderbilt/",
+      "game_date": "2026-11-14",
+      "title": "Alabama at Vanderbilt Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-app-state-at-marshall/",
+      "game_date": "2026-11-14",
+      "title": "App State at Marshall Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-arizona-state-at-ucf/",
+      "game_date": "2026-11-14",
+      "title": "Arizona State at UCF Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-arkansas-state-at-coastal-carolina/",
+      "game_date": "2026-11-14",
+      "title": "Arkansas State at Coastal Carolina Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-auburn-at-mississippi-state/",
+      "game_date": "2026-11-14",
+      "title": "Auburn at Mississippi State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-baylor-at-byu/",
+      "game_date": "2026-11-14",
+      "title": "Baylor at BYU Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-boston-college-at-notre-dame/",
+      "game_date": "2026-11-14",
+      "title": "Boston College at Notre Dame Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-california-at-virginia/",
+      "game_date": "2026-11-14",
+      "title": "California at Virginia Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-cincinnati-at-iowa-state/",
+      "game_date": "2026-11-14",
+      "title": "Cincinnati at Iowa State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-colorado-state-at-washington-state/",
+      "game_date": "2026-11-14",
+      "title": "Colorado State at Washington State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-duke-at-miami/",
+      "game_date": "2026-11-14",
+      "title": "Duke at Miami Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-east-carolina-at-charlotte/",
+      "game_date": "2026-11-14",
+      "title": "East Carolina at Charlotte Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-fiu-at-delaware/",
+      "game_date": "2026-11-14",
+      "title": "FIU at Delaware Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-florida-at-kentucky/",
+      "game_date": "2026-11-14",
+      "title": "Florida at Kentucky Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-florida-atlantic-at-tulsa/",
+      "game_date": "2026-11-14",
+      "title": "Florida Atlantic at Tulsa Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-fresno-state-at-texas-state/",
+      "game_date": "2026-11-14",
+      "title": "Fresno State at Texas State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-georgia-southern-at-georgia-state/",
+      "game_date": "2026-11-14",
+      "title": "Georgia Southern at Georgia State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-georgia-tech-at-clemson/",
+      "game_date": "2026-11-14",
+      "title": "Georgia Tech at Clemson Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-jacksonville-state-at-western-kentucky/",
+      "game_date": "2026-11-14",
+      "title": "Jacksonville State at Western Kentucky Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-james-madison-at-uconn/",
+      "game_date": "2026-11-14",
+      "title": "James Madison at UConn Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-kansas-at-west-virginia/",
+      "game_date": "2026-11-14",
+      "title": "Kansas at West Virginia Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-kansas-state-at-tcu/",
+      "game_date": "2026-11-14",
+      "title": "Kansas State at TCU Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-kennesaw-state-at-sam-houston/",
+      "game_date": "2026-11-14",
+      "title": "Kennesaw State at Sam Houston Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-louisville-at-north-carolina/",
+      "game_date": "2026-11-14",
+      "title": "Louisville at North Carolina Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-michigan-at-oregon/",
+      "game_date": "2026-11-14",
+      "title": "Michigan at Oregon Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-middle-tennessee-at-liberty/",
+      "game_date": "2026-11-14",
+      "title": "Middle Tennessee at Liberty Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-minnesota-at-penn-state/",
+      "game_date": "2026-11-14",
+      "title": "Minnesota at Penn State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-missouri-at-georgia/",
+      "game_date": "2026-11-14",
+      "title": "Missouri at Georgia Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-nebraska-at-rutgers/",
+      "game_date": "2026-11-14",
+      "title": "Nebraska at Rutgers Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-nevada-at-northern-illinois/",
+      "game_date": "2026-11-14",
+      "title": "Nevada at Northern Illinois Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-new-mexico-state-at-missouri-state/",
+      "game_date": "2026-11-14",
+      "title": "New Mexico State at Missouri State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-north-dakota-state-at-hawai-i/",
+      "game_date": "2026-11-14",
+      "title": "North Dakota State at Hawai'i Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-north-texas-at-utsa/",
+      "game_date": "2026-11-14",
+      "title": "North Texas at UTSA Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-northwestern-at-ohio-state/",
+      "game_date": "2026-11-14",
+      "title": "Northwestern at Ohio State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-ole-miss-at-oklahoma/",
+      "game_date": "2026-11-14",
+      "title": "Ole Miss at Oklahoma Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-oregon-state-at-boise-state/",
+      "game_date": "2026-11-14",
+      "title": "Oregon State at Boise State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-purdue-at-iowa/",
+      "game_date": "2026-11-14",
+      "title": "Purdue at Iowa Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-san-jose-state-at-air-force/",
+      "game_date": "2026-11-14",
+      "title": "San José State at Air Force Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-south-carolina-at-arkansas/",
+      "game_date": "2026-11-14",
+      "title": "South Carolina at Arkansas Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-southern-miss-at-louisiana-tech/",
+      "game_date": "2026-11-14",
+      "title": "Southern Miss at Louisiana Tech Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-stanford-at-virginia-tech/",
+      "game_date": "2026-11-14",
+      "title": "Stanford at Virginia Tech Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-syracuse-at-nc-state/",
+      "game_date": "2026-11-14",
+      "title": "Syracuse at NC State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-tennessee-at-texas-a-m/",
+      "game_date": "2026-11-14",
+      "title": "Tennessee at Texas A&M Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-texas-at-lsu/",
+      "game_date": "2026-11-14",
+      "title": "Texas at LSU Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-texas-tech-at-oklahoma-state/",
+      "game_date": "2026-11-14",
+      "title": "Texas Tech at Oklahoma State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-troy-at-south-alabama/",
+      "game_date": "2026-11-14",
+      "title": "Troy at South Alabama Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-tulane-at-rice/",
+      "game_date": "2026-11-14",
+      "title": "Tulane at Rice Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-uab-at-temple/",
+      "game_date": "2026-11-14",
+      "title": "UAB at Temple Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-unlv-at-new-mexico/",
+      "game_date": "2026-11-14",
+      "title": "UNLV at New Mexico Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-usc-at-indiana/",
+      "game_date": "2026-11-14",
+      "title": "USC at Indiana Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-utah-at-arizona/",
+      "game_date": "2026-11-14",
+      "title": "Utah at Arizona Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-utah-state-at-san-diego-state/",
+      "game_date": "2026-11-14",
+      "title": "Utah State at San Diego State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-wake-forest-at-smu/",
+      "game_date": "2026-11-14",
+      "title": "Wake Forest at SMU Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-washington-at-michigan-state/",
+      "game_date": "2026-11-14",
+      "title": "Washington at Michigan State Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-wisconsin-at-maryland/",
+      "game_date": "2026-11-14",
+      "title": "Wisconsin at Maryland Injury Report — Week 11",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-14-wyoming-at-utep/",
+      "game_date": "2026-11-14",
+      "title": "Wyoming at UTEP Injury Report — Week 11",
       "reported": null,
       "coverage": "pending",
       "players": []
