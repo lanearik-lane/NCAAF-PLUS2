@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-08T00:16:24+00:00",
+  "imported_at": "2026-11-08T06:59:44+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -11343,7 +11343,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-delaware-at-kennesaw-state/",
       "game_date": "2026-11-07",
       "title": "Delaware at Kennesaw State Injury Report — Week 10",
-      "reported": "Sat Nov 7, 8:22 AM PT",
+      "reported": "Sat Nov 7, 8:49 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -11874,7 +11874,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-fresno-state-at-utah-state/",
       "game_date": "2026-11-07",
       "title": "Fresno State at Utah State Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:05 PM PT",
+      "reported": "Sat Nov 7, 4:35 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -11887,13 +11887,13 @@
           "team": "Fresno State",
           "player": "Jahzon Jacks",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Jairus Satele",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Fresno State",
@@ -11905,19 +11905,19 @@
           "team": "Fresno State",
           "player": "Sione Noa",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Fresno State",
           "player": "Lucas Blumling",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Niko Baumgartner",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Fresno State",
@@ -11929,19 +11929,19 @@
           "team": "Fresno State",
           "player": "Oscar Weigel",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Fresno State",
           "player": "Ethan Rossetti",
           "position": "SP",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Utah State",
           "player": "Chapman Lewis",
           "position": "DB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
@@ -11953,7 +11953,7 @@
           "team": "Utah State",
           "player": "Bronson Olevao",
           "position": "ILB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Utah State",
@@ -11977,13 +11977,13 @@
           "team": "Utah State",
           "player": "Jimmy Liston",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
           "player": "John Randle",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Utah State",
@@ -12037,7 +12037,7 @@
           "team": "Utah State",
           "player": "Eli Wood",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
@@ -12481,7 +12481,7 @@
           "team": "UTEP",
           "player": "Preston Hickey",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "UTEP",
@@ -12493,7 +12493,7 @@
           "team": "UTEP",
           "player": "Garrett Hawkins",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UTEP",
@@ -12535,7 +12535,7 @@
           "team": "UTEP",
           "player": "Tavorus Jones",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UTEP",
@@ -12559,7 +12559,7 @@
           "team": "UTEP",
           "player": "Jaden Smith",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UTEP",
@@ -13038,14 +13038,110 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-liberty-at-new-mexico-state/",
       "game_date": "2026-11-07",
       "title": "Liberty at New Mexico State Injury Report — Week 10",
-      "reported": null,
+      "reported": "Sat Nov 7, 5:11 AM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Liberty",
+          "player": "Jiquavious Marshall",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Kennedi Bailey",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Aaron Hester",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Samuel Cohen",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Xavier Reid",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Tyler Black",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Kyle Ferm",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Austin Anderson",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Erwil Anthony, Jr.",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Cam Wood",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Justin Marshall",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Liberty",
+          "player": "Ronald Moore, Jr.",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Jeremiah Sandiford",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Josiah Jackson",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Ilya Uvaydov",
+          "position": "K",
+          "status": "Out"
+        },
         {
           "team": "New Mexico State",
           "player": "I. Uvaydov New Mexico State",
           "position": "K",
           "status": "Questionable"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Mark Chapman",
+          "position": "OL",
+          "status": "Out"
         },
         {
           "team": "New Mexico State",
@@ -13061,6 +13157,18 @@
         },
         {
           "team": "New Mexico State",
+          "player": "Bernock Iya",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Tayden Barnes",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
           "player": "B. Burklow Liberty",
           "position": "TE",
           "status": "Questionable"
@@ -13073,9 +13181,33 @@
         },
         {
           "team": "New Mexico State",
+          "player": "Josiah Thomas",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Ray Lotten",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
           "player": "R. Lotten New Mexico State",
           "position": "TE",
           "status": "Questionable"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "Jaylen Stokes",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico State",
+          "player": "TK King",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
@@ -13902,7 +14034,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-missouri-state-at-fiu/",
       "game_date": "2026-11-07",
       "title": "Missouri State at FIU Injury Report — Week 10",
-      "reported": "Sat Nov 7, 9:17 AM PT",
+      "reported": "Sat Nov 7, 8:49 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -14118,7 +14250,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-northern-illinois-at-san-jose-state/",
       "game_date": "2026-11-07",
       "title": "Northern Illinois at San José State Injury Report — Week 10",
-      "reported": "Sat Nov 7, 8:33 AM PT",
+      "reported": "Sat Nov 7, 8:54 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -14331,14 +14463,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-oklahoma-at-florida/",
       "game_date": "2026-11-07",
       "title": "Oklahoma at Florida Injury Report — Week 10",
-      "reported": "Fri Nov 6, 5:10 PM PT",
+      "reported": "Sat Nov 7, 3:15 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Florida",
           "player": "Emmanuel Oyebadejo",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Florida",
@@ -14374,7 +14506,7 @@
           "team": "Florida",
           "player": "Bailey Stockton",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Florida",
@@ -14410,13 +14542,13 @@
           "team": "Oklahoma",
           "player": "Peyton Bowen",
           "position": "DB",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oklahoma",
           "player": "Kenny Ozowalu",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Oklahoma",
@@ -14434,7 +14566,7 @@
           "team": "Oklahoma",
           "player": "Eddy Pierre-Louis",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oklahoma",
@@ -14470,7 +14602,7 @@
           "team": "Oklahoma",
           "player": "Elijah Thomas",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Oklahoma",
@@ -15420,7 +15552,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-sam-houston-at-jacksonville-state/",
       "game_date": "2026-11-07",
       "title": "Sam Houston at Jacksonville State Injury Report — Week 10",
-      "reported": "Sat Nov 7, 12:16 PM PT",
+      "reported": "Sat Nov 7, 8:49 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -16269,14 +16401,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-texas-state-at-oregon-state/",
       "game_date": "2026-11-07",
       "title": "Texas State at Oregon State Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:06 PM PT",
+      "reported": "Sat Nov 7, 5:35 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Oregon State",
           "player": "Isaiah Houi",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Oregon State",
@@ -16300,7 +16432,7 @@
           "team": "Oregon State",
           "player": "Tevita Pome'e",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Oregon State",
@@ -16312,7 +16444,7 @@
           "team": "Oregon State",
           "player": "Jacob Anderson",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Oregon State",
@@ -16336,7 +16468,7 @@
           "team": "Texas State",
           "player": "Chris Jones",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
@@ -16354,7 +16486,7 @@
           "team": "Texas State",
           "player": "Tymere Jackson",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
@@ -16366,7 +16498,7 @@
           "team": "Texas State",
           "player": "Tice Williams",
           "position": "ILB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas State",
@@ -16378,7 +16510,7 @@
           "team": "Texas State",
           "player": "Lincoln Petitjean",
           "position": "SP",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Texas State",
@@ -16390,7 +16522,7 @@
           "team": "Texas State",
           "player": "Zechariah Sample",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         }
       ]
     },
@@ -17241,7 +17373,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-west-virginia-at-texas-tech/",
       "game_date": "2026-11-07",
       "title": "West Virginia at Texas Tech Injury Report — Week 10",
-      "reported": "Fri Nov 6, 7:00 PM PT",
+      "reported": "Sat Nov 7, 5:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -17362,7 +17494,7 @@
           "team": "West Virginia",
           "player": "Da'Mare Williams",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "West Virginia",
@@ -17396,7 +17528,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-wku-at-mtsu/",
       "game_date": "2026-11-07",
       "title": "WKU at MTSU Injury Report — Week 10",
-      "reported": "Sat Nov 7, 9:10 AM PT",
+      "reported": "Sat Nov 7, 8:49 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -17489,14 +17621,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-07-wyoming-at-unlv/",
       "game_date": "2026-11-07",
       "title": "Wyoming at UNLV Injury Report — Week 10",
-      "reported": "Sat Nov 7, 12:48 PM PT",
+      "reported": "Sat Nov 7, 3:43 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "UNLV",
           "player": "Avery Helm",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -17532,7 +17664,7 @@
           "team": "UNLV",
           "player": "Lucas Conti",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -17550,7 +17682,7 @@
           "team": "UNLV",
           "player": "Jackson Brown",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -17574,7 +17706,7 @@
           "team": "UNLV",
           "player": "Jai'Den Thomas",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
@@ -17586,7 +17718,7 @@
           "team": "UNLV",
           "player": "Keyan Burnett",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "UNLV",
