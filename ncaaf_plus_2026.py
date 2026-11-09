@@ -384,35 +384,35 @@ def get_db(team):
     return TEAM_DB.get(name) if name else None
 
 AP_RANKS = {
-    # Week 10 AP Top 25 (Nov 3, 2026)
-    "Miami":1,"Georgia":2,"Utah":3,"Notre Dame":4,"UCLA":5,
-    "Indiana":6,"BYU":7,"Kentucky":8,"Alabama":9,"Texas":10,
-    "Ohio State":11,"Ole Miss":12,"Texas Tech":13,"Wake Forest":14,"LSU":15,
-    "Tennessee":16,"Houston":17,"USC":18,"Missouri":19,"Boise State":20,
-    "Iowa":21,"New Mexico":22,"South Carolina":23,"Arizona":24,"Florida":25,
+    # Week 11 AP Top 25 (Nov 9, 2026)
+    "Georgia":1,"Utah":2,"Notre Dame":3,"UCLA":4,"Miami":5,
+    "Indiana":6,"Alabama":7,"Texas":8,"Tennessee":9,"Texas Tech":10,
+    "Wake Forest":11,"BYU":12,"Kentucky":13,"Houston":14,"USC":15,
+    "Iowa":16,"Boise State":17,"Oregon":18,"Ole Miss":19,"South Carolina":20,
+    "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 10, Nov 6) ─────────────
+# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 9) ─────────────
 TEAM_RECORDS = {
     # AP Top 25
-    "Miami":"8-0","Georgia":"7-1","Utah":"8-0","Notre Dame":"7-1","UCLA":"8-0",
-    "Indiana":"8-1","BYU":"7-1","Kentucky":"7-1","Alabama":"6-2","Texas":"6-2",
-    "Ohio State":"6-2","Ole Miss":"6-2","Texas Tech":"7-1","Wake Forest":"7-1",
-    "LSU":"6-2","Tennessee":"6-2","Houston":"6-2","USC":"7-2","Missouri":"6-2",
-    "Boise State":"7-1","Iowa":"6-2","New Mexico":"7-1","South Carolina":"5-3",
-    "Arizona":"6-2","Florida":"5-3",
+    "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
+    "Indiana":"9-1","Alabama":"7-2","Texas":"7-2","Tennessee":"7-2","Texas Tech":"8-1",
+    "Wake Forest":"8-1","BYU":"7-2","Kentucky":"7-2","Houston":"7-2","USC":"8-2",
+    "Iowa":"7-2","Boise State":"8-1","Oregon":"8-2","Ole Miss":"6-3","South Carolina":"6-3",
+    "Ohio State":"6-3","Arizona":"7-2","New Mexico":"7-2","LSU":"6-3","SMU":"7-3",
+    "Florida":"5-4","Missouri":"6-3",
     # SEC
     "Mississippi State":"3-6","Auburn":"4-5","Arkansas":"5-4","Vanderbilt":"6-3",
-    "Texas A&M":"5-4",
+    "Texas A&M":"5-5",
     # Big Ten
-    "Penn State":"7-2","Oregon":"7-2","Michigan":"5-4","Wisconsin":"6-3",
-    "Northwestern":"6-3","Minnesota":"5-4","Michigan State":"3-6","Purdue":"3-6",
+    "Penn State":"7-2","Michigan":"5-5","Wisconsin":"6-3",
+    "Northwestern":"6-4","Minnesota":"5-5","Michigan State":"4-6","Purdue":"3-6",
     "Maryland":"4-5","Rutgers":"4-5","Nebraska":"6-3","Illinois":"6-3",
     "Washington":"6-3","James Madison":"7-2",
     # Big 12
-    "Iowa State":"5-4","Kansas State":"5-4","Oklahoma State":"5-4","TCU":"4-5",
-    "West Virginia":"5-4","Kansas":"4-5","Baylor":"4-5","Colorado":"4-5",
-    "Arizona State":"5-4","Cincinnati":"5-4","UCF":"4-5",
+    "Iowa State":"5-4","Kansas State":"5-5","Oklahoma State":"6-4","TCU":"4-5",
+    "West Virginia":"5-5","Kansas":"4-6","Baylor":"4-5","Colorado":"4-5",
+    "Arizona State":"5-4","Cincinnati":"5-4","UCF":"5-5",
     # ACC
     "Clemson":"6-3","NC State":"5-4","Duke":"6-3","Florida State":"4-5",
     "Boston College":"4-5","Virginia Tech":"5-4","SMU":"6-3","Louisville":"5-4",
@@ -428,17 +428,18 @@ TEAM_RECORDS = {
     "Georgia State":"4-5","South Alabama":"5-4","Louisiana Monroe":"3-6",
     "Marshall":"5-4","Southern Miss":"3-6","Texas State":"5-4",
     # MWC / Pac-12
-    "UNLV":"5-4","Colorado State":"5-4","Air Force":"4-5","Wyoming":"4-5",
-    "Fresno State":"5-4","Nevada":"3-6","San Diego State":"4-5",
-    "Washington State":"5-4","Oregon State":"4-5","San Jose State":"4-5",
-    "Utah State":"4-5","Hawaii":"3-6","New Mexico State":"3-6",
+    "UNLV":"5-5","Colorado State":"5-4","Air Force":"4-5","Wyoming":"5-5",
+    "Fresno State":"5-5","Nevada":"3-6","San Diego State":"4-5",
+    "Washington State":"5-4","Oregon State":"4-6","San Jose State":"4-5",
+    "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-6",
     "Northern Illinois":"4-5",
     # MAC
     "Toledo":"6-3","Miami (OH)":"5-4","Bowling Green":"4-5","Ohio":"4-5",
     "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-6",
     "Eastern Michigan":"3-6","Western Michigan":"3-6","UMass":"2-7","Kent State":"2-7",
     # C-USA / Indep
-    "UTEP":"3-6","FIU":"2-7","Liberty":"5-4","JMU":"7-2",
+    "UTEP":"3-7","FIU":"2-7","Liberty":"5-4","JMU":"7-2",
+    "Texas State":"6-4",
     "Kennesaw State":"5-4","Jacksonville State":"4-5","Sam Houston":"5-3",
     "Missouri State":"4-5","WKU":"4-5","MTSU":"3-6",
     # FCS
