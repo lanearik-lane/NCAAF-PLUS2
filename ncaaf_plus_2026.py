@@ -392,7 +392,7 @@ AP_RANKS = {
     "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 9) ─────────────
+# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 10) ────────────
 TEAM_RECORDS = {
     # AP Top 25
     "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
