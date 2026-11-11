@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-11T10:29:14+00:00",
+  "imported_at": "2026-11-11T18:28:02+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -18985,12 +18985,6 @@
         },
         {
           "team": "Pitt",
-          "player": "M. Heintschel Pitt",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Pitt",
           "player": "G. Markey Florida State",
           "position": "RB",
           "status": "Out"
@@ -18999,24 +18993,6 @@
           "team": "Pitt",
           "player": "Ja'Kyrian Turner",
           "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Pitt",
-          "player": "J. Turner Pitt",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Pitt",
-          "player": "S. Singleton Jr. Florida State",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Pitt",
-          "player": "E. Lagg Pitt",
-          "position": "TE",
           "status": "Questionable"
         },
         {
@@ -19030,12 +19006,6 @@
           "player": "Max Hunt",
           "position": "TE",
           "status": "Out"
-        },
-        {
-          "team": "Pitt",
-          "player": "M. Hunt Pitt",
-          "position": "TE",
-          "status": "Questionable"
         },
         {
           "team": "Pitt",
@@ -19070,6 +19040,12 @@
       "reported": "Tue Nov 10, 7:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Colorado",
+          "player": "M. Vickers Colorado",
+          "position": "CB",
+          "status": "Questionable"
+        },
         {
           "team": "Colorado",
           "player": "Braylon Edwards",
@@ -19120,8 +19096,8 @@
         },
         {
           "team": "Colorado",
-          "player": "M. Welch Colorado",
-          "position": "RB",
+          "player": "C. Williams Colorado",
+          "position": "TE",
           "status": "Questionable"
         },
         {
@@ -19141,12 +19117,6 @@
           "player": "Danny Scudero",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Colorado",
-          "player": "D. Scudero Colorado",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Colorado",
@@ -19351,12 +19321,6 @@
         },
         {
           "team": "UCLA",
-          "player": "N. Iamaleava UCLA",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "UCLA",
           "player": "Nico Iamaleava",
           "position": "QB",
           "status": "Out"
@@ -19387,7 +19351,7 @@
         },
         {
           "team": "UCLA",
-          "player": "J. Eberhart Illinois",
+          "player": "J. Harvey Illinois",
           "position": "WR",
           "status": "Questionable"
         },
@@ -19399,15 +19363,15 @@
         },
         {
           "team": "UCLA",
-          "player": "J. Platt Illinois",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "UCLA",
           "player": "Mikey Matthews",
           "position": "WR",
           "status": "Out"
+        },
+        {
+          "team": "UCLA",
+          "player": "N. Rankin Illinois",
+          "position": "WR",
+          "status": "Questionable"
         }
       ]
     },
@@ -21822,6 +21786,30 @@
           "status": "Questionable"
         }
       ]
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-17-ball-state-at-ohio/",
+      "game_date": "2026-11-17",
+      "title": "Ball State at Ohio Injury Report — Week 12",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-17-eastern-michigan-at-western-michigan/",
+      "game_date": "2026-11-17",
+      "title": "Eastern Michigan at Western Michigan Injury Report — Week 12",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-17-miami-oh-at-kent-state/",
+      "game_date": "2026-11-17",
+      "title": "Miami (OH) at Kent State Injury Report — Week 12",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
     }
   ]
 }
