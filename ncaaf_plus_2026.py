@@ -396,10 +396,10 @@ AP_RANKS = {
 TEAM_RECORDS = {
     # AP Top 25
     "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
-    "Indiana":"9-1","Alabama":"7-2","Texas":"7-2","Tennessee":"7-2","Texas Tech":"8-1",
-    "Wake Forest":"8-1","BYU":"7-2","Kentucky":"7-2","Houston":"7-2","USC":"8-2",
-    "Iowa":"7-2","Boise State":"8-1","Oregon":"8-2","Ole Miss":"6-3","South Carolina":"6-3",
-    "Ohio State":"6-3","Arizona":"7-2","New Mexico":"7-2","LSU":"6-3","SMU":"7-3",
+    "Indiana":"8-1","Alabama":"7-2","Texas":"7-2","Tennessee":"7-2","Texas Tech":"8-1",
+    "Wake Forest":"8-1","BYU":"7-2","Kentucky":"7-2","Houston":"7-2","USC":"7-2",
+    "Iowa":"7-2","Boise State":"8-1","Oregon":"6-3","Ole Miss":"6-3","South Carolina":"6-3",
+    "Ohio State":"6-3","Arizona":"7-2","New Mexico":"8-1","LSU":"6-3","SMU":"7-2",
     "Florida":"5-4","Missouri":"6-3",
     # SEC
     "Mississippi State":"3-6","Auburn":"4-5","Arkansas":"5-4","Vanderbilt":"6-3",
