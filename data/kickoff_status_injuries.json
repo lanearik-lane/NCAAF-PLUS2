@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-11T02:36:35+00:00",
+  "imported_at": "2026-11-11T10:29:14+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -19067,14 +19067,56 @@
       "url": "https://kickoffstatus.com/games/2026-11-13-houston-at-colorado/",
       "game_date": "2026-11-13",
       "title": "Houston at Colorado Injury Report — Week 11",
-      "reported": null,
+      "reported": "Tue Nov 10, 7:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Colorado",
+          "player": "Braylon Edwards",
+          "position": "DB",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Colorado",
+          "player": "Naeten Mitchell",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado",
+          "player": "Sam Gadie",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado",
+          "player": "Vili Taufatofua",
+          "position": "DL",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Colorado",
+          "player": "Elliot Arnold",
+          "position": "K",
+          "status": "Questionable"
+        },
         {
           "team": "Colorado",
           "player": "E. Noel Houston",
           "position": "K",
           "status": "Questionable"
+        },
+        {
+          "team": "Colorado",
+          "player": "Tyler Martinez",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Colorado",
+          "player": "Micah Welch",
+          "position": "RB",
+          "status": "Out"
         },
         {
           "team": "Colorado",
@@ -19096,6 +19138,12 @@
         },
         {
           "team": "Colorado",
+          "player": "Danny Scudero",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado",
           "player": "D. Scudero Colorado",
           "position": "WR",
           "status": "Questionable"
@@ -19108,6 +19156,12 @@
         },
         {
           "team": "Colorado",
+          "player": "Kaleb Mathis",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado",
           "player": "K. Perry Colorado",
           "position": "WR",
           "status": "Questionable"
@@ -19117,6 +19171,42 @@
           "player": "M. Tounkara Houston",
           "position": "WR",
           "status": "Out"
+        },
+        {
+          "team": "Houston",
+          "player": "JD Rhym",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Houston",
+          "player": "De'Marion Thomas",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "team": "Houston",
+          "player": "Ejiro Egodogbare",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "team": "Houston",
+          "player": "Travis Buhake",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Houston",
+          "player": "Carmycah Glass",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Houston",
+          "player": "Aaron Wolford",
+          "position": "OL",
+          "status": "Questionable"
         }
       ]
     },
