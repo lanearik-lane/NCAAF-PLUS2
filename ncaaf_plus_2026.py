@@ -392,7 +392,7 @@ AP_RANKS = {
     "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 10) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 12) ────────────
 TEAM_RECORDS = {
     # AP Top 25
     "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
@@ -434,9 +434,9 @@ TEAM_RECORDS = {
     "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-6",
     "Northern Illinois":"4-5",
     # MAC
-    "Toledo":"6-3","Miami (OH)":"5-4","Bowling Green":"4-5","Ohio":"4-5",
-    "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-6",
-    "Eastern Michigan":"3-6","Western Michigan":"3-6","UMass":"2-7","Kent State":"2-7",
+    "Toledo":"6-3","Miami (OH)":"6-4","Bowling Green":"5-5","Ohio":"4-6",
+    "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-7",
+    "Eastern Michigan":"3-6","Western Michigan":"4-6","UMass":"2-7","Kent State":"2-8",
     # C-USA / Indep
     "UTEP":"3-7","FIU":"2-7","Liberty":"5-4","JMU":"7-2",
     "Texas State":"6-4",

@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-11-12T05:00:00.000Z",
-  "source": "ESPN FBS scoreboard API (auto-refreshed nightly)",
+  "captured_at": "2026-11-12T05:49:20.000Z",
+  "source": "ESPN FBS scoreboard / fbschedules.com (Week 11 manual refresh)",
   "week_start": "2026-11-09",
   "week_end": "2026-11-15",
   "matchups": [
@@ -23,7 +23,7 @@
         "Ohio",
         "Miami (OH)"
       ],
-      "time": "Tuesday, 8:00 pm EST"
+      "time": "Tuesday, 7:00 pm EST"
     },
     {
       "teams": [
@@ -41,7 +41,7 @@
     },
     {
       "teams": [
-        "UMass",
+        "Massachusetts",
         "Toledo"
       ],
       "time": "Wednesday, 7:30 pm EST"
@@ -49,14 +49,14 @@
     {
       "teams": [
         "Memphis",
-        "USF"
+        "South Florida"
       ],
       "time": "Thursday, 8:00 pm EST"
     },
     {
       "teams": [
         "Louisiana",
-        "ULM"
+        "UL Monroe"
       ],
       "time": "Thursday, 9:00 pm EST"
     },
@@ -90,29 +90,15 @@
     },
     {
       "teams": [
-        "Duke",
-        "Miami"
-      ],
-      "time": "Saturday, 12:00 pm EST"
-    },
-    {
-      "teams": [
-        "Northwestern",
-        "Ohio State"
-      ],
-      "time": "Saturday, 12:00 pm EST"
-    },
-    {
-      "teams": [
-        "Wake Forest",
-        "SMU"
-      ],
-      "time": "Saturday, 12:00 pm EST"
-    },
-    {
-      "teams": [
         "Auburn",
         "Mississippi State"
+      ],
+      "time": "Saturday, 12:00 pm EST"
+    },
+    {
+      "teams": [
+        "Duke",
+        "Miami"
       ],
       "time": "Saturday, 12:00 pm EST"
     },
@@ -125,8 +111,22 @@
     },
     {
       "teams": [
+        "Wake Forest",
+        "SMU"
+      ],
+      "time": "Saturday, 12:00 pm EST"
+    },
+    {
+      "teams": [
         "Wisconsin",
         "Maryland"
+      ],
+      "time": "Saturday, 12:00 pm EST"
+    },
+    {
+      "teams": [
+        "Northwestern",
+        "Ohio State"
       ],
       "time": "Saturday, 12:00 pm EST"
     },
@@ -160,13 +160,6 @@
     },
     {
       "teams": [
-        "Arkansas State",
-        "Coastal Carolina"
-      ],
-      "time": "Saturday, 1:00 pm EST"
-    },
-    {
-      "teams": [
         "East Carolina",
         "Charlotte"
       ],
@@ -181,15 +174,15 @@
     },
     {
       "teams": [
-        "Kansas State",
-        "TCU"
+        "Arkansas State",
+        "Coastal Carolina"
       ],
-      "time": "Saturday, 2:00 pm EST"
+      "time": "Saturday, 1:00 pm EST"
     },
     {
       "teams": [
-        "Kennesaw State",
-        "Sam Houston"
+        "Kansas State",
+        "TCU"
       ],
       "time": "Saturday, 2:00 pm EST"
     },
@@ -202,8 +195,15 @@
     },
     {
       "teams": [
-        "FIU",
-        "Delaware"
+        "Kennesaw State",
+        "Sam Houston"
+      ],
+      "time": "Saturday, 2:00 pm EST"
+    },
+    {
+      "teams": [
+        "Tennessee",
+        "Texas A&M"
       ],
       "time": "Saturday, 3:00 pm EST"
     },
@@ -216,8 +216,8 @@
     },
     {
       "teams": [
-        "Tennessee",
-        "Texas A&M"
+        "Florida International",
+        "Delaware"
       ],
       "time": "Saturday, 3:00 pm EST"
     },
@@ -237,15 +237,15 @@
     },
     {
       "teams": [
-        "Boston College",
-        "Notre Dame"
+        "Missouri",
+        "Georgia"
       ],
       "time": "Saturday, 3:30 pm EST"
     },
     {
       "teams": [
-        "Michigan",
-        "Oregon"
+        "Boston College",
+        "Notre Dame"
       ],
       "time": "Saturday, 3:30 pm EST"
     },
@@ -258,8 +258,29 @@
     },
     {
       "teams": [
+        "USC",
+        "Indiana"
+      ],
+      "time": "Saturday, 3:30 pm EST"
+    },
+    {
+      "teams": [
+        "Michigan",
+        "Oregon"
+      ],
+      "time": "Saturday, 3:30 pm EST"
+    },
+    {
+      "teams": [
         "Florida Atlantic",
         "Tulsa"
+      ],
+      "time": "Saturday, 3:30 pm EST"
+    },
+    {
+      "teams": [
+        "Nevada",
+        "Northern Illinois"
       ],
       "time": "Saturday, 3:30 pm EST"
     },
@@ -286,27 +307,6 @@
     },
     {
       "teams": [
-        "Missouri",
-        "Georgia"
-      ],
-      "time": "Saturday, 3:30 pm EST"
-    },
-    {
-      "teams": [
-        "Nevada",
-        "Northern Illinois"
-      ],
-      "time": "Saturday, 3:30 pm EST"
-    },
-    {
-      "teams": [
-        "USC",
-        "Indiana"
-      ],
-      "time": "Saturday, 3:30 pm EST"
-    },
-    {
-      "teams": [
         "Fresno State",
         "Texas State"
       ],
@@ -314,15 +314,15 @@
     },
     {
       "teams": [
-        "Washington",
-        "Michigan State"
+        "Ole Miss",
+        "Oklahoma"
       ],
       "time": "Saturday, 4:15 pm EST"
     },
     {
       "teams": [
-        "Ole Miss",
-        "Oklahoma"
+        "Washington",
+        "Michigan State"
       ],
       "time": "Saturday, 4:15 pm EST"
     },
@@ -391,15 +391,8 @@
     },
     {
       "teams": [
-        "Purdue",
-        "Iowa"
-      ],
-      "time": "Saturday, 7:30 pm EST"
-    },
-    {
-      "teams": [
-        "Stanford",
-        "Virginia Tech"
+        "Utah",
+        "Arizona"
       ],
       "time": "Saturday, 7:30 pm EST"
     },
@@ -412,15 +405,22 @@
     },
     {
       "teams": [
-        "UNLV",
-        "New Mexico"
+        "Stanford",
+        "Virginia Tech"
       ],
       "time": "Saturday, 7:30 pm EST"
     },
     {
       "teams": [
-        "Utah",
-        "Arizona"
+        "Purdue",
+        "Iowa"
+      ],
+      "time": "Saturday, 7:30 pm EST"
+    },
+    {
+      "teams": [
+        "UNLV",
+        "New Mexico"
       ],
       "time": "Saturday, 7:30 pm EST"
     },
@@ -440,15 +440,15 @@
     },
     {
       "teams": [
-        "Utah State",
-        "San Diego State"
+        "Texas Tech",
+        "Oklahoma State"
       ],
       "time": "Saturday, 9:30 pm EST"
     },
     {
       "teams": [
-        "Texas Tech",
-        "Oklahoma State"
+        "Utah State",
+        "San Diego State"
       ],
       "time": "Saturday, 9:30 pm EST"
     },
@@ -468,7 +468,7 @@
     },
     {
       "teams": [
-        "North Dakota State",
+        "North Dakota St",
         "Hawaii"
       ],
       "time": "Saturday, 11:00 pm EST"
