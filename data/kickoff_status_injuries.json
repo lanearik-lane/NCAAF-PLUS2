@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-11T18:28:02+00:00",
+  "imported_at": "2026-11-12T01:22:35+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -18449,9 +18449,63 @@
       "url": "https://kickoffstatus.com/games/2026-11-11-buffalo-at-ball-state/",
       "game_date": "2026-11-11",
       "title": "Buffalo at Ball State Injury Report — Week 11",
-      "reported": null,
+      "reported": "Wed Nov 11, 3:30 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Ball State",
+          "player": "Cedric Franklin II",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Tobi Adewoyin",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Ben Marsh",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Joshua Coleman",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Khristian Zachary",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Michael Thacker",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Kaden Mayle",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Ryan Eldridge",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Zach Bandy",
+          "position": "OL",
+          "status": "Out"
+        },
         {
           "team": "Ball State",
           "player": "E. Holmes Buffalo",
@@ -18466,9 +18520,33 @@
         },
         {
           "team": "Ball State",
+          "player": "Jalen Bonds",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
           "player": "T. Shelton Jr. Buffalo",
           "position": "RB",
           "status": "Questionable"
+        },
+        {
+          "team": "Ball State",
+          "player": "Cole Coonrod",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Mason Riggins",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Sean Ward",
+          "position": "TE",
+          "status": "Out"
         },
         {
           "team": "Ball State",
@@ -18479,6 +18557,12 @@
         {
           "team": "Ball State",
           "player": "B. Mays Buffalo",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Ball State",
+          "player": "Derion Talbert",
           "position": "WR",
           "status": "Out"
         },
@@ -18505,6 +18589,66 @@
           "player": "No injuries reported Buffalo",
           "position": "—",
           "status": "None Reported"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Ramari Taylor",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Charlton Goodell",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jacari Bennett",
+          "position": "EDG",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jack Garbolino",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Mathew Hilty",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Jackson Bellamy",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Nino Francavilla",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Elijah Holmes",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Dylan Cleary",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Buffalo",
+          "player": "Mark-Anthony Scott, Jr.",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
@@ -18512,14 +18656,92 @@
       "url": "https://kickoffstatus.com/games/2026-11-11-sacramento-state-at-central-michigan/",
       "game_date": "2026-11-11",
       "title": "Sacramento State at Central Michigan Injury Report — Week 11",
-      "reported": null,
+      "reported": "Wed Nov 11, 3:30 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Central Michigan",
+          "player": "JaJuan Jones",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Trey Liebhardt",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Tysen Campbell",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Hunter Zirkle",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "James Reinbold",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Joey VanWetzinga",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Korver Demma",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Max Van Fleet",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Rory Callahan",
+          "position": "DL",
+          "status": "Out"
+        },
         {
           "team": "Central Michigan",
           "player": "Grant Meadors Sacramento State",
           "position": "K",
           "status": "Questionable"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Jeremiah Alston",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Victor Earl",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Xavier White",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Angel Flores",
+          "position": "QB",
+          "status": "Out"
         },
         {
           "team": "Central Michigan",
@@ -18583,14 +18805,188 @@
         },
         {
           "team": "Central Michigan",
+          "player": "Langston Lewis",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
           "player": "S. Foster II Central Michigan",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "Central Michigan",
+          "player": "Shawn Foster II",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
+          "player": "Tommy McIntosh",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Central Michigan",
           "player": "Langston Lewis / Xavier White Central Michigan",
           "position": "WR/LB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Caleb Reese",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Dionte Thornton",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Austin Aten",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Brodie Tagaloa",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Jadakiss Vaokakala",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Will Weber",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Xavier Williams",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Derek Houston",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Jiah Walls",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Grant Meadors",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Alex Kenward",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Bryson Summers",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Davis May",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Dylan Spencer",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Richard McKay",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Dylan Gooden",
+          "position": "OLB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Carson Conklin",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Jackson Sharman",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Curron Borders",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Amari Wallace",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Naytel Mitchell",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Jack Hodge",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Jordan Williams",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Kyle Koontz",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Ajon Bryant",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Sacramento State",
+          "player": "Matthew Auau",
+          "position": "WR",
           "status": "Out"
         }
       ]
@@ -18599,7 +18995,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-11-umass-at-toledo/",
       "game_date": "2026-11-11",
       "title": "UMass at Toledo Injury Report — Week 11",
-      "reported": null,
+      "reported": "Wed Nov 11, 3:30 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -18616,15 +19012,93 @@
         },
         {
           "team": "Toledo",
+          "player": "Langston Long",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Cam Gwinn",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Laith Shamma",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Kari Jackson",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Nathan Gersh",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Dylan Senda",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Grant Zimmerly",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Nick Thomas",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Toledo",
+          "player": "Stephen Gales",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Emilio Duran",
+          "position": "P",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
           "player": "William Watson III UMass",
           "position": "QB",
           "status": "Cleared, Expected To Play"
         },
         {
           "team": "Toledo",
+          "player": "Corey Smith",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
           "player": "C. Smith Toledo",
           "position": "RB",
           "status": "Questionable"
+        },
+        {
+          "team": "Toledo",
+          "player": "Dane Nauman",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
+          "player": "Sam Lee",
+          "position": "TE",
+          "status": "Out"
         },
         {
           "team": "Toledo",
@@ -18664,9 +19138,63 @@
         },
         {
           "team": "Toledo",
+          "player": "Trenton Jones",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Toledo",
           "player": "Kickoff info Toledo",
           "position": "—",
           "status": "Schedule"
+        },
+        {
+          "team": "UMass",
+          "player": "Chris Stanley",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Isaiah Reed",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Zachary Betts",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Grant Mills",
+          "position": "LS",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Greg Klingensmith",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Jordan Washington",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Dallas Elliott",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "UMass",
+          "player": "Joseph Griffin Jr.",
+          "position": "WR",
+          "status": "Out"
         }
       ]
     },
