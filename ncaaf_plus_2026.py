@@ -392,7 +392,7 @@ AP_RANKS = {
     "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 12) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 9) ────────────
 TEAM_RECORDS = {
     # AP Top 25
     "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
@@ -415,7 +415,7 @@ TEAM_RECORDS = {
     "Arizona State":"5-4","Cincinnati":"5-4","UCF":"5-5",
     # ACC
     "Clemson":"6-3","NC State":"5-4","Duke":"6-3","Florida State":"4-5",
-    "Boston College":"4-5","Virginia Tech":"5-4","SMU":"6-3","Louisville":"5-4",
+    "Boston College":"4-5","Virginia Tech":"5-4","Louisville":"5-4",
     "Pittsburgh":"4-5","Syracuse":"3-6","North Carolina":"4-5","Georgia Tech":"4-5",
     # American
     "Tulane":"6-3","Memphis":"5-4","Navy":"5-4","Army":"6-3","UAB":"5-4",
