@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-13T05:41:19+00:00",
+  "imported_at": "2026-11-13T21:15:46+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -21507,7 +21507,7 @@
           "team": "Charlotte",
           "player": "Mitch Griffis East Carolina",
           "position": "QB",
-          "status": "Concussion Protocol"
+          "status": "Concussion Protocol; Unlikely To Play"
         },
         {
           "team": "Charlotte",
@@ -23785,12 +23785,6 @@
         },
         {
           "team": "Northern Illinois",
-          "player": "G. Weber Northern Illinois",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Northern Illinois",
           "player": "Afy Ibekwe",
           "position": "WR",
           "status": "Questionable"
@@ -24769,12 +24763,6 @@
           "player": "Liam Szarka",
           "position": "QB",
           "status": "Out"
-        },
-        {
-          "team": "Air Force",
-          "player": "L. Szarka Air Force",
-          "position": "QB",
-          "status": "Out For Season"
         },
         {
           "team": "Air Force",
@@ -26077,6 +26065,12 @@
       "players": [
         {
           "team": "Rice",
+          "player": "Gael Ochoa Rice",
+          "position": "QB",
+          "status": "Expected Starter"
+        },
+        {
+          "team": "Rice",
           "player": "J. McClure Tulane",
           "position": "RB",
           "status": "Out"
@@ -26215,12 +26209,6 @@
         },
         {
           "team": "New Mexico",
-          "player": "J. Layne New Mexico",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "New Mexico",
           "player": "D. Bowers New Mexico",
           "position": "RB",
           "status": "Questionable"
@@ -26233,7 +26221,13 @@
         },
         {
           "team": "New Mexico",
-          "player": "D. Irvin Jr. UNLV",
+          "player": "T. Walsh New Mexico",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico",
+          "player": "A. Williams New Mexico",
           "position": "WR",
           "status": "Out"
         },
@@ -26258,12 +26252,6 @@
         {
           "team": "New Mexico",
           "player": "Shawn Miller",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "New Mexico",
-          "player": "S. Miller New Mexico",
           "position": "WR",
           "status": "Out"
         },
@@ -27247,12 +27235,6 @@
         },
         {
           "team": "Maryland",
-          "player": "C. Williams Maryland",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Maryland",
           "player": "D. O'Neil Wisconsin",
           "position": "QB",
           "status": "Out"
@@ -27514,6 +27496,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-18-central-michigan-at-buffalo/",
       "game_date": "2026-11-18",
       "title": "Central Michigan at Buffalo Injury Report — Week 12",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-19-rice-at-temple/",
+      "game_date": "2026-11-19",
+      "title": "Rice at Temple Injury Report — Week 12",
       "reported": null,
       "coverage": "pending",
       "players": []
