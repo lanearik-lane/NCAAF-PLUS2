@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-14T02:02:19+00:00",
+  "imported_at": "2026-11-14T09:54:47+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -19721,7 +19721,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-13-houston-at-colorado/",
       "game_date": "2026-11-13",
       "title": "Houston at Colorado Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 5:45 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -19734,7 +19734,7 @@
           "team": "Colorado",
           "player": "Braylon Edwards",
           "position": "DB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Colorado",
@@ -19752,13 +19752,13 @@
           "team": "Colorado",
           "player": "Vili Taufatofua",
           "position": "DL",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Colorado",
           "player": "Elliot Arnold",
           "position": "K",
-          "status": "Doubtful"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Colorado",
@@ -19770,7 +19770,7 @@
           "team": "Colorado",
           "player": "Tyler Martinez",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Colorado",
@@ -19830,25 +19830,25 @@
           "team": "Houston",
           "player": "JD Rhym",
           "position": "DB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
           "player": "De'Marion Thomas",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
           "player": "Ejiro Egodogbare",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
           "player": "Travis Buhake",
           "position": "DL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Houston",
@@ -20369,7 +20369,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-arizona-state-at-ucf/",
       "game_date": "2026-11-14",
       "title": "Arizona State at UCF Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -20406,7 +20406,7 @@
           "team": "Arizona State",
           "player": "Uriah Neloms",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "UCF",
@@ -20526,7 +20526,7 @@
           "team": "UCF",
           "player": "Waden Charles",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         }
       ]
     },
@@ -20732,7 +20732,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-baylor-at-byu/",
       "game_date": "2026-11-14",
       "title": "Baylor at BYU Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -20745,7 +20745,7 @@
           "team": "Baylor",
           "player": "Kyler Beaty",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Probable"
         },
         {
           "team": "Baylor",
@@ -20757,6 +20757,12 @@
           "team": "Baylor",
           "player": "Cayden Tone",
           "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Baylor",
+          "player": "Quinn Murphy",
+          "position": "QB",
           "status": "Out"
         },
         {
@@ -20775,7 +20781,7 @@
           "team": "BYU",
           "player": "Evan Johnson",
           "position": "CB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "BYU",
@@ -20787,7 +20793,7 @@
           "team": "BYU",
           "player": "Isaiah Glasker",
           "position": "LB",
-          "status": "Probable"
+          "status": "Out"
         },
         {
           "team": "BYU",
@@ -20799,7 +20805,7 @@
           "team": "BYU",
           "player": "LJ Martin",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "BYU",
@@ -20811,7 +20817,7 @@
           "team": "BYU",
           "player": "Crew Clark",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "BYU",
@@ -20823,7 +20829,7 @@
           "team": "BYU",
           "player": "Roger Saleapaga II",
           "position": "TE",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "BYU",
@@ -21053,7 +21059,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-cincinnati-at-iowa-state/",
       "game_date": "2026-11-14",
       "title": "Cincinnati at Iowa State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -21072,7 +21078,7 @@
           "team": "Cincinnati",
           "player": "Stephen Rusnak",
           "position": "K",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Cincinnati",
@@ -21084,7 +21090,7 @@
           "team": "Cincinnati",
           "player": "Cole Tabb",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Cincinnati",
@@ -21102,13 +21108,13 @@
           "team": "Iowa State",
           "player": "Beni Ngoyi",
           "position": "CB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Iowa State",
           "player": "Keyon Washington",
           "position": "CB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Iowa State",
@@ -21170,7 +21176,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-colorado-state-at-washington-state/",
       "game_date": "2026-11-14",
       "title": "Colorado State at Washington State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:04 PM PT",
+      "reported": "Fri Nov 13, 7:12 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -21201,7 +21207,7 @@
           "team": "Colorado State",
           "player": "JAYDEN CORTELL",
           "position": "DB",
-          "status": "Not Listed"
+          "status": "Doubtful"
         },
         {
           "team": "Colorado State",
@@ -21225,7 +21231,7 @@
           "team": "Colorado State",
           "player": "ANTARRON TURNER",
           "position": "ILB",
-          "status": "Questionable"
+          "status": "Not Listed"
         },
         {
           "team": "Colorado State",
@@ -21722,7 +21728,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-fresno-state-at-texas-state/",
       "game_date": "2026-11-14",
       "title": "Fresno State at Texas State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:01 PM PT",
+      "reported": "Fri Nov 13, 7:05 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -21765,6 +21771,12 @@
           "team": "Fresno State",
           "player": "Oscar Weigel",
           "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Fresno State",
+          "player": "Julius Gillick",
+          "position": "RB",
           "status": "Questionable"
         },
         {
@@ -22355,7 +22367,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-kansas-at-west-virginia/",
       "game_date": "2026-11-14",
       "title": "Kansas at West Virginia Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -22386,7 +22398,7 @@
           "team": "Kansas",
           "player": "Cole Ballard",
           "position": "QB",
-          "status": "Questionable"
+          "status": "Probable"
         },
         {
           "team": "Kansas",
@@ -22398,7 +22410,7 @@
           "team": "Kansas",
           "player": "Jaden Harris",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Kansas",
@@ -22416,7 +22428,7 @@
           "team": "Kansas",
           "player": "Bryson Hayes",
           "position": "WR",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "West Virginia",
@@ -22476,7 +22488,7 @@
           "team": "West Virginia",
           "player": "Da'Mare Williams",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "West Virginia",
@@ -22514,7 +22526,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-kansas-state-at-tcu/",
       "game_date": "2026-11-14",
       "title": "Kansas State at TCU Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -22549,15 +22561,27 @@
         },
         {
           "team": "Kansas State",
+          "player": "Koy Beasley",
+          "position": "S",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Kansas State",
           "player": "Max Lovett",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Doubtful"
         },
         {
           "team": "TCU",
           "player": "Devondre McGee",
           "position": "CB",
           "status": "Out"
+        },
+        {
+          "team": "TCU",
+          "player": "Ansel Din-Mbuh",
+          "position": "DT",
+          "status": "Questionable"
         },
         {
           "team": "TCU",
@@ -24557,7 +24581,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-oregon-state-at-boise-state/",
       "game_date": "2026-11-14",
       "title": "Oregon State at Boise State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:01 PM PT",
+      "reported": "Fri Nov 13, 7:08 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -24624,19 +24648,19 @@
           "team": "Oregon State",
           "player": "Jacob Anderson",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Oregon State",
           "player": "Will Haverland",
           "position": "OLB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Oregon State",
           "player": "Braden Atkinson",
           "position": "QB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Oregon State",
@@ -25778,7 +25802,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-texas-tech-at-oklahoma-state/",
       "game_date": "2026-11-14",
       "title": "Texas Tech at Oklahoma State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -25827,7 +25851,7 @@
           "team": "Oklahoma State",
           "player": "Tate Romney",
           "position": "LB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Oklahoma State",
@@ -25839,7 +25863,7 @@
           "team": "Oklahoma State",
           "player": "Desmond Magiya",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Oklahoma State",
@@ -25861,6 +25885,12 @@
         },
         {
           "team": "Oklahoma State",
+          "player": "Oscar Hammond",
+          "position": "TE",
+          "status": "Probable"
+        },
+        {
+          "team": "Oklahoma State",
           "player": "Dayvon Standard",
           "position": "WR",
           "status": "Out"
@@ -25869,13 +25899,13 @@
           "team": "Texas Tech",
           "player": "Austin Romaine",
           "position": "LB",
-          "status": "Questionable"
+          "status": "Probable"
         },
         {
           "team": "Texas Tech",
           "player": "Howard Sampson",
           "position": "OL",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Texas Tech",
@@ -25887,7 +25917,7 @@
           "team": "Texas Tech",
           "player": "Cameron Dickey",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Probable"
         },
         {
           "team": "Texas Tech",
@@ -25899,7 +25929,7 @@
           "team": "Texas Tech",
           "player": "Miquel Dingle Jr.",
           "position": "S",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Texas Tech",
@@ -25917,13 +25947,13 @@
           "team": "Texas Tech",
           "player": "Leyton Stone",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Texas Tech",
           "player": "Malcolm Simmons",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Probable"
         }
       ]
     },
@@ -26522,14 +26552,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-utah-at-arizona/",
       "game_date": "2026-11-14",
       "title": "Utah at Arizona Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:00 PM PT",
+      "reported": "Fri Nov 13, 7:00 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Arizona",
           "player": "Jay'Vion Cole",
           "position": "CB",
-          "status": "Questionable"
+          "status": "Available"
         },
         {
           "team": "Arizona",
@@ -26577,7 +26607,7 @@
           "team": "Arizona",
           "player": "Cam Chapa",
           "position": "S",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Arizona",
@@ -26589,7 +26619,7 @@
           "team": "Arizona",
           "player": "Quinn Olson",
           "position": "S",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Arizona",
@@ -26601,7 +26631,7 @@
           "team": "Arizona",
           "player": "Shane King",
           "position": "TE",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Arizona",
@@ -26625,7 +26655,7 @@
           "team": "Utah",
           "player": "Karson Kaufusi",
           "position": "DT",
-          "status": "Doubtful"
+          "status": "Questionable"
         },
         {
           "team": "Utah",
@@ -26637,7 +26667,7 @@
           "team": "Utah",
           "player": "Wayshawn Parker",
           "position": "RB",
-          "status": "Questionable"
+          "status": "Probable"
         }
       ]
     },
@@ -26645,7 +26675,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-utah-state-at-san-diego-state/",
       "game_date": "2026-11-14",
       "title": "Utah State at San Diego State Injury Report — Week 11",
-      "reported": "Thu Nov 12, 7:04 PM PT",
+      "reported": "Fri Nov 13, 7:11 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -26664,6 +26694,12 @@
           "team": "San Diego State",
           "player": "Yannick Parker",
           "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "San Diego State",
+          "player": "Charlie Stewart",
+          "position": "ILB",
           "status": "Out"
         },
         {
@@ -26766,7 +26802,7 @@
           "team": "Utah State",
           "player": "Chapman Lewis",
           "position": "DB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
@@ -26802,7 +26838,7 @@
           "team": "Utah State",
           "player": "Jimmy Liston",
           "position": "OL",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
@@ -26826,7 +26862,7 @@
           "team": "Utah State",
           "player": "Landon Rehkow",
           "position": "SP",
-          "status": "Questionable"
+          "status": "Probable"
         },
         {
           "team": "Utah State",
@@ -26838,7 +26874,7 @@
           "team": "Utah State",
           "player": "Eli Wood",
           "position": "WR",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Utah State",
@@ -26852,7 +26888,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-wake-forest-at-smu/",
       "game_date": "2026-11-14",
       "title": "Wake Forest at SMU Injury Report — Week 11",
-      "reported": "Thu Nov 12, 6:00 PM PT",
+      "reported": "Fri Nov 13, 6:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -26973,7 +27009,7 @@
           "team": "Wake Forest",
           "player": "Aiden Hall",
           "position": "LB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Wake Forest",
@@ -26991,7 +27027,7 @@
           "team": "Wake Forest",
           "player": "Gio Lopez",
           "position": "QB",
-          "status": "Probable"
+          "status": "Available"
         },
         {
           "team": "Wake Forest",
