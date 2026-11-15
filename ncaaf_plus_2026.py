@@ -392,59 +392,59 @@ AP_RANKS = {
     "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 11, Nov 14) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 21) ────────────
 TEAM_RECORDS = {
-    # AP Top 25
-    "Georgia":"8-1","Utah":"9-0","Notre Dame":"8-1","UCLA":"9-0","Miami":"8-1",
-    "Indiana":"8-1","Alabama":"7-2","Texas":"7-2","Tennessee":"7-2","Texas Tech":"8-1",
-    "Wake Forest":"8-1","BYU":"7-2","Kentucky":"7-2","Houston":"7-2","USC":"7-2",
-    "Iowa":"7-2","Boise State":"8-1","Oregon":"6-3","Ole Miss":"6-3","South Carolina":"6-3",
-    "Ohio State":"6-3","Arizona":"7-2","New Mexico":"8-1","LSU":"6-3","SMU":"7-2",
-    "Florida":"5-4","Missouri":"6-3",
+    # AP Top 25 — updated after Week 11 results (Nov 14-15, 2026)
+    "Georgia":"9-1","Utah":"9-0","Notre Dame":"9-1","UCLA":"9-0","Miami":"9-1",
+    "Indiana":"9-1","Alabama":"8-2","Texas":"7-3","Tennessee":"8-2","Texas Tech":"8-1",
+    "Wake Forest":"9-1","BYU":"8-2","Kentucky":"7-3","Houston":"7-2","USC":"7-3",
+    "Iowa":"8-2","Boise State":"9-1","Oregon":"7-3","Ole Miss":"6-3","South Carolina":"6-4",
+    "Ohio State":"7-3","Arizona":"7-2","New Mexico":"9-1","LSU":"7-3","SMU":"7-3",
+    "Florida":"6-4","Missouri":"6-4",
     # SEC
-    "Mississippi State":"3-6","Auburn":"4-5","Arkansas":"5-4","Vanderbilt":"6-3",
-    "Texas A&M":"5-5",
+    "Mississippi State":"3-7","Auburn":"5-5","Arkansas":"6-4","Vanderbilt":"6-4",
+    "Texas A&M":"5-6",
     # Big Ten
-    "Penn State":"7-2","Michigan":"5-5","Wisconsin":"6-3",
-    "Northwestern":"6-4","Minnesota":"5-5","Michigan State":"4-6","Purdue":"3-6",
-    "Maryland":"4-5","Rutgers":"4-5","Nebraska":"6-3","Illinois":"6-3",
-    "Washington":"6-3","James Madison":"7-2",
+    "Penn State":"8-2","Michigan":"5-6","Wisconsin":"6-4",
+    "Northwestern":"6-5","Minnesota":"5-6","Michigan State":"4-7","Purdue":"3-7",
+    "Maryland":"5-5","Rutgers":"4-6","Nebraska":"7-3","Illinois":"6-3",
+    "Washington":"7-3","James Madison":"7-3",
     # Big 12
-    "Iowa State":"5-4","Kansas State":"5-5","Oklahoma State":"6-4","TCU":"4-5",
-    "West Virginia":"5-5","Kansas":"4-6","Baylor":"4-5","Colorado":"4-5",
-    "Arizona State":"5-4","Cincinnati":"5-4","UCF":"5-5",
+    "Iowa State":"6-4","Kansas State":"5-6","Oklahoma State":"6-4","TCU":"5-5",
+    "West Virginia":"5-6","Kansas":"5-6","Baylor":"4-6","Colorado":"4-5",
+    "Arizona State":"6-4","Cincinnati":"5-5","UCF":"5-6",
     # ACC
-    "Clemson":"6-3","NC State":"5-4","Duke":"6-3","Florida State":"4-5",
-    "Boston College":"4-5","Virginia Tech":"5-4","Louisville":"5-4",
-    "Pittsburgh":"4-5","Syracuse":"3-6","North Carolina":"4-5","Georgia Tech":"4-5",
+    "Clemson":"6-4","NC State":"5-5","Duke":"6-4","Florida State":"4-5",
+    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"6-4",
+    "Pittsburgh":"4-5","Syracuse":"4-6","North Carolina":"4-6","Georgia Tech":"5-5",
     # American
-    "Tulane":"6-3","Memphis":"5-4","Navy":"5-4","Army":"6-3","UAB":"5-4",
-    "ECU":"4-5","USF":"5-4","UTSA":"4-6","Florida Atlantic":"5-5","Tulsa":"3-6",
-    "Rice":"4-5","North Texas":"4-5","Charlotte":"3-6","Temple":"2-7",
-    "South Florida":"5-4","East Carolina":"4-5",
+    "Tulane":"7-3","Memphis":"5-4","Navy":"5-4","Army":"6-3","UAB":"6-4",
+    "ECU":"5-5","USF":"5-4","UTSA":"4-6","Florida Atlantic":"5-5","Tulsa":"3-6",
+    "Rice":"4-6","North Texas":"4-5","Charlotte":"3-7","Temple":"2-8",
+    "South Florida":"5-4","East Carolina":"5-5",
     # Sun Belt
-    "Coastal Carolina":"5-4","Appalachian St":"5-4","Louisiana":"5-4","Troy":"4-5",
-    "Georgia Southern":"4-5","Old Dominion":"3-6","Arkansas State":"4-5",
-    "Georgia State":"4-5","South Alabama":"5-4","Louisiana Monroe":"3-6",
-    "Marshall":"5-4","Southern Miss":"3-6","Texas State":"5-4",
+    "Coastal Carolina":"6-4","Appalachian St":"6-4","Louisiana":"5-4","Troy":"4-6",
+    "Georgia Southern":"5-5","Old Dominion":"3-6","Arkansas State":"4-6",
+    "Georgia State":"4-6","South Alabama":"6-4","Louisiana Monroe":"3-6",
+    "Marshall":"5-5","Southern Miss":"3-7","Texas State":"6-4",
     # MWC / Pac-12
-    "UNLV":"5-5","Colorado State":"5-4","Air Force":"4-5","Wyoming":"5-5",
-    "Fresno State":"5-5","Nevada":"3-6","San Diego State":"4-5",
-    "Washington State":"5-4","Oregon State":"4-6","San Jose State":"4-5",
-    "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-6",
-    "Northern Illinois":"4-5",
+    "UNLV":"5-6","Colorado State":"5-4","Air Force":"5-5","Wyoming":"5-5",
+    "Fresno State":"5-6","Nevada":"4-6","San Diego State":"4-5",
+    "Washington State":"5-4","Oregon State":"4-7","San Jose State":"4-6",
+    "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-7",
+    "Northern Illinois":"4-6",
     # MAC
     "Toledo":"6-3","Miami (OH)":"6-4","Bowling Green":"5-5","Ohio":"4-6",
     "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-7",
     "Eastern Michigan":"3-6","Western Michigan":"4-6","UMass":"2-7","Kent State":"2-8",
     # C-USA / Indep
-    "UTEP":"3-7","FIU":"2-7","Liberty":"5-4","JMU":"7-2",
+    "UTEP":"3-7","FIU":"2-8","Liberty":"6-4","JMU":"7-3",
     "Texas State":"6-4",
-    "Kennesaw State":"5-4","Jacksonville State":"4-5","Sam Houston":"5-3",
-    "Missouri State":"4-5","WKU":"4-5","MTSU":"3-6",
+    "Kennesaw State":"6-4","Jacksonville State":"4-6","Sam Houston":"5-4",
+    "Missouri State":"5-5","WKU":"5-5","MTSU":"3-7",
     # FCS
     "North Dakota St":"7-1","South Dakota St":"6-2","Montana State":"6-2",
-    "Sacramento St":"5-3","Delaware":"5-2","Villanova":"4-3",
+    "Sacramento St":"5-3","Delaware":"6-2","Villanova":"4-3",
     "Eastern Washington":"4-3","Merrimack":"3-5",
     # D-II / D-III
     "Ferris State":"7-0","Mount Union":"7-0","North Central":"6-1",
