@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-15T01:34:32+00:00",
+  "imported_at": "2026-11-15T08:56:24+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -21188,14 +21188,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-colorado-state-at-washington-state/",
       "game_date": "2026-11-14",
       "title": "Colorado State at Washington State Injury Report — Week 11",
-      "reported": "Fri Nov 13, 7:12 PM PT",
+      "reported": "Sat Nov 14, 5:35 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "Colorado State",
           "player": "AJ NOLAND",
           "position": "DB",
-          "status": "Not Listed"
+          "status": "Out"
         },
         {
           "team": "Colorado State",
@@ -21219,7 +21219,7 @@
           "team": "Colorado State",
           "player": "JAYDEN CORTELL",
           "position": "DB",
-          "status": "Doubtful"
+          "status": "Out"
         },
         {
           "team": "Colorado State",
@@ -21261,7 +21261,7 @@
           "team": "Colorado State",
           "player": "JOHN HOLTHAUS",
           "position": "OL",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Colorado State",
@@ -21285,25 +21285,25 @@
           "team": "Colorado State",
           "player": "GRANT HOUSER",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Colorado State",
           "player": "JUICE VAREEN",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Out"
         },
         {
           "team": "Colorado State",
           "player": "PEARCE SPURLIN",
           "position": "TE",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Colorado State",
           "player": "JACKSON HARPER",
           "position": "WR",
-          "status": "Not Listed"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Washington State",
@@ -21333,7 +21333,7 @@
           "team": "Washington State",
           "player": "Darrius Clemons",
           "position": "WR",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Washington State",
@@ -28130,7 +28130,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-14-utah-at-arizona/",
       "game_date": "2026-11-14",
       "title": "Utah at Arizona Injury Report — Week 11",
-      "reported": "Fri Nov 13, 7:00 PM PT",
+      "reported": "Sat Nov 14, 6:00 PM PT",
       "coverage": "report",
       "players": [
         {
@@ -28165,6 +28165,12 @@
         },
         {
           "team": "Arizona",
+          "player": "Keytrin Harris",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Arizona",
           "player": "Max Harris",
           "position": "LB",
           "status": "Out"
@@ -28191,7 +28197,7 @@
           "team": "Arizona",
           "player": "Malcolm Hartzog Jr.",
           "position": "S",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Arizona",
@@ -28233,7 +28239,7 @@
           "team": "Utah",
           "player": "Karson Kaufusi",
           "position": "DT",
-          "status": "Questionable"
+          "status": "Game-Time Decision"
         },
         {
           "team": "Utah",
@@ -28245,7 +28251,7 @@
           "team": "Utah",
           "player": "Wayshawn Parker",
           "position": "RB",
-          "status": "Probable"
+          "status": "Available"
         }
       ]
     },
