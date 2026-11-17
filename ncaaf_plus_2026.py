@@ -384,23 +384,22 @@ def get_db(team):
     return TEAM_DB.get(name) if name else None
 
 AP_RANKS = {
-    # Week 12 US LBM Coaches Poll (Nov 16, 2026) — AP poll delayed to Mon Nov 16; Coaches Poll used as proxy
-    "Georgia":1,"Utah":2,"Notre Dame":3,"UCLA":4,"Indiana":5,
-    "Miami":6,"Alabama":7,"Texas":8,"Tennessee":9,"Wake Forest":10,
-    "Texas Tech":11,"BYU":12,"Iowa":13,"Oregon":14,"Boise State":15,
-    "Ole Miss":16,"Ohio State":17,"Kentucky":18,"USC":19,"Arizona":20,
-    "Houston":21,"Louisville":22,"LSU":23,"Duke":24,"Florida":25,
+    # AP Top 25 Poll — Week 12 (released Mon Nov 16, 2026)
+    "Georgia":1,"Utah":2,"Notre Dame":3,"UCLA":4,"Miami":5,
+    "Indiana":6,"Alabama":7,"Texas":8,"Tennessee":9,"Texas Tech":10,
+    "Wake Forest":11,"BYU":12,"Kentucky":13,"Houston":14,"USC":15,
+    "Iowa":16,"Boise State":17,"Oregon":18,"Ole Miss":19,"South Carolina":20,
+    "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 16) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 17) ────────────
 TEAM_RECORDS = {
     # Ranked teams — updated after Week 11 results (Nov 14-15, 2026)
-    "Georgia":"9-1","Utah":"10-0","Notre Dame":"9-1","UCLA":"10-0","Indiana":"9-1",
-    "Miami":"9-1","Alabama":"8-2","Texas":"7-3","Tennessee":"8-2","Wake Forest":"9-1",
-    "Texas Tech":"9-1","BYU":"8-2","Iowa":"8-2","Oregon":"7-3","Boise State":"9-1",
-    "Ole Miss":"6-3","Ohio State":"7-3","Kentucky":"7-3","USC":"7-3","Arizona":"7-3",
-    "Houston":"7-3","Louisville":"7-3","LSU":"7-3","Duke":"7-3","Florida":"7-3",
-    "South Carolina":"6-4","New Mexico":"9-2","SMU":"7-3",
+    "Georgia":"9-1","Utah":"10-0","Notre Dame":"9-1","UCLA":"10-0","Miami":"9-1",
+    "Indiana":"9-1","Alabama":"8-2","Texas":"8-2","Tennessee":"8-2","Texas Tech":"9-1",
+    "Wake Forest":"9-1","BYU":"8-2","Kentucky":"7-3","Houston":"7-3","USC":"7-3",
+    "Iowa":"8-2","Boise State":"9-1","Oregon":"7-3","Ole Miss":"6-4","South Carolina":"6-4",
+    "Ohio State":"7-3","Arizona":"7-3","New Mexico":"8-2","LSU":"6-4","SMU":"7-3",
     "Florida":"6-4","Missouri":"6-4",
     # SEC
     "Mississippi State":"3-7","Auburn":"5-5","Arkansas":"6-4","Vanderbilt":"6-4",
