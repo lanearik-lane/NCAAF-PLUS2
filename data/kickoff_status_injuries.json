@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-15T21:30:46+00:00",
+  "imported_at": "2026-11-17T21:34:27+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -29318,6 +29318,12 @@
       "reported": null,
       "coverage": "report",
       "players": [
+        {
+          "team": "Ohio",
+          "player": "H. Grand Ohio",
+          "position": "QB",
+          "status": "Questionable"
+        },
         {
           "team": "Ohio",
           "player": "Nick Poulos Ohio",
