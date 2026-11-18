@@ -392,7 +392,7 @@ AP_RANKS = {
     "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 17) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 18) ────────────
 TEAM_RECORDS = {
     # Ranked teams — updated after Week 11 results (Nov 14-15, 2026)
     "Georgia":"9-1","Utah":"10-0","Notre Dame":"9-1","UCLA":"10-0","Miami":"9-1",
