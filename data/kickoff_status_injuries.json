@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-18T12:45:42+00:00",
+  "imported_at": "2026-11-18T21:10:28+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -33241,6 +33241,22 @@
       "url": "https://kickoffstatus.com/games/2026-11-21-wofford-at-ole-miss/",
       "game_date": "2026-11-21",
       "title": "Wofford at Ole Miss Injury Report — Week 12",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-24-kent-state-at-eastern-michigan/",
+      "game_date": "2026-11-24",
+      "title": "Kent State at Eastern Michigan Injury Report — Week 13",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-24-miami-oh-at-western-michigan/",
+      "game_date": "2026-11-24",
+      "title": "Miami (OH) at Western Michigan Injury Report — Week 13",
       "reported": null,
       "coverage": "pending",
       "players": []
