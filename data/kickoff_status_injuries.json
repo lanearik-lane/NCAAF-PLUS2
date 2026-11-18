@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-18T03:24:51+00:00",
+  "imported_at": "2026-11-18T12:45:42+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -30449,9 +30449,75 @@
       "url": "https://kickoffstatus.com/games/2026-11-20-iowa-state-at-ucf/",
       "game_date": "2026-11-20",
       "title": "Iowa State at UCF Injury Report — Week 12",
-      "reported": null,
+      "reported": "Tue Nov 17, 7:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Iowa State",
+          "player": "Ka'Mori Moore",
+          "position": "DT",
+          "status": "Out"
+        },
+        {
+          "team": "Iowa State",
+          "player": "Carson Willich",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Iowa State",
+          "player": "Maasai King",
+          "position": "OL",
+          "status": "Probable"
+        },
+        {
+          "team": "Iowa State",
+          "player": "Connor Moberly",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Iowa State",
+          "player": "Cody Jackson",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Iowa State",
+          "player": "Malcolm Watkins",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "UCF",
+          "player": "Demari Henderson",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "UCF",
+          "player": "DJ Bell",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "UCF",
+          "player": "Kahmel Johnson",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "UCF",
+          "player": "Horace Lockett",
+          "position": "DT",
+          "status": "Questionable"
+        },
+        {
+          "team": "UCF",
+          "player": "Jayden Jennings",
+          "position": "LB",
+          "status": "Questionable"
+        },
         {
           "team": "UCF",
           "player": "L. Carter UCF",
@@ -30466,9 +30532,21 @@
         },
         {
           "team": "UCF",
+          "player": "Duke Watson",
+          "position": "RB",
+          "status": "Probable"
+        },
+        {
+          "team": "UCF",
           "player": "E. Miller Iowa State",
           "position": "RB",
           "status": "Questionable"
+        },
+        {
+          "team": "UCF",
+          "player": "Caden Piening",
+          "position": "TE",
+          "status": "Probable"
         },
         {
           "team": "UCF",
@@ -30499,6 +30577,12 @@
           "player": "J. Bailey Iowa State",
           "position": "WR",
           "status": "Out"
+        },
+        {
+          "team": "UCF",
+          "player": "Waden Charles",
+          "position": "WR",
+          "status": "Questionable"
         }
       ]
     },
