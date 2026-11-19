@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-19T11:27:17+00:00",
+  "imported_at": "2026-11-19T20:11:11+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -31027,12 +31027,6 @@
         },
         {
           "team": "Wyoming",
-          "player": "J. Layne New Mexico",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "Wyoming",
           "player": "T. Hasselbeck Wyoming",
           "position": "QB",
           "status": "Out For Season"
@@ -31063,6 +31057,18 @@
         },
         {
           "team": "Wyoming",
+          "player": "J. Olsen New Mexico",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Wyoming",
+          "player": "T. Walsh New Mexico",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Wyoming",
           "player": "D. DeBlanc Wyoming",
           "position": "WR",
           "status": "Questionable"
@@ -31070,12 +31076,6 @@
         {
           "team": "Wyoming",
           "player": "Jayden Williams",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Wyoming",
-          "player": "S. Miller New Mexico",
           "position": "WR",
           "status": "Out"
         },
@@ -31375,12 +31375,6 @@
         },
         {
           "team": "Air Force",
-          "player": "L. Szarka Air Force",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "Air Force",
           "player": "G. Stalfort Air Force",
           "position": "TE",
           "status": "Questionable"
@@ -31576,12 +31570,6 @@
         },
         {
           "team": "Kansas State",
-          "player": "J. Knuth Kansas State",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Kansas State",
           "player": "C. Warren III Arizona",
           "position": "RB",
           "status": "Questionable"
@@ -31590,6 +31578,12 @@
           "team": "Kansas State",
           "player": "C. Rusk Arizona",
           "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "Kansas State",
+          "player": "D. Salley Jr. Kansas State",
+          "position": "WR",
           "status": "Questionable"
         },
         {
@@ -31669,6 +31663,12 @@
         },
         {
           "team": "Texas",
+          "player": "Z. Williams Texas",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Texas",
           "player": "Colin Simmons",
           "position": "EDG",
           "status": "Questionable"
@@ -31677,12 +31677,6 @@
           "team": "Texas",
           "player": "Richard Wesley",
           "position": "EDG",
-          "status": "Out"
-        },
-        {
-          "team": "Texas",
-          "player": "T. Goosby Texas",
-          "position": "OG",
           "status": "Out"
         },
         {
@@ -31696,12 +31690,6 @@
           "player": "Hollywood Smothers",
           "position": "RB",
           "status": "Out"
-        },
-        {
-          "team": "Texas",
-          "player": "H. Smothers Texas",
-          "position": "RB",
-          "status": "Questionable"
         },
         {
           "team": "Texas",
@@ -31837,6 +31825,12 @@
         },
         {
           "team": "Kansas",
+          "player": "B. Laga BYU",
+          "position": "K",
+          "status": "Questionable"
+        },
+        {
+          "team": "Kansas",
           "player": "A. Gentry BYU",
           "position": "OG",
           "status": "Questionable"
@@ -31852,12 +31846,6 @@
           "player": "Kasen Carpenter",
           "position": "OL",
           "status": "Questionable"
-        },
-        {
-          "team": "Kansas",
-          "player": "C. Ballard Kansas",
-          "position": "QB",
-          "status": "Out"
         },
         {
           "team": "Kansas",
@@ -31885,12 +31873,6 @@
         },
         {
           "team": "Kansas",
-          "player": "S. Moa BYU",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Kansas",
           "player": "Mason Ellis",
           "position": "S",
           "status": "Probable"
@@ -31900,6 +31882,12 @@
           "player": "Carson Bruhn",
           "position": "TE",
           "status": "Probable"
+        },
+        {
+          "team": "Kansas",
+          "player": "C. Moses Kansas",
+          "position": "TE",
+          "status": "Questionable"
         },
         {
           "team": "Kansas",
@@ -32215,14 +32203,14 @@
         },
         {
           "team": "Cincinnati",
-          "player": "G. Payne Cincinnati",
+          "player": "M. Welch Colorado",
           "position": "RB",
           "status": "Questionable"
         },
         {
           "team": "Cincinnati",
-          "player": "M. Welch Colorado",
-          "position": "RB",
+          "player": "C. Williams Colorado",
+          "position": "TE",
           "status": "Questionable"
         },
         {
@@ -32236,12 +32224,6 @@
           "player": "Z. Atkins Colorado",
           "position": "TE",
           "status": "Out"
-        },
-        {
-          "team": "Cincinnati",
-          "player": "D. Scudero Colorado",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Cincinnati",
@@ -32554,9 +32536,9 @@
         },
         {
           "team": "South Carolina",
-          "player": "D. Stewart South Carolina",
+          "player": "G. Brownlow-Dindy South Carolina",
           "position": "DL",
-          "status": "Out"
+          "status": "Questionable"
         },
         {
           "team": "South Carolina",
@@ -32633,12 +32615,6 @@
         {
           "team": "South Carolina",
           "player": "Mazeo Bennett Jr.",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "South Carolina",
-          "player": "M. Bennett Jr. South Carolina",
           "position": "WR",
           "status": "Questionable"
         },
@@ -33100,12 +33076,6 @@
         },
         {
           "team": "Nevada",
-          "player": "C. Jones Nevada",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Nevada",
           "player": "I. Jaramilla-Phe Hawai'i",
           "position": "QB",
           "status": "Out"
@@ -33202,12 +33172,6 @@
           "player": "Michael Hawkins Jr.",
           "position": "QB",
           "status": "Questionable"
-        },
-        {
-          "team": "West Virginia",
-          "player": "A. Devine West Virginia",
-          "position": "RB",
-          "status": "Out"
         },
         {
           "team": "West Virginia",
@@ -33322,6 +33286,12 @@
         },
         {
           "team": "Washington",
+          "player": "CJ Christian",
+          "position": "",
+          "status": "Out"
+        },
+        {
+          "team": "Washington",
           "player": "S CJ Christian",
           "position": "",
           "status": "Out"
@@ -33370,21 +33340,9 @@
         },
         {
           "team": "Washington",
-          "player": "Q. Carr Washington",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Washington",
           "player": "Quaid Carr",
           "position": "RB",
           "status": "Out"
-        },
-        {
-          "team": "Washington",
-          "player": "T. Cooley Washington",
-          "position": "RB",
-          "status": "Questionable"
         },
         {
           "team": "Washington",
@@ -33469,12 +33427,6 @@
         },
         {
           "team": "Illinois",
-          "player": "H. Brown Iowa",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "Illinois",
           "player": "Katin Houser",
           "position": "QB",
           "status": "Doubtful"
@@ -33529,13 +33481,13 @@
         },
         {
           "team": "Illinois",
-          "player": "J. Eberhart Illinois",
+          "player": "J. Harvey Illinois",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "Illinois",
-          "player": "J. Platt Illinois",
+          "player": "N. Rankin Illinois",
           "position": "WR",
           "status": "Questionable"
         },
@@ -33658,9 +33610,9 @@
         },
         {
           "team": "Missouri",
-          "player": "A. Afari Jr. Kentucky",
-          "position": "LB",
-          "status": "Questionable"
+          "player": "C. Green Missouri",
+          "position": "OG",
+          "status": "Out"
         },
         {
           "team": "Missouri",
@@ -33695,12 +33647,6 @@
         {
           "team": "Missouri",
           "player": "Gavin Hoffman",
-          "position": "TE",
-          "status": "Out"
-        },
-        {
-          "team": "Missouri",
-          "player": "G. Hoffman Missouri",
           "position": "TE",
           "status": "Out"
         },
@@ -33832,12 +33778,6 @@
           "player": "Daune Morris",
           "position": "RB",
           "status": "Out"
-        },
-        {
-          "team": "Tennessee",
-          "player": "R. Guillory Jr. LSU",
-          "position": "RB",
-          "status": "Questionable"
         },
         {
           "team": "Tennessee",
@@ -33988,12 +33928,6 @@
         },
         {
           "team": "USC",
-          "player": "C. Williams Maryland",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "USC",
           "player": "S. Huard USC",
           "position": "QB",
           "status": "Questionable"
@@ -34042,9 +33976,9 @@
         },
         {
           "team": "USC",
-          "player": "T. Anderson USC",
+          "player": "R. Tezeno USC",
           "position": "WR",
-          "status": "Out"
+          "status": "Questionable"
         },
         {
           "team": "USC",
@@ -34319,12 +34253,6 @@
         {
           "team": "Florida State",
           "player": "Samuel Singleton Jr.",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Florida State",
-          "player": "S. Singleton Jr. Florida State",
           "position": "RB",
           "status": "Out"
         },
@@ -34663,19 +34591,13 @@
         },
         {
           "team": "Virginia",
-          "player": "K. Chapman North Carolina",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Virginia",
-          "player": "R. Flores Jr. Virginia",
+          "player": "Rico Flores Jr.",
           "position": "WR",
           "status": "Out"
         },
         {
           "team": "Virginia",
-          "player": "Rico Flores Jr.",
+          "player": "T. Ward Virginia",
           "position": "WR",
           "status": "Out"
         }
@@ -34858,7 +34780,7 @@
         },
         {
           "team": "Minnesota",
-          "player": "C. Petrucci Northwestern",
+          "player": "L. Dehnicke Northwestern",
           "position": "TE",
           "status": "Questionable"
         },
@@ -34975,12 +34897,6 @@
         },
         {
           "team": "Nebraska",
-          "player": "A. Jones Jr. Nebraska",
-          "position": "DL",
-          "status": "Out"
-        },
-        {
-          "team": "Nebraska",
           "player": "Anthony Jones Jr.",
           "position": "DL",
           "status": "Doubtful"
@@ -34996,6 +34912,12 @@
           "player": "Jahsear Whittington",
           "position": "DL",
           "status": "Out"
+        },
+        {
+          "team": "Nebraska",
+          "player": "R. Van Poppel Nebraska",
+          "position": "DL",
+          "status": "Questionable"
         },
         {
           "team": "Nebraska",
@@ -35029,19 +34951,7 @@
         },
         {
           "team": "Nebraska",
-          "player": "B. Jackson Ohio State",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Nebraska",
           "player": "I. Mozee Nebraska",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Nebraska",
-          "player": "J. Jackson Ohio State",
           "position": "RB",
           "status": "Out"
         },
@@ -35065,15 +34975,21 @@
         },
         {
           "team": "Nebraska",
-          "player": "Larry Miles",
-          "position": "WR",
-          "status": "Out"
+          "player": "B. Christian Ohio State",
+          "position": "TE",
+          "status": "Questionable"
         },
         {
           "team": "Nebraska",
-          "player": "L. Miles Nebraska",
+          "player": "A. Valerio-Hudson Ohio State",
           "position": "WR",
           "status": "Questionable"
+        },
+        {
+          "team": "Nebraska",
+          "player": "Larry Miles",
+          "position": "WR",
+          "status": "Out"
         },
         {
           "team": "Ohio State",
@@ -35170,12 +35086,6 @@
         },
         {
           "team": "Arizona State",
-          "player": "W. Helton Arizona State",
-          "position": "OG",
-          "status": "Out"
-        },
-        {
-          "team": "Arizona State",
           "player": "Wade Helton",
           "position": "OL",
           "status": "Questionable"
@@ -35195,12 +35105,6 @@
         {
           "team": "Arizona State",
           "player": "Harry Hassmann",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Arizona State",
-          "player": "H. Hassmann Arizona State",
           "position": "WR",
           "status": "Out"
         },
@@ -35344,12 +35248,6 @@
         },
         {
           "team": "Louisville",
-          "player": "M. Heintschel Pitt",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Louisville",
           "player": "J. Turner Pitt",
           "position": "RB",
           "status": "Questionable"
@@ -35362,27 +35260,9 @@
         },
         {
           "team": "Louisville",
-          "player": "E. Lagg Pitt",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Louisville",
           "player": "Hamilton Atkins",
           "position": "TE",
           "status": "Out"
-        },
-        {
-          "team": "Louisville",
-          "player": "H. Atkins Louisville",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "Louisville",
-          "player": "M. Hunt Pitt",
-          "position": "TE",
-          "status": "Questionable"
         },
         {
           "team": "Louisville",
@@ -35407,12 +35287,6 @@
           "player": "Payton Cook",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Louisville",
-          "player": "P. Cook Louisville",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Pitt",
@@ -35503,6 +35377,12 @@
         },
         {
           "team": "Penn State",
+          "player": "K. Levy Rutgers",
+          "position": "CB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Penn State",
           "player": "Tyler Armstead",
           "position": "CB",
           "status": "Questionable"
@@ -35545,12 +35425,6 @@
         },
         {
           "team": "Penn State",
-          "player": "D. Lonergan Rutgers",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "Penn State",
           "player": "Carson Hansen",
           "position": "RB",
           "status": "Questionable"
@@ -35584,12 +35458,6 @@
           "player": "J. Houston Rutgers",
           "position": "WR",
           "status": "Questionable"
-        },
-        {
-          "team": "Penn State",
-          "player": "K. Howard Penn State",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "Penn State",
@@ -36097,12 +35965,6 @@
         },
         {
           "team": "Southern Miss",
-          "player": "J. Himes Southern Miss",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Southern Miss",
           "player": "Kaden Saunders",
           "position": "WR",
           "status": "Probable"
@@ -36187,12 +36049,6 @@
         },
         {
           "team": "California",
-          "player": "L. Bironas Stanford",
-          "position": "K",
-          "status": "Out"
-        },
-        {
-          "team": "California",
           "player": "N. Prongos Stanford",
           "position": "OG",
           "status": "Out"
@@ -36241,12 +36097,6 @@
         },
         {
           "team": "California",
-          "player": "A. Mohammed California",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "California",
           "player": "Carter Vargas",
           "position": "RB",
           "status": "Out"
@@ -36256,12 +36106,6 @@
           "player": "C. Perry-Smith California",
           "position": "RB",
           "status": "Questionable"
-        },
-        {
-          "team": "California",
-          "player": "C. Vargas California",
-          "position": "RB",
-          "status": "Out"
         },
         {
           "team": "California",
@@ -36277,13 +36121,19 @@
         },
         {
           "team": "California",
-          "player": "C. Shaw Stanford",
+          "player": "C. Boscia California",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "C. Perry California",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "California",
-          "player": "D. Sharper Stanford",
+          "player": "C. Shaw Stanford",
           "position": "WR",
           "status": "Questionable"
         },
@@ -36484,20 +36334,8 @@
         },
         {
           "team": "Boston College",
-          "player": "A. Odom Syracuse",
-          "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Boston College",
           "player": "S. Angeli Syracuse",
           "position": "QB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Boston College",
-          "player": "E. Dickens Boston College",
-          "position": "RB",
           "status": "Questionable"
         },
         {
@@ -36535,12 +36373,6 @@
           "player": "Reed Swanson",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Boston College",
-          "player": "R. Swanson Boston College",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Syracuse",
@@ -36700,12 +36532,6 @@
         },
         {
           "team": "Oklahoma",
-          "player": "A. Bethel-Roman Texas A&M",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Oklahoma",
           "player": "E. Thomas Oklahoma",
           "position": "WR",
           "status": "Questionable"
@@ -36721,12 +36547,6 @@
           "player": "M. Craver Texas A&M",
           "position": "WR",
           "status": "Questionable"
-        },
-        {
-          "team": "Oklahoma",
-          "player": "T. Harris Oklahoma",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "Oklahoma",
@@ -36835,21 +36655,9 @@
         },
         {
           "team": "Baylor",
-          "player": "J. Jones Texas Tech",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Baylor",
           "player": "Taz Williams Jr.",
           "position": "WR",
           "status": "Probable"
-        },
-        {
-          "team": "Baylor",
-          "player": "T. Williams Jr. Baylor",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "Texas Tech",
@@ -36952,12 +36760,6 @@
         },
         {
           "team": "Michigan",
-          "player": "A. Sprague Michigan",
-          "position": "OG",
-          "status": "Out"
-        },
-        {
-          "team": "Michigan",
           "player": "J. Davis UCLA",
           "position": "OG",
           "status": "Out"
@@ -36985,12 +36787,6 @@
           "player": "Brady Norton",
           "position": "OL",
           "status": "Questionable"
-        },
-        {
-          "team": "Michigan",
-          "player": "N. Iamaleava UCLA",
-          "position": "QB",
-          "status": "Out For Season"
         },
         {
           "team": "Michigan",
@@ -37051,12 +36847,6 @@
           "player": "JJ Buchanan",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Michigan",
-          "player": "K. Bell Michigan",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Michigan",
@@ -37220,12 +37010,6 @@
         {
           "team": "App State",
           "player": "J. Wright UL Monroe",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "App State",
-          "player": "M. Lenard UL Monroe",
           "position": "RB",
           "status": "Questionable"
         },
@@ -37737,12 +37521,6 @@
         },
         {
           "team": "Florida",
-          "player": "V. Brown III Florida",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Florida",
           "player": "Vernell Brown III",
           "position": "WR",
           "status": "Out"
@@ -37836,6 +37614,12 @@
         },
         {
           "team": "Miami",
+          "player": "B. Meadows Virginia Tech",
+          "position": "OG",
+          "status": "Questionable"
+        },
+        {
+          "team": "Miami",
           "player": "Max Buchanan",
           "position": "OL",
           "status": "Out"
@@ -37867,12 +37651,6 @@
         {
           "team": "Miami",
           "player": "Joshua Moore",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Miami",
-          "player": "L. Stuewe Virginia Tech",
           "position": "WR",
           "status": "Out"
         },
@@ -38001,6 +37779,12 @@
         },
         {
           "team": "Georgia Tech",
+          "player": "J. Walker Georgia Tech",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Georgia Tech",
           "player": "Shymeik Jones",
           "position": "DT",
           "status": "Questionable"
@@ -38049,12 +37833,6 @@
         },
         {
           "team": "Georgia Tech",
-          "player": "M. Hosley Georgia Tech",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Georgia Tech",
           "player": "Fenix Felton",
           "position": "S",
           "status": "Out"
@@ -38094,18 +37872,6 @@
           "player": "Darnell Collins",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Georgia Tech",
-          "player": "D. Collins Georgia Tech",
-          "position": "WR",
-          "status": "Questionable"
-        },
-        {
-          "team": "Georgia Tech",
-          "player": "E. Otieno Wake Forest",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Georgia Tech",
@@ -38223,12 +37989,6 @@
           "player": "C. Toney Washington State",
           "position": "RB",
           "status": "Out"
-        },
-        {
-          "team": "Texas State",
-          "player": "D. Jackson Texas State",
-          "position": "RB",
-          "status": "Questionable"
         },
         {
           "team": "Texas State",
@@ -38358,21 +38118,9 @@
         },
         {
           "team": "Purdue",
-          "player": "N. Palmer Wisconsin",
-          "position": "RB",
-          "status": "Questionable"
-        },
-        {
-          "team": "Purdue",
           "player": "George Burhenn",
           "position": "TE",
           "status": "Questionable"
-        },
-        {
-          "team": "Purdue",
-          "player": "K. Fox Purdue",
-          "position": "TE",
-          "status": "Out"
         },
         {
           "team": "Purdue",
