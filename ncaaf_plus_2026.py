@@ -385,22 +385,24 @@ def get_db(team):
 
 AP_RANKS = {
     # AP Top 25 Poll — Week 12 (released Mon Nov 16, 2026)
+    # Dropped out: South Carolina, New Mexico, LSU, SMU
+    # In: Louisville (#21), Liberty (#22), Florida (#23), Memphis (#24)
     "Georgia":1,"Utah":2,"Notre Dame":3,"UCLA":4,"Miami":5,
-    "Indiana":6,"Alabama":7,"Texas":8,"Tennessee":9,"Texas Tech":10,
-    "Wake Forest":11,"BYU":12,"Kentucky":13,"Houston":14,"USC":15,
-    "Iowa":16,"Boise State":17,"Oregon":18,"Ole Miss":19,"South Carolina":20,
-    "Ohio State":21,"Arizona":22,"New Mexico":23,"LSU":24,"SMU":25,
+    "Indiana":6,"Alabama":7,"Texas":8,"Tennessee":9,"Wake Forest":10,
+    "Texas Tech":11,"BYU":12,"Iowa":13,"Oregon":14,"Boise State":15,
+    "Ohio State":16,"Kentucky":17,"USC":18,"Arizona":19,"Houston":20,
+    "Louisville":21,"Liberty":22,"Florida":23,"Memphis":24,"Ole Miss":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 18) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 12, Nov 19) ────────────
 TEAM_RECORDS = {
     # Ranked teams — updated after Week 11 results (Nov 14-15, 2026)
     "Georgia":"9-1","Utah":"10-0","Notre Dame":"9-1","UCLA":"10-0","Miami":"9-1",
-    "Indiana":"9-1","Alabama":"8-2","Texas":"8-2","Tennessee":"8-2","Texas Tech":"9-1",
-    "Wake Forest":"9-1","BYU":"8-2","Kentucky":"7-3","Houston":"7-3","USC":"7-3",
-    "Iowa":"8-2","Boise State":"9-1","Oregon":"7-3","Ole Miss":"6-4","South Carolina":"6-4",
-    "Ohio State":"7-3","Arizona":"7-3","New Mexico":"8-2","LSU":"6-4","SMU":"7-3",
-    "Florida":"6-4","Missouri":"6-4",
+    "Indiana":"9-1","Alabama":"8-2","Texas":"8-2","Tennessee":"8-2","Wake Forest":"9-1",
+    "Texas Tech":"9-1","BYU":"8-2","Iowa":"8-2","Oregon":"7-3","Boise State":"9-1",
+    "Ohio State":"7-3","Kentucky":"7-3","USC":"7-3","Arizona":"7-3","Houston":"7-3",
+    "Louisville":"7-3","Liberty":"9-1","Florida":"6-4","Memphis":"8-2","Ole Miss":"6-4",
+    "South Carolina":"6-4","New Mexico":"8-2","LSU":"6-4","SMU":"7-3","Missouri":"6-4",
     # SEC
     "Mississippi State":"3-7","Auburn":"5-5","Arkansas":"6-4","Vanderbilt":"6-4",
     "Texas A&M":"5-6",
@@ -415,10 +417,10 @@ TEAM_RECORDS = {
     "Arizona State":"6-4","Cincinnati":"5-5","UCF":"5-6",
     # ACC
     "Clemson":"6-4","NC State":"5-5","Duke":"6-4","Florida State":"4-5",
-    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"6-4",
+    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"7-3",
     "Pittsburgh":"4-5","Syracuse":"4-6","North Carolina":"4-6","Georgia Tech":"5-5",
     # American
-    "Tulane":"7-3","Memphis":"5-4","Navy":"5-4","Army":"6-3","UAB":"6-4",
+    "Tulane":"7-3","Memphis":"8-2","Navy":"5-4","Army":"6-3","UAB":"6-4",
     "ECU":"5-5","USF":"5-4","UTSA":"4-6","Florida Atlantic":"5-5","Tulsa":"3-6",
     "Rice":"4-6","North Texas":"4-5","Charlotte":"3-7","Temple":"2-8",
     "South Florida":"5-4","East Carolina":"5-5",
@@ -438,7 +440,7 @@ TEAM_RECORDS = {
     "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-7",
     "Eastern Michigan":"3-6","Western Michigan":"4-6","UMass":"2-7","Kent State":"2-8",
     # C-USA / Indep
-    "UTEP":"3-7","FIU":"2-8","Liberty":"6-4","JMU":"7-3",
+    "UTEP":"3-7","FIU":"2-8","Liberty":"9-1","JMU":"7-3",
     "Texas State":"6-4",
     "Kennesaw State":"6-4","Jacksonville State":"4-6","Sam Houston":"5-4",
     "Missouri State":"5-5","WKU":"5-5","MTSU":"3-7",
