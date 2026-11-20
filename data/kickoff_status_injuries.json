@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-20T11:02:34+00:00",
+  "imported_at": "2026-11-20T19:46:33+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -31058,7 +31058,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-20-new-mexico-at-wyoming/",
       "game_date": "2026-11-20",
       "title": "New Mexico at Wyoming Injury Report — Week 12",
-      "reported": "Wed Nov 18, 1:13 PM PT",
+      "reported": "Fri Nov 20, 9:27 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -31390,15 +31390,15 @@
         },
         {
           "team": "Michigan State",
-          "player": "E. Stewart Oregon",
+          "player": "D. Gresham Oregon",
           "position": "WR",
           "status": "Questionable"
         },
         {
           "team": "Michigan State",
-          "player": "I. Hooks Oregon",
+          "player": "E. Stewart Oregon",
           "position": "WR",
-          "status": "Out"
+          "status": "Questionable"
         },
         {
           "team": "Michigan State",
@@ -31484,7 +31484,7 @@
       "url": "https://kickoffstatus.com/games/2026-11-20-utep-at-air-force/",
       "game_date": "2026-11-20",
       "title": "UTEP at Air Force Injury Report — Week 12",
-      "reported": "Wed Nov 18, 12:04 PM PT",
+      "reported": "Fri Nov 20, 10:23 AM PT",
       "coverage": "report",
       "players": [
         {
@@ -34969,12 +34969,6 @@
         },
         {
           "team": "North Dakota State",
-          "player": "G. Weber Northern Illinois",
-          "position": "TE",
-          "status": "Questionable"
-        },
-        {
-          "team": "North Dakota State",
           "player": "Luke Kokat",
           "position": "TE",
           "status": "Questionable"
@@ -37732,12 +37726,6 @@
         },
         {
           "team": "San José State",
-          "player": "D. Irvin Jr. UNLV",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "San José State",
           "player": "J. Anderson San José State",
           "position": "WR",
           "status": "Questionable"
@@ -38894,6 +38882,14 @@
       "url": "https://kickoffstatus.com/games/2026-11-24-miami-oh-at-western-michigan/",
       "game_date": "2026-11-24",
       "title": "Miami (OH) at Western Michigan Injury Report — Week 13",
+      "reported": null,
+      "coverage": "pending",
+      "players": []
+    },
+    {
+      "url": "https://kickoffstatus.com/games/2026-11-26-tcu-at-texas-tech/",
+      "game_date": "2026-11-26",
+      "title": "TCU at Texas Tech Injury Report — Week 13",
       "reported": null,
       "coverage": "pending",
       "players": []
