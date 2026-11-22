@@ -384,25 +384,26 @@ def get_db(team):
     return TEAM_DB.get(name) if name else None
 
 AP_RANKS = {
-    # AP Top 25 Poll — Week 13 (entering Nov 21, 2026 games)
-    # Dropped out: Liberty (#22), Memphis (#24)
-    # In: South Carolina (#21), Oklahoma (#22)
-    "Georgia":1,"Utah":2,"Alabama":3,"UCLA":4,"Texas":5,
-    "Notre Dame":6,"Miami":7,"Indiana":8,"Tennessee":9,"BYU":10,
-    "Wake Forest":11,"Texas Tech":12,"Oregon":13,"Ohio State":14,"Iowa":15,
-    "Kentucky":16,"Boise State":17,"USC":18,"Arizona":19,"Houston":20,
-    "South Carolina":21,"Oklahoma":22,"Louisville":23,"Florida":24,"Ole Miss":25,
+    # AP Top 25 Poll — Week 14 (entering Nov 24, 2026 Thanksgiving week games)
+    # Dropped out: Ohio State (#14), Kentucky (#16), Memphis (#24)
+    # In: Nebraska (#24), Missouri (#25); Tennessee surge to #5; UCLA fell to #10
+    "Georgia":1,"Utah":2,"Notre Dame":3,"Miami":4,"Tennessee":5,
+    "Alabama":6,"Texas":7,"Wake Forest":8,"Texas Tech":9,"UCLA":10,
+    "BYU":11,"Indiana":12,"Iowa":13,"Oregon":14,"Boise State":15,
+    "USC":16,"Arizona":17,"Houston":18,"Louisville":19,"Liberty":20,
+    "Florida":21,"Oklahoma":22,"Ole Miss":23,"Nebraska":24,"Missouri":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 13, Nov 21) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 14, Nov 24) ────────────
 TEAM_RECORDS = {
-    # Ranked teams — updated after Week 12 results (Nov 14-16, 2026)
-    "Georgia":"10-1","Utah":"10-0","Alabama":"9-2","UCLA":"10-0","Texas":"9-2",
-    "Notre Dame":"9-2","Miami":"9-1","Indiana":"9-1","Tennessee":"8-2","Wake Forest":"9-1",
-    "Texas Tech":"9-1","BYU":"9-2","Iowa":"8-2","Oregon":"7-3","Boise State":"9-1",
-    "Ohio State":"7-3","Kentucky":"7-3","USC":"7-3","Arizona":"7-3","Houston":"7-3",
-    "South Carolina":"7-4","Oklahoma":"8-2","Louisville":"7-3","Liberty":"9-1","Florida":"6-4","Memphis":"8-2","Ole Miss":"6-4",
-    "South Carolina":"6-4","New Mexico":"8-2","LSU":"6-4","SMU":"7-3","Missouri":"6-4",
+    # Ranked teams — updated after Week 13 results (Nov 21-22, 2026)
+    "Georgia":"10-1","Utah":"11-0","Notre Dame":"10-1","Miami":"10-1","Tennessee":"9-2",
+    "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"10-1","UCLA":"10-1",
+    "BYU":"9-2","Indiana":"9-2","Iowa":"9-2","Oregon":"8-3","Boise State":"10-1",
+    "USC":"8-3","Arizona":"8-3","Houston":"8-3","Louisville":"8-3","Liberty":"10-1",
+    "Florida":"7-4","Oklahoma":"7-4","Ole Miss":"7-4","Nebraska":"8-3","Missouri":"7-4",
+    "Ohio State":"7-4","Kentucky":"7-4","Memphis":"8-3","South Carolina":"7-4",
+    "New Mexico":"8-2","LSU":"7-4","SMU":"7-3","Missouri":"7-4",
     # SEC
     "Mississippi State":"3-7","Auburn":"5-5","Arkansas":"6-4","Vanderbilt":"6-4",
     "Texas A&M":"5-6",
