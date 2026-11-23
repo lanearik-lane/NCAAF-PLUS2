@@ -384,14 +384,15 @@ def get_db(team):
     return TEAM_DB.get(name) if name else None
 
 AP_RANKS = {
-    # AP Top 25 Poll — Week 14 (entering Nov 24, 2026 Thanksgiving week games)
-    # Dropped out: Ohio State (#14), Kentucky (#16), Memphis (#24)
-    # In: Nebraska (#24), Missouri (#25); Tennessee surge to #5; UCLA fell to #10
-    "Georgia":1,"Utah":2,"Notre Dame":3,"Miami":4,"Tennessee":5,
-    "Alabama":6,"Texas":7,"Wake Forest":8,"Texas Tech":9,"UCLA":10,
-    "BYU":11,"Indiana":12,"Iowa":13,"Oregon":14,"Boise State":15,
-    "USC":16,"Arizona":17,"Houston":18,"Louisville":19,"Liberty":20,
-    "Florida":21,"Oklahoma":22,"Ole Miss":23,"Nebraska":24,"Missouri":25,
+    # AP Top 25 Poll — Rivalry Week (Nov 22, 2026; entering Thanksgiving games)
+    # Source: Associated Press poll; SEC Giants Surge, Ohio State Plummets
+    # Texas surges to #5; Ohio State drops to #25 after loss at Nebraska
+    # Receiving votes (not ranked): Nebraska 90, New Mexico 95, UTSA 75, Kentucky 62
+    "Georgia":1,"Utah":2,"Notre Dame":3,"Miami":4,"Texas":5,
+    "Alabama":6,"Tennessee":7,"Wake Forest":8,"Texas Tech":9,"UCLA":10,
+    "BYU":11,"Indiana":12,"Iowa":13,"Oregon":14,"USC":15,
+    "Arizona":16,"Houston":17,"Louisville":18,"Oklahoma":19,"Florida":20,
+    "Liberty":21,"Boise State":22,"Ole Miss":23,"Missouri":24,"Ohio State":25,
 }
 
 # ── TEAM RECORDS (updated weekly — going into Week 14, Nov 24) ────────────
@@ -410,7 +411,7 @@ TEAM_RECORDS = {
     # Big Ten
     "Penn State":"8-2","Michigan":"5-6","Wisconsin":"6-4",
     "Northwestern":"6-5","Minnesota":"5-6","Michigan State":"4-7","Purdue":"3-7",
-    "Maryland":"5-5","Rutgers":"4-6","Nebraska":"7-3","Illinois":"6-3",
+    "Maryland":"5-5","Rutgers":"4-6","Nebraska":"8-3","Illinois":"6-3",
     "Washington":"7-3","James Madison":"7-3",
     # Big 12
     "Iowa State":"6-4","Kansas State":"5-6","Oklahoma State":"6-4","TCU":"5-5",
@@ -418,13 +419,13 @@ TEAM_RECORDS = {
     "Arizona State":"6-4","Cincinnati":"5-5","UCF":"5-6",
     # ACC
     "Clemson":"6-4","NC State":"5-5","Duke":"6-4","Florida State":"4-5",
-    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"7-3",
+    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"8-3",
     "Pittsburgh":"4-5","Syracuse":"4-6","North Carolina":"4-6","Georgia Tech":"5-5",
     # American
-    "Tulane":"7-3","Memphis":"8-2","Navy":"5-4","Army":"6-3","UAB":"6-4",
-    "ECU":"5-5","USF":"5-4","UTSA":"4-6","Florida Atlantic":"5-5","Tulsa":"3-6",
-    "Rice":"4-6","North Texas":"4-5","Charlotte":"3-7","Temple":"2-8",
-    "South Florida":"5-4","East Carolina":"5-5",
+    "Tulane":"7-3","Memphis":"8-3","Navy":"4-6","Army":"5-5","UAB":"6-5",
+    "ECU":"7-4","USF":"6-5","UTSA":"9-2","Florida Atlantic":"7-4","Tulsa":"7-4",
+    "Rice":"4-6","North Texas":"7-4","Charlotte":"3-7","Temple":"2-8",
+    "South Florida":"6-5","East Carolina":"7-4",
     # Sun Belt
     "Coastal Carolina":"6-4","Appalachian St":"6-4","Louisiana":"5-4","Troy":"4-6",
     "Georgia Southern":"5-5","Old Dominion":"3-6","Arkansas State":"4-6",
