@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-22T18:19:31+00:00",
+  "imported_at": "2026-11-24T05:14:42+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -41011,9 +41011,57 @@
       "url": "https://kickoffstatus.com/games/2026-11-26-tcu-at-texas-tech/",
       "game_date": "2026-11-26",
       "title": "TCU at Texas Tech Injury Report — Week 13",
-      "reported": null,
+      "reported": "Mon Nov 23, 7:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "TCU",
+          "player": "Ansel Din-Mbuh",
+          "position": "DT",
+          "status": "Probable"
+        },
+        {
+          "team": "TCU",
+          "player": "Keylan Abrams",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "TCU",
+          "player": "Jaden Craig",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "TCU",
+          "player": "G'Ivori Graham",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "TCU",
+          "player": "Kari Ashley",
+          "position": "TE",
+          "status": "Probable"
+        },
+        {
+          "team": "TCU",
+          "player": "Lafayette Kaiuway",
+          "position": "TE",
+          "status": "Probable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Brice Pollock",
+          "position": "CB",
+          "status": "Probable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Bryce Butler",
+          "position": "DL",
+          "status": "Questionable"
+        },
         {
           "team": "Texas Tech",
           "player": "K. Lemmermann TCU",
@@ -41028,9 +41076,51 @@
         },
         {
           "team": "Texas Tech",
+          "player": "Cash Cleveland",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "LaDamion Guyton",
+          "position": "OLB",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Texas Tech",
           "player": "C. Dickey Texas Tech",
           "position": "RB",
           "status": "Out"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Quinten Joyner",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Marcus Ramon-Edwards",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Miquel Dingle Jr.",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Peyton Morgan",
+          "position": "S",
+          "status": "Probable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Coy Eakin",
+          "position": "WR",
+          "status": "Probable"
         },
         {
           "team": "Texas Tech",
@@ -41040,7 +41130,25 @@
         },
         {
           "team": "Texas Tech",
+          "player": "Jalen Jones",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Texas Tech",
           "player": "J. Jones Texas Tech",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Kenny Johnson",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "Texas Tech",
+          "player": "Micah Hudson",
           "position": "WR",
           "status": "Questionable"
         }
