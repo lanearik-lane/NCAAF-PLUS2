@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-24T05:14:42+00:00",
+  "imported_at": "2026-11-24T17:10:52+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -41133,12 +41133,6 @@
           "player": "Jalen Jones",
           "position": "WR",
           "status": "Out"
-        },
-        {
-          "team": "Texas Tech",
-          "player": "J. Jones Texas Tech",
-          "position": "WR",
-          "status": "Questionable"
         },
         {
           "team": "Texas Tech",
