@@ -395,9 +395,9 @@ AP_RANKS = {
     "Liberty":21,"Boise State":22,"Ole Miss":23,"Missouri":24,"Ohio State":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 14, Nov 24) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 13 (Rivalry Week), Nov 25) ────────────
 TEAM_RECORDS = {
-    # Ranked teams — updated after Week 13 results (Nov 21-22, 2026)
+    # Ranked teams — updated after Week 12 results (Nov 21-22, 2026)
     "Georgia":"10-1","Utah":"11-0","Notre Dame":"10-1","Miami":"10-1","Tennessee":"9-2",
     "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"10-1","UCLA":"10-1",
     "BYU":"9-2","Indiana":"9-2","Iowa":"9-2","Oregon":"8-3","Boise State":"10-1",
