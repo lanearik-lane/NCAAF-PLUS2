@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-26T04:00:33+00:00",
+  "imported_at": "2026-11-26T13:47:48+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -43175,14 +43175,260 @@
       "url": "https://kickoffstatus.com/games/2026-11-28-boise-state-at-colorado-state/",
       "game_date": "2026-11-28",
       "title": "Boise State at Colorado State Injury Report — Week 13",
-      "reported": "Wed Nov 25, 7:07 PM PT",
+      "reported": "Wed Nov 25, 8:11 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "Boise State",
+          "player": "Markell Bowens",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Boise State",
+          "player": "Syncere Brackett-Lambey",
+          "position": "ILB",
+          "status": "Questionable"
+        },
         {
           "team": "Boise State",
           "player": "Carson Rasmussen",
           "position": "OL",
           "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "AJ Noland",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Caleb Pressley",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Dagan Myers",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Dylan Phleps",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Elijah McCantos",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jace Bellah",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jayden Cortell",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jordan Lessard",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Kallen Martinez",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Tre Moore",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Ty Staples",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Xavier Wimbush",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Alton Tarber",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Brandon Kelley",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Mukendi Wa Kalonji",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Robby Harrison",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Steph Wright",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Tyrone Fitten",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Ant Turner",
+          "position": "ILB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jaseim Mitchell",
+          "position": "ILB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Marc Pretto",
+          "position": "ILB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Oumar Diomnade",
+          "position": "ILB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "John Holthaus",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Payton Stewart",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Phil Ocon",
+          "position": "OL",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Zach Smith",
+          "position": "OL",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jaden Hernandez",
+          "position": "OLB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Kenyon Agurs",
+          "position": "OLB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Khamani Potts",
+          "position": "OLB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Durell Robinson",
+          "position": "RB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jadyen Fox",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Mel Brown",
+          "position": "RB",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Grant Houser",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Juice Vereen",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Nader Chirchi",
+          "position": "TE",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Pearce Spurlin",
+          "position": "TE",
+          "status": "Probable"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Jaivyn Moore",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Rj Vick",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Colorado State",
+          "player": "Tommy Maher",
+          "position": "WR",
+          "status": "Probable"
         }
       ]
     },
@@ -45886,13 +46132,193 @@
       "url": "https://kickoffstatus.com/games/2026-11-28-pitt-at-california/",
       "game_date": "2026-11-28",
       "title": "Pitt at California Injury Report — Week 13",
-      "reported": null,
+      "reported": "Wed Nov 25, 8:00 PM PT",
       "coverage": "report",
       "players": [
         {
           "team": "California",
+          "player": "Aiden Manutai",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Cam Sidney",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "California",
+          "player": "Daniel Harris",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Isaiah Crosby",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Khamani Hudson",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Ashun Shepphard",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Jayden Williams",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "team": "California",
+          "player": "Nate Burrell",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "AJ Tuitele",
+          "position": "ILB",
+          "status": "Probable"
+        },
+        {
+          "team": "California",
+          "player": "Kahlee Tafai",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "Ashten Emory",
+          "position": "RB",
+          "status": "Probable"
+        },
+        {
+          "team": "California",
+          "player": "Carter Vargas",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "California",
           "player": "C. Vargas California",
           "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "Dorian Thomas",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "Rico Walker",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "California",
+          "player": "Taimane Purcell",
+          "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "Ian Strong",
+          "position": "WR",
+          "status": "Probable"
+        },
+        {
+          "team": "California",
+          "player": "Trevor Rogers",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "team": "Pitt",
+          "player": "Allen Bryant",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Isaac Patterson",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Raion Strader",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Pitt",
+          "player": "Shadarian Harrison",
+          "position": "DB",
+          "status": "Questionable"
+        },
+        {
+          "team": "Pitt",
+          "player": "Sean FitzSimmons",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Cameron Lindsey",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Mason Heintschel",
+          "position": "QB",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Damon Ferguson Jr.",
+          "position": "RB",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Pitt",
+          "player": "Elijah Lagg",
+          "position": "TE",
+          "status": "Questionable"
+        },
+        {
+          "team": "Pitt",
+          "player": "Jordan Fields",
+          "position": "TE",
+          "status": "Doubtful"
+        },
+        {
+          "team": "Pitt",
+          "player": "Max Hunt",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Rodney Dunbar",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Pitt",
+          "player": "Tyreek Robinson",
+          "position": "WR",
           "status": "Out"
         }
       ]
@@ -46206,13 +46632,145 @@
       "url": "https://kickoffstatus.com/games/2026-11-28-smu-at-stanford/",
       "game_date": "2026-11-28",
       "title": "SMU at Stanford Injury Report — Week 13",
-      "reported": null,
+      "reported": "Wed Nov 25, 8:00 PM PT",
       "coverage": "report",
       "players": [
+        {
+          "team": "SMU",
+          "player": "Jaelyn Davis-Robinson",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Ira Singleton IV",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Trey Wilson",
+          "position": "DE",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Brandon Miyazono",
+          "position": "LB",
+          "status": "Questionable"
+        },
+        {
+          "team": "SMU",
+          "player": "I'Zayah Young",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Addison Nichols",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "SMU",
+          "player": "Evan Goodwin",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Link Rhodes",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Jimmy Wyrick",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Tyren Polley Jr.",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "SMU",
+          "player": "Carterrious Brown",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Brandon Nicholson",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Breylan Thompson",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Chris Garland",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Sam Neely III",
+          "position": "CB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Zaiden McDonald",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "team": "Stanford",
+          "player": "Brendan Delaney",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Daniel Ogiozee",
+          "position": "DL",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Matt Rose",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Preston Jernegan",
+          "position": "ILB",
+          "status": "Out"
+        },
         {
           "team": "Stanford",
           "player": "L. Bironas Stanford",
           "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "London Bironas",
+          "position": "K",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Peyton Warford",
+          "position": "LS",
           "status": "Out"
         },
         {
@@ -46223,8 +46781,50 @@
         },
         {
           "team": "Stanford",
+          "player": "Aidan Kilstrom",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Jay Miller",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Stanford",
+          "player": "Nathan Mejia",
+          "position": "OL",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Simione Pale",
+          "position": "OL",
+          "status": "Questionable"
+        },
+        {
+          "team": "Stanford",
           "player": "D. Green SMU",
           "position": "RB",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Reiman Zebert",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Daylen Sharper",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Stanford",
+          "player": "Langdon Horace",
+          "position": "WR",
           "status": "Out"
         }
       ]
