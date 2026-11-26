@@ -395,9 +395,9 @@ AP_RANKS = {
     "Liberty":21,"Boise State":22,"Ole Miss":23,"Missouri":24,"Ohio State":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 13 (Rivalry Week), Nov 25) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 13 (Rivalry Week), Nov 26) ────────────
 TEAM_RECORDS = {
-    # Ranked teams — updated after Week 12 results (Nov 21-22, 2026)
+    # Ranked teams — updated after Week 12 results (Nov 21-22, 2026); MAC Tue Nov 24 included
     "Georgia":"10-1","Utah":"11-0","Notre Dame":"10-1","Miami":"10-1","Tennessee":"9-2",
     "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"10-1","UCLA":"10-1",
     "BYU":"9-2","Indiana":"9-2","Iowa":"9-2","Oregon":"8-3","Boise State":"10-1",
@@ -437,10 +437,10 @@ TEAM_RECORDS = {
     "Washington State":"5-4","Oregon State":"4-7","San Jose State":"4-6",
     "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-7",
     "Northern Illinois":"4-6",
-    # MAC
-    "Toledo":"6-3","Miami (OH)":"6-4","Bowling Green":"5-5","Ohio":"4-6",
+    # MAC (Tue Nov 24: Miami OH def WMich 28-24; EMich def Kent St 17-12)
+    "Toledo":"6-3","Miami (OH)":"7-4","Bowling Green":"5-5","Ohio":"4-6",
     "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-7",
-    "Eastern Michigan":"3-6","Western Michigan":"4-6","UMass":"2-7","Kent State":"2-8",
+    "Eastern Michigan":"4-6","Western Michigan":"4-7","UMass":"2-7","Kent State":"2-9",
     # C-USA / Indep
     "UTEP":"3-7","FIU":"2-8","Liberty":"9-1","JMU":"7-3",
     "Texas State":"6-4",
