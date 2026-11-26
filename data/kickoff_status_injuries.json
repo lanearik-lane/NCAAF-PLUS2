@@ -1,6 +1,6 @@
 {
   "source": "Kickoff Status",
-  "imported_at": "2026-11-26T13:47:48+00:00",
+  "imported_at": "2026-11-26T22:53:22+00:00",
   "games": [
     {
       "url": "https://kickoffstatus.com/games/2026-10-30-baylor-at-ucf/",
@@ -41673,18 +41673,6 @@
         },
         {
           "team": "New Mexico",
-          "player": "J. Layne New Mexico",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "New Mexico",
-          "player": "L. Szarka Air Force",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "New Mexico",
           "player": "Kiefer Sibley",
           "position": "RB",
           "status": "Questionable"
@@ -41705,6 +41693,12 @@
           "team": "New Mexico",
           "player": "Nick Wheeler",
           "position": "S",
+          "status": "Out"
+        },
+        {
+          "team": "New Mexico",
+          "player": "J. Olsen New Mexico",
+          "position": "TE",
           "status": "Out"
         },
         {
@@ -41734,12 +41728,6 @@
         {
           "team": "New Mexico",
           "player": "Shawn Miller",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "New Mexico",
-          "player": "S. Miller New Mexico",
           "position": "WR",
           "status": "Out"
         },
@@ -42845,12 +42833,6 @@
         },
         {
           "team": "Arizona",
-          "player": "W. Helton Arizona State",
-          "position": "OG",
-          "status": "Out"
-        },
-        {
-          "team": "Arizona",
           "player": "Ismail Mahdi",
           "position": "RB",
           "status": "Out"
@@ -42860,12 +42842,6 @@
           "player": "Quincy Craig",
           "position": "RB",
           "status": "Questionable"
-        },
-        {
-          "team": "Arizona",
-          "player": "H. Hassmann Arizona State",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "Arizona State",
@@ -43645,12 +43621,6 @@
         },
         {
           "team": "BYU",
-          "player": "S. Moa BYU",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "BYU",
           "player": "Roger Saleapaga II",
           "position": "TE",
           "status": "Doubtful"
@@ -44335,12 +44305,6 @@
         {
           "team": "Iowa State",
           "player": "Connor Moberly",
-          "position": "QB",
-          "status": "Out"
-        },
-        {
-          "team": "Iowa State",
-          "player": "D. Duff Kansas State",
           "position": "QB",
           "status": "Out"
         },
@@ -45660,6 +45624,12 @@
         },
         {
           "team": "Missouri",
+          "player": "C. Green Missouri",
+          "position": "OG",
+          "status": "Out"
+        },
+        {
+          "team": "Missouri",
           "player": "Josh Atkins",
           "position": "OL",
           "status": "Out"
@@ -45684,19 +45654,7 @@
         },
         {
           "team": "Missouri",
-          "player": "G. Hoffman Missouri",
-          "position": "TE",
-          "status": "Out"
-        },
-        {
-          "team": "Missouri",
           "player": "J. Brady Missouri",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Missouri",
-          "player": "T. Harris Oklahoma",
           "position": "WR",
           "status": "Out"
         },
@@ -46019,12 +45977,6 @@
           "status": "Out"
         },
         {
-          "team": "Maryland",
-          "player": "K. Howard Penn State",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
           "team": "Penn State",
           "player": "Jahmir Joseph",
           "position": "CB",
@@ -46209,12 +46161,6 @@
         },
         {
           "team": "California",
-          "player": "C. Vargas California",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "California",
           "player": "Dorian Thomas",
           "position": "TE",
           "status": "Out"
@@ -46230,6 +46176,12 @@
           "player": "Taimane Purcell",
           "position": "TE",
           "status": "Questionable"
+        },
+        {
+          "team": "California",
+          "player": "C. Boscia California",
+          "position": "WR",
+          "status": "Out"
         },
         {
           "team": "California",
@@ -46757,12 +46709,6 @@
         },
         {
           "team": "Stanford",
-          "player": "L. Bironas Stanford",
-          "position": "K",
-          "status": "Out"
-        },
-        {
-          "team": "Stanford",
           "player": "London Bironas",
           "position": "K",
           "status": "Out"
@@ -46932,12 +46878,6 @@
         {
           "team": "Old Dominion",
           "player": "G. Page Southern Miss",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Old Dominion",
-          "player": "J. Himes Southern Miss",
           "position": "WR",
           "status": "Out"
         },
@@ -47487,12 +47427,6 @@
           "status": "Out"
         },
         {
-          "team": "Colorado",
-          "player": "D. Thomas Jr. UCF",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
           "team": "UCF",
           "player": "Antonio Branch Jr.",
           "position": "DB",
@@ -47635,12 +47569,6 @@
         },
         {
           "team": "UCLA",
-          "player": "N. Iamaleava UCLA",
-          "position": "QB",
-          "status": "Out For Season"
-        },
-        {
-          "team": "UCLA",
           "player": "Nico Iamaleava",
           "position": "QB",
           "status": "Out"
@@ -47678,12 +47606,6 @@
         {
           "team": "UCLA",
           "player": "Shane Rosenthal",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "UCLA",
-          "player": "T. Anderson USC",
           "position": "WR",
           "status": "Out"
         },
@@ -47928,21 +47850,9 @@
         },
         {
           "team": "Virginia",
-          "player": "L. Stuewe Virginia Tech",
-          "position": "WR",
-          "status": "Out"
-        },
-        {
-          "team": "Virginia",
           "player": "Luke Stuewe",
           "position": "WR",
           "status": "Questionable"
-        },
-        {
-          "team": "Virginia",
-          "player": "R. Flores Jr. Virginia",
-          "position": "WR",
-          "status": "Out"
         },
         {
           "team": "Virginia",
@@ -47959,6 +47869,12 @@
         {
           "team": "Virginia",
           "player": "T. Heath Virginia Tech",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Virginia",
+          "player": "T. Ward Virginia",
           "position": "WR",
           "status": "Out"
         }
@@ -48039,12 +47955,6 @@
         },
         {
           "team": "Oregon",
-          "player": "Q. Carr Washington",
-          "position": "RB",
-          "status": "Out"
-        },
-        {
-          "team": "Oregon",
           "player": "I. Hooks Oregon",
           "position": "WR",
           "status": "Out"
@@ -48053,6 +47963,12 @@
           "team": "Oregon",
           "player": "J. McClellan Oregon",
           "position": "WR",
+          "status": "Out"
+        },
+        {
+          "team": "Washington",
+          "player": "CJ Christian",
+          "position": "",
           "status": "Out"
         },
         {
