@@ -395,11 +395,11 @@ AP_RANKS = {
     "Liberty":21,"Boise State":22,"Ole Miss":23,"Missouri":24,"Ohio State":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 13 (Rivalry Week), Nov 26) ────────────
+# ── TEAM RECORDS (updated weekly — going into Week 13, Nov 27) ────────────────────────────
 TEAM_RECORDS = {
-    # Ranked teams — updated after Week 12 results (Nov 21-22, 2026); MAC Tue Nov 24 included
+    # Ranked teams — updated through Thu Nov 26 (Texas Tech 48, TCU 27); MAC Tue Nov 24 included
     "Georgia":"10-1","Utah":"11-0","Notre Dame":"10-1","Miami":"10-1","Tennessee":"9-2",
-    "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"10-1","UCLA":"10-1",
+    "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"11-1","UCLA":"10-1",
     "BYU":"9-2","Indiana":"9-2","Iowa":"9-2","Oregon":"8-3","Boise State":"10-1",
     "USC":"8-3","Arizona":"8-3","Houston":"8-3","Louisville":"8-3","Liberty":"10-1",
     "Florida":"7-4","Oklahoma":"7-4","Ole Miss":"7-4","Nebraska":"8-3","Missouri":"7-4",
@@ -414,7 +414,7 @@ TEAM_RECORDS = {
     "Maryland":"5-5","Rutgers":"4-6","Nebraska":"8-3","Illinois":"6-3",
     "Washington":"7-3","James Madison":"7-3",
     # Big 12
-    "Iowa State":"6-4","Kansas State":"5-6","Oklahoma State":"6-4","TCU":"5-5",
+    "Iowa State":"6-4","Kansas State":"5-6","Oklahoma State":"6-4","TCU":"5-6",
     "West Virginia":"5-6","Kansas":"5-6","Baylor":"4-6","Colorado":"4-5",
     "Arizona State":"6-4","Cincinnati":"5-5","UCF":"5-6",
     # ACC
