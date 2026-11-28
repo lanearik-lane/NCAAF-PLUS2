@@ -384,68 +384,70 @@ def get_db(team):
     return TEAM_DB.get(name) if name else None
 
 AP_RANKS = {
-    # AP Top 25 Poll — Rivalry Week (Nov 22, 2026; entering Thanksgiving games)
-    # Source: Associated Press poll; SEC Giants Surge, Ohio State Plummets
-    # Texas surges to #5; Ohio State drops to #25 after loss at Nebraska
-    # Receiving votes (not ranked): Nebraska 90, New Mexico 95, UTSA 75, Kentucky 62
-    "Georgia":1,"Utah":2,"Notre Dame":3,"Miami":4,"Texas":5,
+    # AP Top 25 Poll — Rivalry Week (Nov 22, 2026; entering final regular-season week)
+    # Source: Associated Press poll; confirmed via Yahoo Sports live game coverage
+    # Texas confirmed #3; Ohio State #21; Ole Miss #22; Nebraska #25 (via game tags)
+    # Utah #2 (11-0); Iowa #13; Florida #20 — all confirmed by Yahoo live blog Nov 27
+    # Receiving votes (not ranked): Missouri, New Mexico, UTSA, Kentucky
+    "Georgia":1,"Utah":2,"Texas":3,"Notre Dame":4,"Miami":5,
     "Alabama":6,"Tennessee":7,"Wake Forest":8,"Texas Tech":9,"UCLA":10,
-    "BYU":11,"Indiana":12,"Iowa":13,"Oregon":14,"USC":15,
-    "Arizona":16,"Houston":17,"Louisville":18,"Oklahoma":19,"Florida":20,
-    "Liberty":21,"Boise State":22,"Ole Miss":23,"Missouri":24,"Ohio State":25,
+    "BYU":11,"Indiana":12,"Iowa":13,"Liberty":14,"Oregon":15,
+    "USC":16,"Arizona":17,"Houston":18,"Louisville":19,"Florida":20,
+    "Ohio State":21,"Ole Miss":22,"Oklahoma":23,"Boise State":24,"Nebraska":25,
 }
 
-# ── TEAM RECORDS (updated weekly — going into Week 13, Nov 27) ────────────────────────────
+# ── TEAM RECORDS (updated weekly — going into Week 13, Nov 28) ────────────────────────────
 TEAM_RECORDS = {
-    # Ranked teams — updated through Thu Nov 26 (Texas Tech 48, TCU 27); MAC Tue Nov 24 included
-    "Georgia":"10-1","Utah":"11-0","Notre Dame":"10-1","Miami":"10-1","Tennessee":"9-2",
-    "Alabama":"9-2","Texas":"9-2","Wake Forest":"10-1","Texas Tech":"11-1","UCLA":"10-1",
-    "BYU":"9-2","Indiana":"9-2","Iowa":"9-2","Oregon":"8-3","Boise State":"10-1",
-    "USC":"8-3","Arizona":"8-3","Houston":"8-3","Louisville":"8-3","Liberty":"10-1",
-    "Florida":"7-4","Oklahoma":"7-4","Ole Miss":"7-4","Nebraska":"8-3","Missouri":"7-4",
-    "Ohio State":"7-4","Kentucky":"7-4","Memphis":"8-3","South Carolina":"7-4",
-    "New Mexico":"8-2","LSU":"7-4","SMU":"7-3","Missouri":"7-4",
+    # Ranked teams — updated through Fri Nov 27 games (Rivalry/Thanksgiving)
+    # Texas 10-2 (beat A&M 16-6); Iowa 10-2 (beat Nebraska 31-7); Florida 8-4 (beat FSU 26-10)
+    # Ole Miss 8-4 (beat Miss State 41-17); Utah 12-0 (beat WVU 24-0 est.); Texas Tech 11-1 (beat TCU 48-27)
+    "Georgia":"10-1","Utah":"12-0","Texas":"10-2","Notre Dame":"10-1","Miami":"10-1",
+    "Alabama":"9-2","Tennessee":"9-2","Wake Forest":"10-1","Texas Tech":"11-1","UCLA":"10-1",
+    "BYU":"9-2","Indiana":"9-2","Iowa":"10-2","Liberty":"10-1","Oregon":"8-3",
+    "USC":"8-3","Arizona":"8-3","Houston":"8-3","Louisville":"8-3","Florida":"8-4",
+    "Ohio State":"7-4","Ole Miss":"8-4","Oklahoma":"7-4","Boise State":"9-2","Nebraska":"7-5",
+    "Missouri":"7-4","Kentucky":"7-4","Memphis":"8-4","South Carolina":"7-4",
+    "New Mexico":"10-2","LSU":"6-5","SMU":"7-4",
     # SEC
-    "Mississippi State":"3-7","Auburn":"5-5","Arkansas":"6-4","Vanderbilt":"6-4",
-    "Texas A&M":"5-6",
+    "Mississippi State":"5-7","Auburn":"7-4","Arkansas":"4-7","Vanderbilt":"4-7",
+    "Texas A&M":"4-8",
     # Big Ten
-    "Penn State":"8-2","Michigan":"5-6","Wisconsin":"6-4",
-    "Northwestern":"6-5","Minnesota":"5-6","Michigan State":"4-7","Purdue":"3-7",
-    "Maryland":"5-5","Rutgers":"4-6","Nebraska":"8-3","Illinois":"6-3",
-    "Washington":"7-3","James Madison":"7-3",
+    "Penn State":"6-5","Michigan":"6-5","Wisconsin":"8-4",
+    "Northwestern":"6-5","Minnesota":"6-6","Michigan State":"3-8","Purdue":"3-8",
+    "Maryland":"4-7","Rutgers":"3-8","Illinois":"6-5",
+    "Washington":"7-4","James Madison":"8-3",
     # Big 12
-    "Iowa State":"6-4","Kansas State":"5-6","Oklahoma State":"6-4","TCU":"5-6",
-    "West Virginia":"5-6","Kansas":"5-6","Baylor":"4-6","Colorado":"4-5",
-    "Arizona State":"6-4","Cincinnati":"5-5","UCF":"5-6",
+    "Iowa State":"5-6","Kansas State":"4-7","Oklahoma State":"7-4","TCU":"5-7",
+    "West Virginia":"5-7","Kansas":"4-7","Baylor":"6-5","Colorado":"4-7",
+    "Arizona State":"6-5","Cincinnati":"5-6","UCF":"6-5",
     # ACC
-    "Clemson":"6-4","NC State":"5-5","Duke":"6-4","Florida State":"4-5",
-    "Boston College":"4-6","Virginia Tech":"5-5","Louisville":"8-3",
-    "Pittsburgh":"4-5","Syracuse":"4-6","North Carolina":"4-6","Georgia Tech":"5-5",
-    # American
-    "Tulane":"7-3","Memphis":"8-3","Navy":"4-6","Army":"5-5","UAB":"6-5",
-    "ECU":"7-4","USF":"6-5","UTSA":"9-2","Florida Atlantic":"7-4","Tulsa":"7-4",
-    "Rice":"4-6","North Texas":"7-4","Charlotte":"3-7","Temple":"2-8",
+    "Clemson":"7-4","NC State":"5-6","Duke":"6-5","Florida State":"5-7",
+    "Boston College":"5-6","Virginia Tech":"6-5",
+    "Pittsburgh":"6-5","Syracuse":"5-6","North Carolina":"5-6","Georgia Tech":"3-8",
+    # AAC
+    "Tulane":"6-5","Navy":"4-6","Army":"5-5","UAB":"6-5",
+    "ECU":"7-4","USF":"6-5","UTSA":"10-2","Florida Atlantic":"7-4","Tulsa":"7-5",
+    "Rice":"2-9","North Texas":"7-4","Charlotte":"1-10","Temple":"3-9",
     "South Florida":"6-5","East Carolina":"7-4",
     # Sun Belt
-    "Coastal Carolina":"6-4","Appalachian St":"6-4","Louisiana":"5-4","Troy":"4-6",
-    "Georgia Southern":"5-5","Old Dominion":"3-6","Arkansas State":"4-6",
-    "Georgia State":"4-6","South Alabama":"6-4","Louisiana Monroe":"3-6",
-    "Marshall":"5-5","Southern Miss":"3-7","Texas State":"6-4",
+    "Coastal Carolina":"4-7","Appalachian State":"7-5","Louisiana":"8-3","Troy":"4-7",
+    "Georgia Southern":"7-4","Old Dominion":"3-8","Arkansas State":"4-7",
+    "Georgia State":"5-6","South Alabama":"7-5","Louisiana Monroe":"2-9",
+    "Marshall":"6-5","Southern Miss":"3-8","Texas State":"7-4",
     # MWC / Pac-12
-    "UNLV":"5-6","Colorado State":"5-4","Air Force":"5-5","Wyoming":"5-5",
-    "Fresno State":"5-6","Nevada":"4-6","San Diego State":"4-5",
-    "Washington State":"5-4","Oregon State":"4-7","San Jose State":"4-6",
-    "Utah State":"5-5","Hawaii":"4-6","New Mexico State":"3-7",
-    "Northern Illinois":"4-6",
-    # MAC (Tue Nov 24: Miami OH def WMich 28-24; EMich def Kent St 17-12)
-    "Toledo":"6-3","Miami (OH)":"7-4","Bowling Green":"5-5","Ohio":"4-6",
-    "Ball State":"3-6","Buffalo":"3-6","Central Michigan":"4-5","Akron":"3-7",
-    "Eastern Michigan":"4-6","Western Michigan":"4-7","UMass":"2-7","Kent State":"2-9",
+    "UNLV":"7-4","Colorado State":"3-9","Air Force":"9-3","Wyoming":"7-4",
+    "Fresno State":"6-5","Nevada":"5-6","San Diego State":"6-5",
+    "Washington State":"2-9","Oregon State":"6-5","San Jose State":"5-8",
+    "Utah State":"4-7","Hawaii":"3-8","New Mexico State":"3-8",
+    "Northern Illinois":"0-11",
+    # MAC (Tue Nov 24: Miami OH 28-24 WMich; EMich 17-12 Kent St; Nov 27: Toledo 34-31 Ohio; Buffalo 17-9 Akron)
+    "Toledo":"10-2","Miami (OH)":"8-4","Bowling Green":"3-8","Ohio":"8-4",
+    "Ball State":"3-8","Buffalo":"9-3","Central Michigan":"5-6","Akron":"2-10",
+    "Eastern Michigan":"5-7","Western Michigan":"8-4","UMass":"5-6","Kent State":"3-9",
     # C-USA / Indep
-    "UTEP":"3-7","FIU":"2-8","Liberty":"9-1","JMU":"7-3",
-    "Texas State":"6-4",
-    "Kennesaw State":"6-4","Jacksonville State":"4-6","Sam Houston":"5-4",
-    "Missouri State":"5-5","WKU":"5-5","MTSU":"3-7",
+    "UTEP":"1-10","FIU":"4-7","JMU":"8-3",
+    "Kennesaw State":"5-6","Jacksonville State":"8-3","Sam Houston":"1-10",
+    "Missouri State":"4-7","Western Kentucky":"4-7","Middle Tennessee":"6-5",
     # FCS
     "North Dakota St":"7-1","South Dakota St":"6-2","Montana State":"6-2",
     "Sacramento St":"5-3","Delaware":"6-2","Villanova":"4-3",
